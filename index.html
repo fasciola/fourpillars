@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Four Pillars | Premium Social Media Management</title>
+    <!-- Canonical Domain Redirect Script -->
+    <script>
+      if (window.location.hostname === "www.4pillars.ae") {
+        window.location.href = "https://4pillars.ae" + window.location.pathname;
+      }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
+        /* CSS remains the same as original */
         :root {
             --primary: #F7941D;
             --primary-dark: #e08515;
@@ -444,6 +451,77 @@
             font-weight: 600;
         }
         
+        /* Website Design Showcase */
+        .website-showcase {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .showcase-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .showcase-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: var(--text);
+        }
+        
+        .showcase-text p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .showcase-features {
+            margin: 30px 0;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(247, 148, 29, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--primary);
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .feature-text h4 {
+            margin-bottom: 5px;
+        }
+        
+        .feature-text p {
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        .showcase-image {
+            position: relative;
+            height: 500px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            border: 15px solid white;
+            background: url('https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
+        }
+        
         /* Contact */
         .contact-section {
             background-color: var(--background);
@@ -632,7 +710,7 @@
                 font-size: 2.8rem;
             }
             
-            .about-content, .contact-container {
+            .about-content, .contact-container, .showcase-container {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
@@ -643,6 +721,10 @@
             
             .about-text {
                 padding-left: 0;
+            }
+            
+            .showcase-image {
+                height: 400px;
             }
         }
         
@@ -688,6 +770,10 @@
             section {
                 padding: 80px 0;
             }
+            
+            .showcase-image {
+                height: 300px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -714,6 +800,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#website">Website Design</a></li>
                 <li><a href="#stats">Results</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -727,8 +814,8 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Your Premier Social Media Partner</h1>
-                <p>Four Pillars helps luxury brands build meaningful connections and measurable growth through strategic social media management.</p>
+                <h1>Your Premier Social Media & Web Partner</h1>
+                <p>Four Pillars helps luxury brands build meaningful connections, stunning websites, and measurable growth through premium digital solutions.</p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn">Get Started</a>
                     <a href="#services" class="btn btn-outline">Our Services</a>
@@ -750,22 +837,22 @@
                     </div>
                     
                     <div class="tab-content active" id="about-content">
-                        <h2>Redefining Social Media Excellence</h2>
-                        <p>Four Pillars was founded to transform how premium brands approach digital engagement. We combine strategic insight with creative excellence to build social media presences that resonate with discerning audiences.</p>
-                        <p>Our team of digital strategists, content creators, and analytics experts work together to craft bespoke solutions for luxury brands across industries.</p>
+                        <h2>Redefining Digital Excellence</h2>
+                        <p>Four Pillars was founded to transform how premium brands approach digital engagement. We combine strategic insight with creative excellence to build social media presences and websites that resonate with discerning audiences.</p>
+                        <p>Our team of digital strategists, content creators, and web designers work together to craft bespoke solutions for luxury brands across industries.</p>
                         <a href="#contact" class="btn" style="margin-top: 20px;">Learn More</a>
                     </div>
                     
                     <div class="tab-content" id="mission-content">
                         <h2>Our Mission</h2>
-                        <p>To elevate premium brands through strategic digital storytelling and measurable results. We partner with our clients to build authentic connections that drive growth and brand loyalty.</p>
+                        <p>To elevate premium brands through strategic digital storytelling, stunning web experiences, and measurable results. We partner with our clients to build authentic connections that drive growth and brand loyalty.</p>
                         <p>We're committed to innovation, excellence, and delivering exceptional value at every touchpoint of the customer journey.</p>
                         <a href="#contact" class="btn" style="margin-top: 20px;">Connect With Us</a>
                     </div>
                     
                     <div class="tab-content" id="vision-content">
                         <h2>Our Vision</h2>
-                        <p>To become the most trusted partner for luxury brands seeking to maximize their digital impact. We envision a world where every premium brand has a social presence that truly reflects its excellence.</p>
+                        <p>To become the most trusted partner for luxury brands seeking to maximize their digital impact. We envision a world where every premium brand has a cohesive digital presence that truly reflects its excellence.</p>
                         <p>By 2025, we aim to transform the digital presence of 100+ luxury brands worldwide.</p>
                         <a href="#contact" class="btn" style="margin-top: 20px;">Join Our Vision</a>
                     </div>
@@ -789,11 +876,11 @@
                                 <i class="fas fa-chess"></i>
                             </div>
                             <h3>Strategy & Planning</h3>
-                            <p>Data-driven social roadmaps</p>
+                            <p>Data-driven digital roadmaps</p>
                         </div>
                         <div class="service-card-back">
                             <h3>Strategy & Planning</h3>
-                            <p>Comprehensive audience analysis, competitive benchmarking, and bespoke content calendars tailored to your brand objectives.</p>
+                            <p>Comprehensive audience analysis, competitive benchmarking, and bespoke digital strategies tailored to your brand objectives.</p>
                         </div>
                     </div>
                 </div>
@@ -809,7 +896,7 @@
                         </div>
                         <div class="service-card-back">
                             <h3>Content Creation</h3>
-                            <p>Editorial-quality photography, videography, and copywriting that embodies your brand's luxury aesthetic.</p>
+                            <p>Editorial-quality photography, videography, and copywriting that embodies your brand's luxury aesthetic across all platforms.</p>
                         </div>
                     </div>
                 </div>
@@ -861,6 +948,80 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Website Design</h3>
+                            <p>Premium digital experiences</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Website Design</h3>
+                            <p>Custom website design and development that reflects your brand's luxury positioning and drives conversions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Design Showcase -->
+    <section class="website-showcase" id="website">
+        <div class="container">
+            <div class="showcase-container">
+                <div class="showcase-text">
+                    <h2>Premium Website Design</h2>
+                    <p>Your website is the digital storefront for your luxury brand. We create stunning, responsive websites that captivate your audience and convert visitors into customers.</p>
+                    
+                    <div class="showcase-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Luxury Aesthetic</h4>
+                                <p>Designs that reflect your premium brand identity</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Fully Responsive</h4>
+                                <p>Perfect experience on all devices and screen sizes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Lightning Fast</h4>
+                                <p>Optimized for speed and performance</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>E-commerce Ready</h4>
+                                <p>Seamless shopping experiences for premium products</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn">Request Web Design Consultation</a>
+                </div>
+                
+                <div class="showcase-image"></div>
             </div>
         </div>
     </section>
@@ -878,8 +1039,8 @@
                     <div class="stat-text">Client Retention</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">5.2M</div>
-                    <div class="stat-text">Audience Reach</div>
+                    <div class="stat-number">120+</div>
+                    <div class="stat-text">Websites Designed</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">12</div>
@@ -898,8 +1059,8 @@
             </div>
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Ready to Transform Your Social Strategy?</h3>
-                    <p>Our team of experts is ready to create a customized social media solution that aligns with your brand's luxury positioning and business objectives.</p>
+                    <h3>Ready to Transform Your Digital Strategy?</h3>
+                    <p>Our team of experts is ready to create customized social media and web solutions that align with your brand's luxury positioning and business objectives.</p>
                     
                     <div class="contact-details">
                         <div class="contact-detail">
@@ -952,6 +1113,18 @@
                         </div>
                         
                         <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" class="form-group input" required>
+                                <option value="">Select a service</option>
+                                <option value="social">Social Media Management</option>
+                                <option value="website">Website Design</option>
+                                <option value="content">Content Creation</option>
+                                <option value="strategy">Digital Strategy</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
                             <label for="message">How can we help?</label>
                             <textarea id="message" rows="5" required></textarea>
                         </div>
@@ -969,7 +1142,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="#" class="footer-logo">FourPillars</a>
-                    <p class="footer-about">We specialize in premium social media management for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
+                    <p class="footer-about">We specialize in premium social media management and website design for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -985,6 +1158,7 @@
                         <li><a href="#">Community Management</a></li>
                         <li><a href="#">Paid Advertising</a></li>
                         <li><a href="#">Analytics & Reporting</a></li>
+                        <li><a href="#">Website Design</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -993,9 +1167,9 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#website">Website Design</a></li>
                         <li><a href="#stats">Results</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1009,7 +1183,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Four Pillars. All rights reserved. Premium Social Media Management for Luxury Brands.</p>
+                <p>&copy; 2023 Four Pillars. All rights reserved. Premium Digital Solutions for Luxury Brands.</p>
             </div>
         </div>
     </footer>
