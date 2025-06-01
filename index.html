@@ -122,7 +122,7 @@
             width: 100%;
             z-index: 1000;
             background: transparent;
-            padding: 25px 0;
+            padding: 20px 0; /* Reduced from 25px */
             transition: var(--transition);
         }
         
@@ -139,18 +139,14 @@
             align-items: center;
         }
         
-        .logo {
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--text);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
+        /* New logo styling */
+        .logo img {
+            height: 45px;
             transition: var(--transition);
         }
-        
-        .logo span {
-            color: var(--primary);
+
+        header.scrolled .logo img {
+            height: 40px;
         }
         
         .nav-links {
@@ -823,6 +819,11 @@
             display: block;
         }
         
+        .footer-logo img {
+            height: 40px;
+            margin-bottom: 15px;
+        }
+        
         .footer-about {
             font-size: 1rem;
             line-height: 1.7;
@@ -956,7 +957,7 @@
             .nav-links {
                 display: none;
                 position: absolute;
-                top: 80px;
+                top: 70px; /* Reduced from 80px */
                 left: 0;
                 right: 0;
                 background: var(--background);
@@ -1038,7 +1039,9 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">Four<span>Pillars</span></a>
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Four Pillars Logo">
+            </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -1504,7 +1507,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="#" class="footer-logo">FourPillars</a>
+                    <a href="#" class="footer-logo">
+                        <img src="logo.png" alt="Four Pillars Logo">
+                    </a>
                     <p class="footer-about">We specialize in premium social media management, website design, and business setup for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -1588,7 +1593,7 @@
                 
                 // Show corresponding content
                 const tabId = tab.getAttribute('data-tab');
-                document.getElementById(`${tabId}-content`).classList.add('active');
+                document.getElementById(`${tabId}-content`).class.classList.add('active');
             });
         });
 
