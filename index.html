@@ -122,7 +122,7 @@
             width: 100%;
             z-index: 1000;
             background: transparent;
-            padding: 20px 0; /* Reduced from 25px */
+            padding: 20px 50px; /* Reduced from 25px */
             transition: var(--transition);
         }
         
@@ -141,12 +141,14 @@
         
         /* New logo styling */
         .logo img {
-            height: 45px;
-            transition: var(--transition);
+          height: 100px;
+          display: block;
+          object-fit: contain;
         }
 
+
         header.scrolled .logo img {
-            height: 40px;
+            height: 60px;
         }
         
         .nav-links {
@@ -820,7 +822,7 @@
         }
         
         .footer-logo img {
-            height: 40px;
+            height: 100px;
             margin-bottom: 15px;
         }
         
