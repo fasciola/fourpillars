@@ -139,14 +139,31 @@
             align-items: center;
         }
         
-        .logo img {
-          height: 100px;
-          display: block;
-          object-fit: contain;
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 8px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        header.scrolled .logo img {
-            height: 60px;
+        header.scrolled .logo-placeholder {
+            width: 180px;
+            height: 50px;
+            font-size: 20px;
         }
         
         .nav-links {
@@ -819,9 +836,21 @@
             display: block;
         }
         
-        .footer-logo img {
-            height: 100px;
-            margin-bottom: 15px;
+        .footer-logo-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 8px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
         }
         
         .footer-about {
@@ -1054,6 +1083,18 @@
             .price-value {
                 font-size: 36px;
             }
+            
+            .logo-placeholder {
+                width: 180px;
+                height: 60px;
+                font-size: 20px;
+            }
+            
+            header.scrolled .logo-placeholder {
+                width: 150px;
+                height: 45px;
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -1062,7 +1103,7 @@
     <header>
         <div class="container header-container">
             <a href="#" class="logo">
-                <img src="https://i.ibb.co/2kz0GmT/logo.png" alt="Four Pillars Logo">
+                <div class="logo-placeholder">FOUR PILLARS</div>
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -1527,7 +1568,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="#" class="footer-logo">
-                        <img src="https://i.ibb.co/2kz0GmT/logo.png" alt="Four Pillars Logo">
+                        <div class="footer-logo-placeholder">FOUR PILLARS</div>
                     </a>
                     <p class="footer-about">We specialize in premium social media management, website design, and business setup for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
                     <div class="social-links">
