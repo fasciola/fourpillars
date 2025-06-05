@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Four Pillars | Premium Digital Solutions</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Four Pillars | Premium Digital Solutions</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
         :root {
             --primary: #6C63FF;
             --primary-light: #8A84FF;
@@ -1096,528 +1097,531 @@
                 font-size: 18px;
             }
         }
-    </style>
+    
+/* Preloader Styles */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  display: flex;
+  gap: 8px;
+}
+.loader div {
+  width: 15px;
+  height: 80px;
+  background: #0f1423;
+  animation: bounce 1s infinite ease-in-out;
+}
+.loader div:nth-child(2) { animation-delay: 0.1s; }
+.loader div:nth-child(3) { animation-delay: 0.2s; }
+.loader div:nth-child(4) { animation-delay: 0.3s; }
+@keyframes bounce {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.4); }
+}
+
+/* Pointer Effect */
+body {
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-13/cur1162.cur'), auto;
+}
+</style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <a href="#" class="logo">
-                <div class="logo-placeholder">FOUR PILLARS</div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#business-setup">Business Setup</a></li>
-                <li><a href="#website">Website Design</a></li>
-                <li><a href="#stats">Results</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
+<div id="preloader">
+<div class="loader">
+<div></div><div></div><div></div><div></div>
+</div>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Premium Digital Solutions for Luxury Brands</h1>
-                <p>Four Pillars transforms how premium brands approach digital engagement through strategic insight and creative excellence.</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn">Get Started</a>
-                    <a href="#services" class="btn btn-outline">Our Services</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image"></div>
-                <div class="about-text">
-                    <div class="tabs">
-                        <div class="tab active" data-tab="about">About</div>
-                        <div class="tab" data-tab="mission">Mission</div>
-                        <div class="tab" data-tab="vision">Vision</div>
-                    </div>
-                    
-                    <div class="tab-content active" id="about-content">
-                        <h2>Redefining Digital Excellence</h2>
-                        <p>Four Pillars was founded to transform how premium brands approach digital engagement. We combine strategic insight with creative excellence to build social media presences and websites that resonate with discerning audiences.</p>
-                        <p>Our team of digital strategists, content creators, and web designers work together to craft bespoke solutions for luxury brands across industries.</p>
-                        <a href="#contact" class="btn" style="margin-top: 20px;">Learn More</a>
-                    </div>
-                    
-                    <div class="tab-content" id="mission-content">
-                        <h2>Our Mission</h2>
-                        <p>To elevate premium brands through strategic digital storytelling, stunning web experiences, and measurable results. We partner with our clients to build authentic connections that drive growth and brand loyalty.</p>
-                        <p>We're committed to innovation, excellence, and delivering exceptional value at every touchpoint of the customer journey.</p>
-                        <a href="#contact" class="btn" style="margin-top: 20px;">Connect With Us</a>
-                    </div>
-                    
-                    <div class="tab-content" id="vision-content">
-                        <h2>Our Vision</h2>
-                        <p>To become the most trusted partner for luxury brands seeking to maximize their digital impact. We envision a world where every premium brand has a cohesive digital presence that truly reflects its excellence.</p>
-                        <p>By 2025, we aim to transform the digital presence of 100+ luxury brands worldwide.</p>
-                        <a href="#contact" class="btn" style="margin-top: 20px;">Join Our Vision</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-section" id="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Premium Services</h2>
-                <p>Tailored solutions for luxury brands seeking digital excellence</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <div class="service-icon">
-                                <i class="fas fa-chess"></i>
-                            </div>
-                            <h3>Strategy & Planning</h3>
-                            <p>Data-driven digital roadmaps</p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3>Strategy & Planning</h3>
-                            <p>Comprehensive audience analysis, competitive benchmarking, and bespoke digital strategies tailored to your brand objectives.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <div class="service-icon">
-                                <i class="fas fa-pen-fancy"></i>
-                            </div>
-                            <h3>Content Creation</h3>
-                            <p>Premium visual storytelling</p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3>Content Creation</h3>
-                            <p>Editorial-quality photography, videography, and copywriting that embodies your brand's luxury aesthetic across all platforms.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <div class="service-icon">
-                                <i class="fas fa-comments"></i>
-                            </div>
-                            <h3>Community Management</h3>
-                            <p>Engaging premium audiences</p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3>Community Management</h3>
-                            <p>24/7 engagement with your audience, building authentic relationships that foster brand loyalty and advocacy.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <div class="service-icon">
-                                <i class="fas fa-bullhorn"></i>
-                            </div>
-                            <h3>Paid Advertising</h3>
-                            <p>Targeted premium campaigns</p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3>Paid Advertising</h3>
-                            <p>Strategic ad campaigns designed to reach high-value audiences with precision targeting and measurable ROI.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <div class="service-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3>Analytics & Insights</h3>
-                            <p>Performance intelligence</p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3>Analytics & Insights</h3>
-                            <p>Comprehensive performance reporting with actionable insights to continuously optimize your digital strategy.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <div class="service-icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <h3>Website Design</h3>
-                            <p>Premium digital experiences</p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3>Website Design</h3>
-                            <p>Custom website design and development that reflects your brand's luxury positioning and drives conversions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Business Setup Section -->
-    <section class="business-setup-section" id="business-setup">
-        <div class="business-setup-container">
-            <div class="setup-header">
-                <div class="setup-subtitle">Offering Exclusive</div>
-                <h2 class="setup-title">
-                    <span>Company Setup Opportunities</span> <span>In The UAE</span>
-                </h2>
-            </div>
-            
-            <div class="setup-cards">
-                <!-- Mainland Offer Card -->
-                <div class="setup-card">
-                    <div class="ribbon">Offer Price</div>
-                    <div class="card-header">
-                        <h3 class="card-title">Mainland</h3>
-                        <div class="card-price">
-                            <div class="price-label">Starting</div>
-                            <div class="price-value">AED 18,500<span class="price-asterisk">*</span></div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <ul class="features-list">
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">100% Business Ownership</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">Investor Visa</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">All-Inclusive Licenses</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">Banking Assistance</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">FREE VAT Consultation</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">24 hr License Approval</div>
-                            </li>
-                        </ul>
-                        <a href="#contact" class="card-button">Get Offer</a>
-                    </div>
-                </div>
-                
-                <!-- Free Zone Offer Card -->
-                <div class="setup-card">
-                    <div class="card-header">
-                        <h3 class="card-title">Free Zone</h3>
-                        <div class="card-price">
-                            <div class="price-label">Starting</div>
-                            <div class="price-value">AED 5,750<span class="price-asterisk">*</span></div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <ul class="features-list">
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">IFZA/RAKEZ Options</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">Visa Assistance</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">100% Ownership</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">Banking Assistance</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">FREE VAT Consultation</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-check"></i></div>
-                                <div class="feature-text">Dedicated Account Manager</div>
-                            </li>
-                        </ul>
-                        <a href="#contact" class="card-button">Get Offer</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Website Design Showcase -->
-    <section class="website-showcase" id="website">
-        <div class="container">
-            <div class="showcase-container">
-                <div class="showcase-text">
-                    <h2>Premium Website Design</h2>
-                    <p>Your website is the digital storefront for your luxury brand. We create stunning, responsive websites that captivate your audience and convert visitors into customers.</p>
-                    
-                    <div class="showcase-features">
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-paint-brush"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Luxury Aesthetic</h4>
-                                <p>Designs that reflect your premium brand identity</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Fully Responsive</h4>
-                                <p>Perfect experience on all devices and screen sizes</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Lightning Fast</h4>
-                                <p>Optimized for speed and performance</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>E-commerce Ready</h4>
-                                <p>Seamless shopping experiences for premium products</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="#contact" class="btn">Request Web Design Consultation</a>
-                </div>
-                
-                <div class="showcase-image"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section" id="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">250+</div>
-                    <div class="stat-text">Premium Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-text">Client Retention</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">120+</div>
-                    <div class="stat-text">Websites Designed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">12</div>
-                    <div class="stat-text">Industry Awards</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Connect With Us</h2>
-                <p>Let's discuss how we can elevate your brand's digital presence</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Ready to Transform Your Digital Strategy?</h3>
-                    <p>Our team of experts is ready to create customized social media and web solutions that align with your brand's luxury positioning and business objectives.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Our Headquarters</h4>
-                                <p>RAKEZ, UAE</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-detail">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <p>+971 522797168</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-detail">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p>Faisal.Alamir@4pillars.ae</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" title="Enter a valid phone number">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Service Interest</label>
-                            <select id="service" name="service" required>
-                                <option value="">Select a service</option>
-                                <option value="Social Media Management">Social Media Management</option>
-                                <option value="Website Design">Website Design</option>
-                                <option value="Content Creation">Content Creation</option>
-                                <option value="Digital Strategy">Digital Strategy</option>
-                                <option value="Business Setup">Business Setup</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">How can we help?</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn">Submit Request</button>
-                        
-                        <div class="form-loading" id="formLoading">
-                            <div class="spinner"></div>
-                            <p>Submitting your request...</p>
-                        </div>
-                    </form>
-                    
-                    <!-- Thank You Message -->
-                    <div class="thank-you-message" id="thank-you">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <h3>Thank You!</h3>
-                        <p>We've received your message and will get back to you shortly.</p>
-                        <a href="#" class="btn" onclick="resetForm()">Send Another Message</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="#" class="footer-logo">
-                        <div class="footer-logo-placeholder">FOUR PILLARS</div>
-                    </a>
-                    <p class="footer-about">We specialize in premium social media management, website design, and business setup for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-title">Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Strategy & Planning</a></li>
-                        <li><a href="#">Content Creation</a></li>
-                        <li><a href="#">Community Management</a></li>
-                        <li><a href="#">Paid Advertising</a></li>
-                        <li><a href="#">Analytics & Reporting</a></li>
-                        <li><a href="#">Website Design</a></li>
-                        <li><a href="#">Business Setup</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-title">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#website">Website Design</a></li>
-                        <li><a href="#business-setup">Business Setup</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-title">Contact</h3>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> RAKEZ, UAE</li>
-                        <li><i class="fas fa-phone-alt"></i> +971 522797168</li>
-                        <li><i class="fas fa-envelope"></i> Faisal.Alamir@4pillars.ae</li>
-                        <li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 Four Pillars. All rights reserved. Premium Digital Solutions for Luxury Brands.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
+<!-- Header -->
+<header>
+<div class="container header-container">
+<a class="logo" href="#">
+<div class="logo-placeholder">FOUR PILLARS</div>
+</a>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#business-setup">Business Setup</a></li>
+<li><a href="#website">Website Design</a></li>
+<li><a href="#stats">Results</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="mobile-menu">
+<i class="fas fa-bars"></i>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero" id="home">
+<div class="container">
+<div class="hero-content">
+<h1>Premium Digital Solutions for Luxury Brands</h1>
+<p>Four Pillars transforms how premium brands approach digital engagement through strategic insight and creative excellence.</p>
+<div class="hero-cta">
+<a class="btn" href="#contact">Get Started</a>
+<a class="btn btn-outline" href="#services">Our Services</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="about-section" id="about">
+<div class="container">
+<div class="about-content">
+<div class="about-image"></div>
+<div class="about-text">
+<div class="tabs">
+<div class="tab active" data-tab="about">About</div>
+<div class="tab" data-tab="mission">Mission</div>
+<div class="tab" data-tab="vision">Vision</div>
+</div>
+<div class="tab-content active" id="about-content">
+<h2>Redefining Digital Excellence</h2>
+<p>Four Pillars was founded to transform how premium brands approach digital engagement. We combine strategic insight with creative excellence to build social media presences and websites that resonate with discerning audiences.</p>
+<p>Our team of digital strategists, content creators, and web designers work together to craft bespoke solutions for luxury brands across industries.</p>
+<a class="btn" href="#contact" style="margin-top: 20px;">Learn More</a>
+</div>
+<div class="tab-content" id="mission-content">
+<h2>Our Mission</h2>
+<p>To elevate premium brands through strategic digital storytelling, stunning web experiences, and measurable results. We partner with our clients to build authentic connections that drive growth and brand loyalty.</p>
+<p>We're committed to innovation, excellence, and delivering exceptional value at every touchpoint of the customer journey.</p>
+<a class="btn" href="#contact" style="margin-top: 20px;">Connect With Us</a>
+</div>
+<div class="tab-content" id="vision-content">
+<h2>Our Vision</h2>
+<p>To become the most trusted partner for luxury brands seeking to maximize their digital impact. We envision a world where every premium brand has a cohesive digital presence that truly reflects its excellence.</p>
+<p>By 2025, we aim to transform the digital presence of 100+ luxury brands worldwide.</p>
+<a class="btn" href="#contact" style="margin-top: 20px;">Join Our Vision</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="services-section" id="services">
+<div class="container">
+<div class="section-title">
+<h2>Our Premium Services</h2>
+<p>Tailored solutions for luxury brands seeking digital excellence</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-card-inner">
+<div class="service-card-front">
+<div class="service-icon">
+<i class="fas fa-chess"></i>
+</div>
+<h3>Strategy &amp; Planning</h3>
+<p>Data-driven digital roadmaps</p>
+</div>
+<div class="service-card-back">
+<h3>Strategy &amp; Planning</h3>
+<p>Comprehensive audience analysis, competitive benchmarking, and bespoke digital strategies tailored to your brand objectives.</p>
+</div>
+</div>
+</div>
+<div class="service-card">
+<div class="service-card-inner">
+<div class="service-card-front">
+<div class="service-icon">
+<i class="fas fa-pen-fancy"></i>
+</div>
+<h3>Content Creation</h3>
+<p>Premium visual storytelling</p>
+</div>
+<div class="service-card-back">
+<h3>Content Creation</h3>
+<p>Editorial-quality photography, videography, and copywriting that embodies your brand's luxury aesthetic across all platforms.</p>
+</div>
+</div>
+</div>
+<div class="service-card">
+<div class="service-card-inner">
+<div class="service-card-front">
+<div class="service-icon">
+<i class="fas fa-comments"></i>
+</div>
+<h3>Community Management</h3>
+<p>Engaging premium audiences</p>
+</div>
+<div class="service-card-back">
+<h3>Community Management</h3>
+<p>24/7 engagement with your audience, building authentic relationships that foster brand loyalty and advocacy.</p>
+</div>
+</div>
+</div>
+<div class="service-card">
+<div class="service-card-inner">
+<div class="service-card-front">
+<div class="service-icon">
+<i class="fas fa-bullhorn"></i>
+</div>
+<h3>Paid Advertising</h3>
+<p>Targeted premium campaigns</p>
+</div>
+<div class="service-card-back">
+<h3>Paid Advertising</h3>
+<p>Strategic ad campaigns designed to reach high-value audiences with precision targeting and measurable ROI.</p>
+</div>
+</div>
+</div>
+<div class="service-card">
+<div class="service-card-inner">
+<div class="service-card-front">
+<div class="service-icon">
+<i class="fas fa-chart-line"></i>
+</div>
+<h3>Analytics &amp; Insights</h3>
+<p>Performance intelligence</p>
+</div>
+<div class="service-card-back">
+<h3>Analytics &amp; Insights</h3>
+<p>Comprehensive performance reporting with actionable insights to continuously optimize your digital strategy.</p>
+</div>
+</div>
+</div>
+<div class="service-card">
+<div class="service-card-inner">
+<div class="service-card-front">
+<div class="service-icon">
+<i class="fas fa-laptop-code"></i>
+</div>
+<h3>Website Design</h3>
+<p>Premium digital experiences</p>
+</div>
+<div class="service-card-back">
+<h3>Website Design</h3>
+<p>Custom website design and development that reflects your brand's luxury positioning and drives conversions.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Setup Section -->
+<section class="business-setup-section" id="business-setup">
+<div class="business-setup-container">
+<div class="setup-header">
+<div class="setup-subtitle">Offering Exclusive</div>
+<h2 class="setup-title">
+<span>Company Setup Opportunities</span> <span>In The UAE</span>
+</h2>
+</div>
+<div class="setup-cards">
+<!-- Mainland Offer Card -->
+<div class="setup-card">
+<div class="ribbon">Offer Price</div>
+<div class="card-header">
+<h3 class="card-title">Mainland</h3>
+<div class="card-price">
+<div class="price-label">Starting</div>
+<div class="price-value">AED 18,500<span class="price-asterisk">*</span></div>
+</div>
+</div>
+<div class="card-body">
+<ul class="features-list">
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">100% Business Ownership</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">Investor Visa</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">All-Inclusive Licenses</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">Banking Assistance</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">FREE VAT Consultation</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">24 hr License Approval</div>
+</li>
+</ul>
+<a class="card-button" href="#contact">Get Offer</a>
+</div>
+</div>
+<!-- Free Zone Offer Card -->
+<div class="setup-card">
+<div class="card-header">
+<h3 class="card-title">Free Zone</h3>
+<div class="card-price">
+<div class="price-label">Starting</div>
+<div class="price-value">AED 5,750<span class="price-asterisk">*</span></div>
+</div>
+</div>
+<div class="card-body">
+<ul class="features-list">
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">IFZA/RAKEZ Options</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">Visa Assistance</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">100% Ownership</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">Banking Assistance</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">FREE VAT Consultation</div>
+</li>
+<li class="feature-item">
+<div class="feature-icon"><i class="fas fa-check"></i></div>
+<div class="feature-text">Dedicated Account Manager</div>
+</li>
+</ul>
+<a class="card-button" href="#contact">Get Offer</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Website Design Showcase -->
+<section class="website-showcase" id="website">
+<div class="container">
+<div class="showcase-container">
+<div class="showcase-text">
+<h2>Premium Website Design</h2>
+<p>Your website is the digital storefront for your luxury brand. We create stunning, responsive websites that captivate your audience and convert visitors into customers.</p>
+<div class="showcase-features">
+<div class="feature">
+<div class="feature-icon">
+<i class="fas fa-paint-brush"></i>
+</div>
+<div class="feature-text">
+<h4>Luxury Aesthetic</h4>
+<p>Designs that reflect your premium brand identity</p>
+</div>
+</div>
+<div class="feature">
+<div class="feature-icon">
+<i class="fas fa-mobile-alt"></i>
+</div>
+<div class="feature-text">
+<h4>Fully Responsive</h4>
+<p>Perfect experience on all devices and screen sizes</p>
+</div>
+</div>
+<div class="feature">
+<div class="feature-icon">
+<i class="fas fa-bolt"></i>
+</div>
+<div class="feature-text">
+<h4>Lightning Fast</h4>
+<p>Optimized for speed and performance</p>
+</div>
+</div>
+<div class="feature">
+<div class="feature-icon">
+<i class="fas fa-shopping-cart"></i>
+</div>
+<div class="feature-text">
+<h4>E-commerce Ready</h4>
+<p>Seamless shopping experiences for premium products</p>
+</div>
+</div>
+</div>
+<a class="btn" href="#contact">Request Web Design Consultation</a>
+</div>
+<div class="showcase-image"></div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="stats-section" id="stats">
+<div class="container">
+<div class="stats-grid">
+<div class="stat-item">
+<div class="stat-number">250+</div>
+<div class="stat-text">Premium Clients</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">98%</div>
+<div class="stat-text">Client Retention</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">120+</div>
+<div class="stat-text">Websites Designed</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">12</div>
+<div class="stat-text">Industry Awards</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+<div class="container">
+<div class="section-title">
+<h2>Connect With Us</h2>
+<p>Let's discuss how we can elevate your brand's digital presence</p>
+</div>
+<div class="contact-container">
+<div class="contact-info">
+<h3>Ready to Transform Your Digital Strategy?</h3>
+<p>Our team of experts is ready to create customized social media and web solutions that align with your brand's luxury positioning and business objectives.</p>
+<div class="contact-details">
+<div class="contact-detail">
+<div class="contact-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="contact-text">
+<h4>Our Headquarters</h4>
+<p>RAKEZ, UAE</p>
+</div>
+</div>
+<div class="contact-detail">
+<div class="contact-icon">
+<i class="fas fa-phone-alt"></i>
+</div>
+<div class="contact-text">
+<h4>Phone</h4>
+<p>+971 522797168</p>
+</div>
+</div>
+<div class="contact-detail">
+<div class="contact-icon">
+<i class="fas fa-envelope"></i>
+</div>
+<div class="contact-text">
+<h4>Email</h4>
+<p>Faisal.Alamir@4pillars.ae</p>
+</div>
+</div>
+</div>
+</div>
+<div class="contact-form">
+<form id="contactForm">
+<div class="form-group">
+<label for="name">Full Name</label>
+<input id="name" name="name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input id="email" name="email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="company">Company</label>
+<input id="company" name="company" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Phone Number</label>
+<input id="phone" name="phone" pattern="[0-9]{10,15}" required="" title="Enter a valid phone number" type="tel"/>
+</div>
+<div class="form-group">
+<label for="service">Service Interest</label>
+<select id="service" name="service" required="">
+<option value="">Select a service</option>
+<option value="Social Media Management">Social Media Management</option>
+<option value="Website Design">Website Design</option>
+<option value="Content Creation">Content Creation</option>
+<option value="Digital Strategy">Digital Strategy</option>
+<option value="Business Setup">Business Setup</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div class="form-group">
+<label for="message">How can we help?</label>
+<textarea id="message" name="message" required="" rows="5"></textarea>
+</div>
+<button class="btn" type="submit">Submit Request</button>
+<div class="form-loading" id="formLoading">
+<div class="spinner"></div>
+<p>Submitting your request...</p>
+</div>
+</form>
+<!-- Thank You Message -->
+<div class="thank-you-message" id="thank-you">
+<div class="icon">
+<i class="fas fa-check-circle"></i>
+</div>
+<h3>Thank You!</h3>
+<p>We've received your message and will get back to you shortly.</p>
+<a class="btn" href="#" onclick="resetForm()">Send Another Message</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col">
+<a class="footer-logo" href="#">
+<div class="footer-logo-placeholder">FOUR PILLARS</div>
+</a>
+<p class="footer-about">We specialize in premium social media management, website design, and business setup for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
+<div class="social-links">
+<a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+<a aria-label="LinkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
+<a aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+<a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
+<div class="footer-col">
+<h3 class="footer-title">Services</h3>
+<ul class="footer-links">
+<li><a href="#">Strategy &amp; Planning</a></li>
+<li><a href="#">Content Creation</a></li>
+<li><a href="#">Community Management</a></li>
+<li><a href="#">Paid Advertising</a></li>
+<li><a href="#">Analytics &amp; Reporting</a></li>
+<li><a href="#">Website Design</a></li>
+<li><a href="#">Business Setup</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3 class="footer-title">Quick Links</h3>
+<ul class="footer-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#website">Website Design</a></li>
+<li><a href="#business-setup">Business Setup</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3 class="footer-title">Contact</h3>
+<ul class="footer-links">
+<li><i class="fas fa-map-marker-alt"></i> RAKEZ, UAE</li>
+<li><i class="fas fa-phone-alt"></i> +971 522797168</li>
+<li><i class="fas fa-envelope"></i> Faisal.Alamir@4pillars.ae</li>
+<li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+<p>© 2023 Four Pillars. All rights reserved. Premium Digital Solutions for Luxury Brands.</p>
+</div>
+</div>
+</footer>
+<script>
         // Header scroll effect
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
@@ -1741,5 +1745,10 @@
             }, 2000);
         });
     </script>
-</body>
+<script>
+window.addEventListener('load', function () {
+  const preloader = document.getElementById('preloader');
+  if (preloader) preloader.style.display = 'none';
+});
+</script></body>
 </html>
