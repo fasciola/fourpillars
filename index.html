@@ -11,23 +11,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
         :root {
-            --primary: #6C63FF;
-            --primary-light: #8A84FF;
-            --primary-dark: #5750D9;
-            --accent: #FFC107;
-            --accent-light: #FFD54F;
-            --text: #212529;
-            --text-light: #6C757D;
-            --background: #FFFFFF;
-            --background-alt: #F8F9FA;
-            --background-light: #F1F3F5;
-            --border: #DEE2E6;
-            --shadow: rgba(0, 0, 0, 0.05);
-            --transition: all 0.3s ease;
-            --blue-dark: #142440;
-            --red: #D7352A;
-            --purple-light: #F3F2FF;
-        }
+    --primary: #5E3DFE;
+    --primary-light: #884DFE;
+    --primary-dark: #4A2EFF;
+    --accent: #FF3CCF;
+    --accent-light: #FF5CAB;
+    --text: #FFFFFF;
+    --text-light: #BBBBBB;
+    --background: #12121E;
+    --background-alt: #1A1A27;
+    --background-light: #1A1A27;
+    --border: #222233;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --blue-dark: #12121E;
+    --red: #D7352A;
+    --purple-light: #1A1A27;
+}
         
         * {
             margin: 0;
@@ -57,28 +56,28 @@
         }
         
         .btn {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-            color: white;
-            padding: 14px 32px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            font-size: 14px;
-            box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
-        }
-        
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(108, 99, 255, 0.3);
-        }
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    color: white;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(255, 60, 207, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 60, 207, 0.5), 0 0 15px rgba(255, 60, 207, 0.6);
+}
         
         section {
             padding: 100px 0;
@@ -215,16 +214,11 @@
         
         /* Hero Section */
         .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
-                        url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-        }
+    background: linear-gradient(rgba(18,18,30,0.85), rgba(18,18,30,0.85)), 
+                url('images/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+}
         
         .hero-content {
             max-width: 700px;
@@ -817,11 +811,28 @@
         
         /* Footer */
         footer {
-            background: #F8F9FA;
-            color: var(--text-light);
-            padding: 70px 0 30px;
-            border-top: 1px solid var(--border);
-        }
+    background: #1A1A27;
+    color: var(--text-light);
+    padding: 70px 0 30px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+    padding-left: 5px;
+}
+
+.footer-title {
+    color: #FFFFFF;
+}
+
+.footer-logo-placeholder {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
         
         .footer-grid {
             display: grid;
@@ -1131,6 +1142,68 @@
 body {
   cursor: url('https://cur.cursors-4u.net/cursors/cur-13/cur1162.cur'), auto;
 }
+
+/* Fade-in animation for setup cards */
+.setup-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.setup-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(18,18,30,0.7) 0%, rgba(18,18,30,0.7) 100%);
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+header {
+    background: #12121E !important;
+    padding: 15px 50px !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5) !important;
+}
+
+
+.stats-section {
+    background: #12121E !important;
+}
+.stat-item {
+    background: #1A1A27 !important;
+    border: 1px solid #222233 !important;
+}
+.stat-number {
+    color: #FF3CCF !important;
+}
+.stat-text {
+    color: #BBBBBB !important;
+}
+.business-setup-section {
+    background: #12121E !important;
+}
+.website-showcase {
+    background: #12121E !important;
+}
+#website-packages.business-setup-section {
+    background: #12121E !important;
+}
+.setup-header h2.setup-title {
+    color: #FFFFFF !important;
+}
+.setup-subtitle {
+    color: #FF3CCF !important;
+}
 </style>
 </head>
 <body>
@@ -1147,6 +1220,7 @@ body {
 <li><a href="#services">Services</a></li>
 <li><a href="#business-setup">Business Setup</a></li>
 <li><a href="#website">Website Design</a></li>
+<li><a href="#website-packages">Website Packages</a></li>
 <li><a href="#stats">Results</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -1445,6 +1519,81 @@ body {
 </div>
 </div>
 </section>
+<!-- Website Design Packages Section -->
+<section class="business-setup-section" id="website-packages">
+    <div class="business-setup-container">
+        <div class="setup-header">
+            <div class="setup-subtitle">Website Design</div>
+            <h2 class="setup-title">
+                <span>Our Packages</span> <span>For Every Business</span>
+            </h2>
+        </div>
+        <div class="setup-cards">
+            <!-- Starter Package -->
+            <div class="setup-card">
+                <div class="ribbon">Popular</div>
+                <div class="card-header">
+                    <h3 class="card-title">Starter</h3>
+                    <div class="card-price">
+                        <div class="price-label">Starting From</div>
+                        <div class="price-value">AED 499<span class="price-asterisk">+VAT</span></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="features-list">
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">1 Page Dynamic Website</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Basic Website Design</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Mobile Optimized</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">WhatsApp Integration</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Google Map Integration</div></li>
+                    </ul>
+                    <a class="card-button" href="#contact">Book Now</a>
+                </div>
+            </div>
+            <!-- Standard Package -->
+            <div class="setup-card">
+                <div class="card-header">
+                    <h3 class="card-title">Standard</h3>
+                    <div class="card-price">
+                        <div class="price-label">Starting From</div>
+                        <div class="price-value">AED 999<span class="price-asterisk">+VAT</span></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="features-list">
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">5 Page Dynamic Website</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Custom Website Design</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Mobile Optimized</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">WhatsApp & Call Button</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Google Map Integration</div></li>
+                    </ul>
+                    <a class="card-button" href="#contact">Book Now</a>
+                </div>
+            </div>
+            <!-- Premium Package -->
+            <div class="setup-card">
+                <div class="card-header">
+                    <h3 class="card-title">Premium</h3>
+                    <div class="card-price">
+                        <div class="price-label">Starting From</div>
+                        <div class="price-value">AED 1999<span class="price-asterisk">+VAT</span></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="features-list">
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">10 Page Dynamic Website</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Custom Website Design</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Company Profile Design</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">SEO Friendly</div></li>
+                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">WhatsApp & Call Button</div></li>
+                    </ul>
+                    <a class="card-button" href="#contact">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Stats Section -->
 <section class="stats-section" id="stats">
 <div class="container">
@@ -1597,6 +1746,7 @@ body {
 <li><a href="#about">About Us</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#website">Website Design</a></li>
+<li><a href="#website-packages">Website Packages</a></li>
 <li><a href="#business-setup">Business Setup</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -1758,5 +1908,22 @@ lottie.loadAnimation({
   autoplay: true,
   path: "https://assets6.lottiefiles.com/packages/lf20_usmfx6bp.json"
 });
-</script></body>
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.setup-card').forEach(card => {
+        observer.observe(card);
+    });
+});
+</script>
+
+</body>
 </html>
