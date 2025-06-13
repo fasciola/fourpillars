@@ -1582,7 +1582,9 @@
 </div>
 </div>
 <div class="contact-form">
-<form id="contactForm">
+<form id="contactForm" action="https://formsubmit.co/faisal4pillars@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="https://4pillars.ae/#contact">
+    <input type="hidden" name="_captcha" value="false">
 <div class="form-group">
 <label for="name">Full Name</label>
 <input id="name" name="name" required="" type="text"/>
@@ -1769,46 +1771,6 @@
             section.style.transform = 'translateY(20px)';
             section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(section);
-        });
-        
-        // Form submission handling - FIXED
-        const contactForm = document.getElementById('contactForm');
-        const thankYouMessage = document.getElementById('thank-you');
-        const formLoading = document.getElementById('formLoading');
-        
-        function resetForm() {
-            contactForm.reset();
-            contactForm.style.display = 'block';
-            thankYouMessage.style.display = 'none';
-        }
-        
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Validate phone number
-            const phoneInput = document.getElementById('phone');
-            const phonePattern = /^[0-9]{10,15}$/;
-            if (!phonePattern.test(phoneInput.value)) {
-                alert('Please enter a valid phone number (10-15 digits)');
-                phoneInput.focus();
-                return;
-            }
-            
-            // Show loading indicator
-            formLoading.style.display = 'block';
-            
-            // Simulate form submission (would be replaced with actual backend in production)
-            setTimeout(() => {
-                // Hide loading indicator
-                formLoading.style.display = 'none';
-                
-                // Hide form and show thank you message
-                contactForm.style.display = 'none';
-                thankYouMessage.style.display = 'block';
-                
-                // Scroll to thank you message
-                thankYouMessage.scrollIntoView({ behavior: 'smooth' });
-            }, 2000);
         });
         
         // Preloader
