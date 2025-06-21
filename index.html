@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Four Pillars | Premium Digital Solutions</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<style>
-        :root {
-    --primary: #5E3DFE;
-    --primary-light: #884DFE;
-    --primary-dark: #4A2EFF;
-    --accent: #FF3CCF;
-    --accent-light: #FF5CAB;
-    --text: #FFFFFF;
-    --text-light: #BBBBBB;
-    --background: #12121E;
-    --background-alt: #1A1A27;
-    --background-light: #1A1A27;
-    --border: #222233;
-    --shadow: rgba(0, 0, 0, 0.5);
-    --blue-dark: #12121E;
-    --red: #D7352A;
-    --purple-light: #1A1A27;
-}
-        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Pillars | Premium Digital Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
+        :root {
+            /* Blue Color Palette */
+            --primary-dark: #3D52A0;      /* Dark Blue - for header/nav */
+            --primary: #7091E6;           /* Bright Blue - main visual area */
+            --primary-light: #8697C4;     /* Light Blue - gradients/backgrounds */
+            --accent: #ADBBDA;            /* Grayish-Blue - buttons/hover states */
+            --background-light: #EDE8F5;  /* Very Light Blue - background */
+            
+            /* Text Colors */
+            --text-dark: #333333;
+            --text: #444444;
+            --text-light: #666666;
+            
+            /* Additional Colors */
+            --background-alt: #FFFFFF;
+            --border: #D0D8E8;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+        
         body {
             font-family: 'Open Sans', sans-serif;
             color: var(--text);
-            background-color: var(--background);
+            background-color: var(--background-light);
             line-height: 1.6;
             overflow-x: hidden;
-            padding-top: 110px; /* Added padding for fixed header */
         }
         
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             line-height: 1.2;
-            color: var(--text);
+            color: var(--text-dark);
         }
         
         .container {
@@ -56,28 +54,28 @@
         }
         
         .btn {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-    color: white;
-    padding: 14px 32px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    font-size: 14px;
-    box-shadow: 0 4px 15px rgba(255, 60, 207, 0.3);
-}
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(112, 145, 230, 0.3);
+        }
 
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 60, 207, 0.5), 0 0 15px rgba(255, 60, 207, 0.6);
-}
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(112, 145, 230, 0.4);
+        }
         
         section {
             padding: 100px 0;
@@ -104,7 +102,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 4px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
             border-radius: 2px;
         }
         
@@ -115,20 +113,20 @@
             font-size: 1.1rem;
         }
         
-        /* Updated Header Styles */
+        /* Header Styles */
         header {
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
-            background: #12121E;
+            background: var(--primary-dark);
             padding: 20px 50px;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
         
         header.scrolled {
-            background: rgba(26, 26, 39, 0.95);
+            background: rgba(61, 82, 160, 0.95);
             padding: 15px 50px;
             backdrop-filter: blur(10px);
         }
@@ -164,7 +162,7 @@
         
         .nav-links a {
             text-decoration: none;
-            color: var(--text);
+            color: white;
             font-weight: 600;
             position: relative;
             padding-bottom: 5px;
@@ -179,7 +177,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
+            background: white;
             transition: all 0.3s ease;
         }
         
@@ -187,42 +185,46 @@
             width: 100%;
         }
         
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-        
         .mobile-menu {
             display: none;
             font-size: 24px;
             cursor: pointer;
-            color: var(--text);
+            color: white;
             transition: all 0.3s ease;
         }
         
-        /* Hero Section */
+        /* Hero Section with Particle Background */
         .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(rgba(18,18,30,0.85), rgba(18,18,30,0.85)), 
-                url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
-}
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        #particle-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
         
         .hero-content {
-            max-width: 700px;
             position: relative;
             z-index: 2;
-            color: var(--text);
-            padding-top: 80px;
+            max-width: 700px;
+            padding: 40px;
+            color: white;
+            margin-left: 10%;
         }
         
         .hero h1 {
             font-size: 3.5rem;
             line-height: 1.2;
             margin-bottom: 20px;
-            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
         
         .hero p {
@@ -230,7 +232,7 @@
             margin-bottom: 40px;
             max-width: 600px;
             font-weight: 300;
-            color: var(--text-light);
+            color: rgba(255, 255, 255, 0.9);
         }
         
         .hero-cta {
@@ -241,18 +243,51 @@
         
         .btn-outline {
             background: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
+            border: 2px solid white;
+            color: white;
         }
         
         .btn-outline:hover {
-            background: rgba(108, 99, 255, 0.1);
-            color: var(--primary);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .stat-item {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .stat-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
         }
         
         /* About Section */
         .about-section {
-            background-color: var(--background);
+            background-color: var(--background-light);
             position: relative;
         }
         
@@ -264,14 +299,15 @@
         }
         
         .about-image {
-    height: 500px;
-    background: url('images/about-image.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    border: 3px solid var(--accent);
-}
+            height: 500px;
+            background: linear-gradient(rgba(112, 145, 230, 0.1), rgba(61, 82, 160, 0.1)), 
+                        url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            border: 3px solid var(--primary);
+        }
         
         .about-text {
             padding-left: 20px;
@@ -284,7 +320,7 @@
         
         .about-text p {
             margin-bottom: 20px;
-            color: var(--text-light);
+            color: var(--text);
             font-size: 1.1rem;
             line-height: 1.8;
         }
@@ -301,11 +337,11 @@
             font-weight: 600;
             position: relative;
             color: var(--text-light);
-            transition: var(--transition);
+            transition: all 0.3s ease;
         }
         
         .tab.active {
-            color: var(--primary);
+            color: var(--primary-dark);
         }
         
         .tab.active:after {
@@ -315,7 +351,7 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
         }
         
         .tab-content {
@@ -326,7 +362,7 @@
             display: block;
         }
         
-        /* Services */
+        /* Services Section */
         .services-section {
             background-color: var(--background-alt);
         }
@@ -351,8 +387,8 @@
             transform-style: preserve-3d;
             border-radius: 12px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-            background: var(--background);
-            border: 1px solid rgba(108, 99, 255, 0.1);
+            background: white;
+            border: 1px solid var(--border);
         }
         
         .service-card:hover .service-card-inner {
@@ -374,11 +410,11 @@
         }
         
         .service-card-front {
-            background-color: var(--background);
+            background-color: white;
         }
         
         .service-card-back {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
             transform: rotateY(180deg);
         }
@@ -386,15 +422,15 @@
         .service-icon {
             width: 80px;
             height: 80px;
-            background: rgba(108, 99, 255, 0.1);
+            background: rgba(112, 145, 230, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 25px;
             font-size: 32px;
-            color: var(--primary);
-            border: 1px solid rgba(108, 99, 255, 0.2);
+            color: var(--primary-dark);
+            border: 1px solid var(--border);
         }
         
         .service-card-front h3 {
@@ -411,112 +447,9 @@
             color: rgba(255, 255, 255, 0.9);
         }
         
-        /* Stats */
-        .stats-section {
-            background: #12121E !important;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .stat-item {
-            padding: 30px;
-            background: #1A1A27 !important;
-            border-radius: 12px;
-            backdrop-filter: blur(5px);
-            border: 1px solid #222233 !important;
-        }
-        
-        .stat-number {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #FF3CCF !important;
-        }
-        
-        .stat-text {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #BBBBBB !important;
-        }
-        
-        /* Website Design Showcase */
-        .website-showcase {
-            background: #12121E !important;
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .showcase-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        
-        .showcase-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 25px;
-            color: var(--text);
-        }
-        
-        .showcase-text p {
-            margin-bottom: 20px;
-            color: var(--text-light);
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-        
-        .showcase-features {
-            margin: 30px 0;
-        }
-        
-        .feature {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-        
-        .feature-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(108, 99, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            color: var(--primary);
-            margin-right: 15px;
-            flex-shrink: 0;
-            border: 1px solid rgba(108, 99, 255, 0.2);
-        }
-        
-        .feature-text h4 {
-            margin-bottom: 5px;
-        }
-        
-        .feature-text p {
-            color: var(--text-light);
-            margin: 0;
-        }
-        
-        .showcase-image {
-            position: relative;
-            height: 500px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
-            background: url('https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
-        }
-        
         /* Business Setup Section */
         .business-setup-section {
-            background: #12121E !important;
+            background: var(--background-alt);
             padding: 100px 0;
             position: relative;
             overflow: hidden;
@@ -536,7 +469,7 @@
         }
         
         .setup-subtitle {
-            color: #FF3CCF !important;
+            color: var(--primary-dark);
             text-transform: uppercase;
             font-size: 14px;
             letter-spacing: 2px;
@@ -550,15 +483,11 @@
             font-weight: 700;
             font-size: 2.5rem;
             line-height: 1.2;
-            color: #FFFFFF !important;
-        }
-        
-        .setup-title span:first-child {
-            color: var(--text);
+            color: var(--text-dark);
         }
         
         .setup-title span:last-child {
-            color: var(--primary);
+            color: var(--primary-dark);
         }
         
         .setup-cards {
@@ -569,13 +498,21 @@
         }
         
         .setup-card {
-            background: var(--background);
+            background: white;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             position: relative;
-            border: 1px solid rgba(108, 99, 255, 0.1);
+            border: 1px solid var(--border);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .setup-card.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
         
         .setup-card:hover {
@@ -586,7 +523,7 @@
         .card-header {
             padding: 30px 30px 20px;
             position: relative;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
         }
         
@@ -594,7 +531,7 @@
             position: absolute;
             top: 15px;
             left: -30px;
-            background: var(--red);
+            background: var(--primary-dark);
             color: white;
             padding: 8px 40px;
             font-size: 12px;
@@ -657,13 +594,13 @@
         .feature-icon {
             width: 24px;
             height: 24px;
-            background: rgba(108, 99, 255, 0.1);
+            background: rgba(112, 145, 230, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 15px;
-            color: var(--primary);
+            color: var(--primary-dark);
             font-size: 12px;
         }
         
@@ -676,7 +613,7 @@
         .card-button {
             display: block;
             width: 100%;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
             text-align: center;
             padding: 16px;
@@ -690,17 +627,90 @@
             border: none;
             cursor: pointer;
             font-size: 16px;
-            box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(112, 145, 230, 0.2);
         }
         
         .card-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(108, 99, 255, 0.3);
+            box-shadow: 0 6px 20px rgba(112, 145, 230, 0.3);
         }
         
-        /* Contact */
+        /* Website Design Showcase */
+        .website-showcase {
+            background: var(--background-light);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .showcase-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .showcase-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+        
+        .showcase-text p {
+            margin-bottom: 20px;
+            color: var(--text);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .showcase-features {
+            margin: 30px 0;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(112, 145, 230, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--primary-dark);
+            margin-right: 15px;
+            flex-shrink: 0;
+            border: 1px solid var(--border);
+        }
+        
+        .feature-text h4 {
+            margin-bottom: 5px;
+            color: var(--primary-dark);
+        }
+        
+        .feature-text p {
+            color: var(--text);
+            margin: 0;
+        }
+        
+        .showcase-image {
+            position: relative;
+            height: 500px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(rgba(112, 145, 230, 0.1), rgba(61, 82, 160, 0.1)), 
+                        url('https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
+            border: 1px solid var(--border);
+        }
+        
+        /* Contact Section */
         .contact-section {
-            background-color: var(--background);
+            background-color: var(--background-light);
         }
         
         .contact-container {
@@ -731,33 +741,33 @@
         .contact-icon {
             width: 50px;
             height: 50px;
-            background: rgba(108, 99, 255, 0.1);
+            background: rgba(112, 145, 230, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 20px;
-            color: var(--primary);
+            color: var(--primary-dark);
             margin-right: 15px;
             flex-shrink: 0;
-            border: 1px solid rgba(108, 99, 255, 0.2);
+            border: 1px solid var(--border);
         }
         
         .contact-text h4 {
             margin-bottom: 5px;
-            color: var(--primary);
+            color: var(--primary-dark);
         }
         
         .contact-text p {
-            color: var(--text-light);
+            color: var(--text);
         }
         
         .contact-form {
-            background: var(--background-alt);
+            background: white;
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(108, 99, 255, 0.1);
+            border: 1px solid var(--border);
         }
         
         .form-group {
@@ -768,7 +778,7 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: var(--text-light);
+            color: var(--text);
         }
         
         .form-group input, 
@@ -780,8 +790,8 @@
             border-radius: 8px;
             font-family: 'Open Sans', sans-serif;
             font-size: 16px;
-            transition: var(--transition);
-            background: var(--background);
+            transition: all 0.3s ease;
+            background: var(--background-light);
             color: var(--text);
         }
         
@@ -790,125 +800,126 @@
         .form-group select:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+            box-shadow: 0 0 0 3px rgba(112, 145, 230, 0.1);
         }
         
         /* Footer */
         footer {
-    background: #1A1A27;
-    color: var(--text-light);
-    padding: 70px 0 30px;
-    border-top: 1px solid var(--border);
-}
+            background: var(--primary-dark);
+            color: white;
+            padding: 70px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 50px;
-    margin-bottom: 50px;
-}
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
 
-.footer-col {
-    position: relative;
-}
+        .footer-col {
+            position: relative;
+        }
 
-.footer-logo {
-    font-size: 28px;
-    color: var(--text);
-    margin-bottom: 20px;
-    display: block;
-}
+        .footer-logo {
+            font-size: 28px;
+            color: white;
+            margin-bottom: 20px;
+            display: block;
+        }
 
-.footer-logo img {
-    height: 70px;
-}
+        .footer-logo img {
+            height: 70px;
+            filter: brightness(0) invert(1);
+        }
 
-.footer-about {
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 20px;
-    color: var(--text-light);
-}
+        .footer-about {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.8);
+        }
 
-.footer-title {
-    font-size: 1.5rem;
-    color: var(--text);
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 10px;
-}
+        .footer-title {
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
 
-.footer-title:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-}
+        .footer-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: white;
+        }
 
-.footer-links {
-    list-style: none;
-}
+        .footer-links {
+            list-style: none;
+        }
 
-.footer-links li {
-    margin-bottom: 15px;
-}
+        .footer-links li {
+            margin-bottom: 15px;
+        }
 
-.footer-links a {
-    color: var(--text-light);
-    text-decoration: none;
-    transition: var(--transition);
-}
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
 
-.footer-links a:hover {
-    color: var(--primary);
-    padding-left: 5px;
-}
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
 
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-.social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: var(--background);
-    border-radius: 50%;
-    color: var(--primary);
-    transition: var(--transition);
-    border: 1px solid rgba(108, 99, 255, 0.2);
-}
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
 
-.social-links a:hover {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-    color: white;
-    transform: translateY(-5px);
-}
+        .social-links a:hover {
+            background: white;
+            color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
 
-.copyright {
-    text-align: center;
-    padding-top: 40px;
-    border-top: 1px solid var(--border);
-    color: var(--text-light);
-    font-size: 0.9rem;
-}
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
         
         /* Thank You Message */
         .thank-you-message {
             display: none;
             text-align: center;
             padding: 40px;
-            background: var(--background-alt);
+            background: white;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(108, 99, 255, 0.1);
+            border: 1px solid var(--border);
         }
         
         .thank-you-message .icon {
@@ -920,12 +931,12 @@
         .thank-you-message h3 {
             font-size: 2rem;
             margin-bottom: 15px;
-            color: var(--text);
+            color: var(--text-dark);
         }
         
         .thank-you-message p {
             margin-bottom: 20px;
-            color: var(--text-light);
+            color: var(--text);
         }
         
         /* Form Loading */
@@ -938,7 +949,7 @@
         .form-loading .spinner {
             width: 40px;
             height: 40px;
-            border: 4px solid rgba(108, 99, 255, 0.2);
+            border: 4px solid rgba(112, 145, 230, 0.2);
             border-top: 4px solid var(--primary);
             border-radius: 50%;
             animation: spin 1s linear infinite;
@@ -970,7 +981,7 @@
         .loader div {
           width: 15px;
           height: 80px;
-          background: #0f1423;
+          background: var(--primary);
           animation: bounce 1s infinite ease-in-out;
         }
         
@@ -981,6 +992,37 @@
         @keyframes bounce {
           0%, 100% { transform: scaleY(1); }
           50% { transform: scaleY(0.4); }
+        }
+        
+        /* Controls */
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 10;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .control-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        
+        .control-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
         }
         
         /* Responsive */
@@ -1018,7 +1060,7 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background: var(--background);
+                background: var(--primary-dark);
                 flex-direction: column;
                 padding: 20px 0;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -1068,6 +1110,12 @@
             .setup-title {
                 font-size: 2rem;
             }
+            
+            .hero-content {
+                margin-left: 5%;
+                margin-right: 5%;
+                text-align: center;
+            }
         }
         
         @media (max-width: 480px) {
@@ -1102,699 +1150,834 @@
             header.scrolled .logo img {
                 height: 40px;
             }
-            
-            body {
-                padding-top: 90px;
-            }
         }
-    
-/* Fade-in animation for setup cards */
-.setup-card {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.setup-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-</style>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-54ND7C10E4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-54ND7C10E4');
-</script>
-
+    </style>
 </head>
 <body>
-<div id="preloader">
-    <div class="loader">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-<!-- Header -->
-<header>
-<div class="container header-container">
-<a class="logo" href="#"><img alt="Four Pillars Logo" src="logo.png" style="height: 70px;"/></a>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#business-setup">Business Setup</a></li>
-<li><a href="#website">Website Design</a></li>
-<li><a href="#website-packages">Website Packages</a></li>
-<li><a href="#stats">Results</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<div class="mobile-menu">
-<i class="fas fa-bars"></i>
-</div>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="hero" id="home">
-<div class="container">
-<div class="hero-content">
-<h1>Premium Digital Solutions for Luxury Brands</h1>
-<p>Four Pillars transforms how premium brands approach digital engagement through strategic insight and creative excellence.</p>
-<div class="hero-cta">
-<a class="btn" href="#contact">Get Started</a>
-<a class="btn btn-outline" href="#services">Our Services</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Stats Section -->
-<section class="stats-section" id="stats">
-<div class="container">
-<div class="section-title">
-<h2>Our Impressive Results</h2>
-<p>Delivering measurable success for luxury brands</p>
-</div>
-<div class="stats-grid">
-<div class="stat-item">
-<div class="stat-number">250+</div>
-<div class="stat-text">Premium Clients</div>
-</div>
-<div class="stat-item">
-<div class="stat-number">98%</div>
-<div class="stat-text">Client Retention</div>
-</div>
-<div class="stat-item">
-<div class="stat-number">120+</div>
-<div class="stat-text">Websites Designed</div>
-</div>
-<div class="stat-item">
-<div class="stat-number">12</div>
-<div class="stat-text">Industry Awards</div>
-</div>
-</div>
-</div>
-</section>
-<!-- About Section -->
-<section class="about-section" id="about">
-<div class="container">
-<div class="about-content">
-<div class="about-image"></div>
-<div class="about-text">
-<div class="tabs">
-<div class="tab active" data-tab="about">About</div>
-<div class="tab" data-tab="mission">Mission</div>
-<div class="tab" data-tab="vision">Vision</div>
-</div>
-<div class="tab-content active" id="about-content">
-<h2>Redefining Digital Excellence</h2>
-<p>Four Pillars was founded to transform how premium brands approach digital engagement. We combine strategic insight with creative excellence to build social media presences and websites that resonate with discerning audiences.</p>
-<p>Our team of digital strategists, content creators, and web designers work together to craft bespoke solutions for luxury brands across industries.</p>
-<a class="btn" href="#contact" style="margin-top: 20px;">Learn More</a>
-</div>
-<div class="tab-content" id="mission-content">
-<h2>Our Mission</h2>
-<p>To elevate premium brands through strategic digital storytelling, stunning web experiences, and measurable results. We partner with our clients to build authentic connections that drive growth and brand loyalty.</p>
-<p>We're committed to innovation, excellence, and delivering exceptional value at every touchpoint of the customer journey.</p>
-<a class="btn" href="#contact" style="margin-top: 20px;">Connect With Us</a>
-</div>
-<div class="tab-content" id="vision-content">
-<h2>Our Vision</h2>
-<p>To become the most trusted partner for luxury brands seeking to maximize their digital impact. We envision a world where every premium brand has a cohesive digital presence that truly reflects its excellence.</p>
-<p>By 2025, we aim to transform the digital presence of 100+ luxury brands worldwide.</p>
-<a class="btn" href="#contact" style="margin-top: 20px;">Join Our Vision</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="services-section" id="services">
-<div class="container">
-<div class="section-title">
-<h2>Our Premium Services</h2>
-<p>Tailored solutions for luxury brands seeking digital excellence</p>
-</div>
-<div class="services-grid">
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-chess"></i>
-</div>
-<h3>Strategy &amp; Planning</h3>
-<p>Data-driven digital roadmaps</p>
-</div>
-<div class="service-card-back">
-<h3>Strategy &amp; Planning</h3>
-<p>Comprehensive audience analysis, competitive benchmarking, and bespoke digital strategies tailored to your brand objectives.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-pen-fancy"></i>
-</div>
-<h3>Content Creation</h3>
-<p>Premium visual storytelling</p>
-</div>
-<div class="service-card-back">
-<h3>Content Creation</h3>
-<p>Editorial-quality photography, videography, and copywriting that embodies your brand's luxury aesthetic across all platforms.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-comments"></i>
-</div>
-<h3>Community Management</h3>
-<p>Engaging premium audiences</p>
-</div>
-<div class="service-card-back">
-<h3>Community Management</h3>
-<p>24/7 engagement with your audience, building authentic relationships that foster brand loyalty and advocacy.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-bullhorn"></i>
-</div>
-<h3>Paid Advertising</h3>
-<p>Targeted premium campaigns</p>
-</div>
-<div class="service-card-back">
-<h3>Paid Advertising</h3>
-<p>Strategic ad campaigns designed to reach high-value audiences with precision targeting and measurable ROI.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-chart-line"></i>
-</div>
-<h3>Analytics &amp; Insights</h3>
-<p>Performance intelligence</p>
-</div>
-<div class="service-card-back">
-<h3>Analytics &amp; Insights</h3>
-<p>Comprehensive performance reporting with actionable insights to continuously optimize your digital strategy.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-laptop-code"></i>
-</div>
-<h3>Website Design</h3>
-<p>Premium digital experiences</p>
-</div>
-<div class="service-card-back">
-<h3>Website Design</h3>
-<p>Custom website design and development that reflects your brand's luxury positioning and drives conversions.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Business Setup Section -->
-<section class="business-setup-section" id="business-setup">
-<div class="business-setup-container">
-<div class="setup-header">
-<div class="setup-subtitle">Offering Exclusive</div>
-<h2 class="setup-title">
-<span>Company Setup Opportunities</span> <span>In The UAE</span>
-</h2>
-</div>
-<div class="setup-cards">
-<!-- Mainland Offer Card -->
-<div class="setup-card">
-<div class="ribbon">Offer Price</div>
-<div class="card-header">
-<h3 class="card-title">Mainland</h3>
-<div class="card-price">
-<div class="price-label">Starting</div>
-<div class="price-value">AED 18,500<span class="price-asterisk">*</span></div>
-</div>
-</div>
-<div class="card-body">
-<ul class="features-list">
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">100% Business Ownership</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">Investor Visa</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">All-Inclusive Licenses</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">Banking Assistance</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">FREE VAT Consultation</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">24 hr License Approval</div>
-</li>
-</ul>
-<a class="card-button" href="#contact">Get Offer</a>
-</div>
-</div>
-<!-- Free Zone Offer Card -->
-<div class="setup-card">
-<div class="card-header">
-<h3 class="card-title">Free Zone</h3>
-<div class="card-price">
-<div class="price-label">Starting</div>
-<div class="price-value">AED 5,750<span class="price-asterisk">*</span></div>
-</div>
-</div>
-<div class="card-body">
-<ul class="features-list">
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">IFZA/RAKEZ Options</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">Visa Assistance</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">100% Ownership</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">Banking Assistance</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">FREE VAT Consultation</div>
-</li>
-<li class="feature-item">
-<div class="feature-icon"><i class="fas fa-check"></i></div>
-<div class="feature-text">Dedicated Account Manager</div>
-</li>
-</ul>
-<a class="card-button" href="#contact">Get Offer</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Website Design Showcase -->
-<section class="website-showcase" id="website">
-<div class="container">
-<div class="showcase-container">
-<div class="showcase-text">
-<h2>Premium Website Design</h2>
-<p>Your website is the digital storefront for your luxury brand. We create stunning, responsive websites that captivate your audience and convert visitors into customers.</p>
-<div class="showcase-features">
-<div class="feature">
-<div class="feature-icon">
-<i class="fas fa-paint-brush"></i>
-</div>
-<div class="feature-text">
-<h4>Luxury Aesthetic</h4>
-<p>Designs that reflect your premium brand identity</p>
-</div>
-</div>
-<div class="feature">
-<div class="feature-icon">
-<i class="fas fa-mobile-alt"></i>
-</div>
-<div class="feature-text">
-<h4>Fully Responsive</h4>
-<p>Perfect experience on all devices and screen sizes</p>
-</div>
-</div>
-<div class="feature">
-<div class="feature-icon">
-<i class="fas fa-bolt"></i>
-</div>
-<div class="feature-text">
-<h4>Lightning Fast</h4>
-<p>Optimized for speed and performance</p>
-</div>
-</div>
-<div class="feature">
-<div class="feature-icon">
-<i class="fas fa-shopping-cart"></i>
-</div>
-<div class="feature-text">
-<h4>E-commerce Ready</h4>
-<p>Seamless shopping experiences for premium products</p>
-</div>
-</div>
-</div>
-<a class="btn" href="#contact">Request Web Design Consultation</a>
-</div>
-<div class="showcase-image"></div>
-</div>
-</div>
-</section>
-<!-- Website Design Packages Section -->
-<section class="business-setup-section" id="website-packages">
-    <div class="business-setup-container">
-        <div class="setup-header">
-            <div class="setup-subtitle">Website Design</div>
-            <h2 class="setup-title">
-                <span>Our Packages</span> <span>For Every Business</span>
-            </h2>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <div class="setup-cards">
-            <!-- Starter Package -->
-            <div class="setup-card">
-                <div class="ribbon">Popular</div>
-                <div class="card-header">
-                    <h3 class="card-title">Starter</h3>
-                    <div class="card-price">
-                        <div class="price-label">Starting From</div>
-                        <div class="price-value">AED 499<span class="price-asterisk">+VAT</span></div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <ul class="features-list">
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">1 Page Dynamic Website</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Basic Website Design</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Mobile Optimized</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">WhatsApp Integration</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Google Map Integration</div></li>
-                    </ul>
-                    <a class="card-button" href="#contact">Book Now</a>
-                </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a class="logo" href="#"><img alt="Four Pillars Logo" src="your-logo.png" style="height: 70px;"/></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#business-setup">Business Setup</a></li>
+                <li><a href="#website">Website Design</a></li>
+                <li><a href="#website-packages">Website Packages</a></li>
+                <li><a href="#stats">Results</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
             </div>
-            <!-- Standard Package -->
-            <div class="setup-card">
-                <div class="card-header">
-                    <h3 class="card-title">Standard</h3>
-                    <div class="card-price">
-                        <div class="price-label">Starting From</div>
-                        <div class="price-value">AED 999<span class="price-asterisk">+VAT</span></div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <ul class="features-list">
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">5 Page Dynamic Website</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Custom Website Design</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Mobile Optimized</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">WhatsApp & Call Button</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Google Map Integration</div></li>
-                    </ul>
-                    <a class="card-button" href="#contact">Book Now</a>
-                </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section with Particle Background -->
+    <section class="hero" id="home">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <h1>Premium Digital Solutions for Luxury Brands</h1>
+            <p>Four Pillars transforms how premium brands approach digital engagement through strategic insight and creative excellence.</p>
+            <div class="hero-cta">
+                <a class="btn" href="#contact">Get Started</a>
+                <a class="btn btn-outline" href="#services">Our Services</a>
             </div>
-            <!-- Premium Package -->
-            <div class="setup-card">
-                <div class="card-header">
-                    <h3 class="card-title">Premium</h3>
-                    <div class="card-price">
-                        <div class="price-label">Starting From</div>
-                        <div class="price-value">AED 1999<span class="price-asterisk">+VAT</span></div>
-                    </div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn" id="play-pause">
+                <i class="fas fa-pause"></i>
+            </button>
+            <button class="control-btn" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Our Impressive Results</h2>
+                <p style="color: rgba(255,255,255,0.8);">Delivering measurable success for luxury brands</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-text">Premium Clients</div>
                 </div>
-                <div class="card-body">
-                    <ul class="features-list">
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">10 Page Dynamic Website</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Custom Website Design</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Company Profile Design</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">SEO Friendly</div></li>
-                        <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">WhatsApp & Call Button</div></li>
-                    </ul>
-                    <a class="card-button" href="#contact">Book Now</a>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-text">Client Retention</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">120+</div>
+                    <div class="stat-text">Websites Designed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-text">Industry Awards</div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image"></div>
+                <div class="about-text">
+                    <div class="tabs">
+                        <div class="tab active" data-tab="about">About</div>
+                        <div class="tab" data-tab="mission">Mission</div>
+                        <div class="tab" data-tab="vision">Vision</div>
+                    </div>
+                    <div class="tab-content active" id="about-content">
+                        <h2>Redefining Digital Excellence</h2>
+                        <p>Four Pillars was founded to transform how premium brands approach digital engagement. We combine strategic insight with creative excellence to build social media presences and websites that resonate with discerning audiences.</p>
+                        <p>Our team of digital strategists, content creators, and web designers work together to craft bespoke solutions for luxury brands across industries.</p>
+                        <a class="btn" href="#contact" style="margin-top: 20px;">Learn More</a>
+                    </div>
+                    <div class="tab-content" id="mission-content">
+                        <h2>Our Mission</h2>
+                        <p>To elevate premium brands through strategic digital storytelling, stunning web experiences, and measurable results. We partner with our clients to build authentic connections that drive growth and brand loyalty.</p>
+                        <p>We're committed to innovation, excellence, and delivering exceptional value at every touchpoint of the customer journey.</p>
+                        <a class="btn" href="#contact" style="margin-top: 20px;">Connect With Us</a>
+                    </div>
+                    <div class="tab-content" id="vision-content">
+                        <h2>Our Vision</h2>
+                        <p>To become the most trusted partner for luxury brands seeking to maximize their digital impact. We envision a world where every premium brand has a cohesive digital presence that truly reflects its excellence.</p>
+                        <p>By 2025, we aim to transform the digital presence of 100+ luxury brands worldwide.</p>
+                        <a class="btn" href="#contact" style="margin-top: 20px;">Join Our Vision</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Premium Services</h2>
+                <p>Tailored solutions for luxury brands seeking digital excellence</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-chess"></i>
+                            </div>
+                            <h3>Strategy &amp; Planning</h3>
+                            <p>Data-driven digital roadmaps</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Strategy &amp; Planning</h3>
+                            <p>Comprehensive audience analysis, competitive benchmarking, and bespoke digital strategies tailored to your brand objectives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                            <h3>Content Creation</h3>
+                            <p>Premium visual storytelling</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Content Creation</h3>
+                            <p>Editorial-quality photography, videography, and copywriting that embodies your brand's luxury aesthetic across all platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Community Management</h3>
+                            <p>Engaging premium audiences</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Community Management</h3>
+                            <p>24/7 engagement with your audience, building authentic relationships that foster brand loyalty and advocacy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3>Paid Advertising</h3>
+                            <p>Targeted premium campaigns</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Paid Advertising</h3>
+                            <p>Strategic ad campaigns designed to reach high-value audiences with precision targeting and measurable ROI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Analytics &amp; Insights</h3>
+                            <p>Performance intelligence</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Analytics &amp; Insights</h3>
+                            <p>Comprehensive performance reporting with actionable insights to continuously optimize your digital strategy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Website Design</h3>
+                            <p>Premium digital experiences</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Website Design</h3>
+                            <p>Custom website design and development that reflects your brand's luxury positioning and drives conversions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Business Setup Section -->
+    <section class="business-setup-section" id="business-setup">
+        <div class="business-setup-container">
+            <div class="setup-header">
+                <div class="setup-subtitle">Offering Exclusive</div>
+                <h2 class="setup-title">
+                    <span>Company Setup Opportunities</span> <span>In The UAE</span>
+                </h2>
+            </div>
+            <div class="setup-cards">
+                <!-- Mainland Offer Card -->
+                <div class="setup-card">
+                    <div class="ribbon">Offer Price</div>
+                    <div class="card-header">
+                        <h3 class="card-title">Mainland</h3>
+                        <div class="card-price">
+                            <div class="price-label">Starting</div>
+                            <div class="price-value">AED 18,500<span class="price-asterisk">*</span></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">100% Business Ownership</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">Investor Visa</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">All-Inclusive Licenses</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">Banking Assistance</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">FREE VAT Consultation</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">24 hr License Approval</div>
+                            </li>
+                        </ul>
+                        <a class="card-button" href="#contact">Get Offer</a>
+                    </div>
+                </div>
+                <!-- Free Zone Offer Card -->
+                <div class="setup-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Free Zone</h3>
+                        <div class="card-price">
+                            <div class="price-label">Starting</div>
+                            <div class="price-value">AED 5,750<span class="price-asterisk">*</span></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">IFZA/RAKEZ Options</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">Visa Assistance</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">100% Ownership</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">Banking Assistance</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">FREE VAT Consultation</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">Dedicated Account Manager</div>
+                            </li>
+                        </ul>
+                        <a class="card-button" href="#contact">Get Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Website Design Showcase -->
+    <section class="website-showcase" id="website">
+        <div class="container">
+            <div class="showcase-container">
+                <div class="showcase-text">
+                    <h2>Premium Website Design</h2>
+                    <p>Your website is the digital storefront for your luxury brand. We create stunning, responsive websites that captivate your audience and convert visitors into customers.</p>
+                    <div class="showcase-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Luxury Aesthetic</h4>
+                                <p>Designs that reflect your premium brand identity</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Fully Responsive</h4>
+                                <p>Perfect experience on all devices and screen sizes</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Lightning Fast</h4>
+                                <p>Optimized for speed and performance</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>E-commerce Ready</h4>
+                                <p>Seamless shopping experiences for premium products</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn" href="#contact">Request Web Design Consultation</a>
+                </div>
+                <div class="showcase-image"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Website Design Packages Section -->
+    <section class="business-setup-section" id="website-packages">
+        <div class="business-setup-container">
+            <div class="setup-header">
+                <div class="setup-subtitle">Website Design</div>
+                <h2 class="setup-title">
+                    <span>Our Packages</span> <span>For Every Business</span>
+                </h2>
+            </div>
+            <div class="setup-cards">
+                <!-- Starter Package -->
+                <div class="setup-card">
+                    <div class="ribbon">Popular</div>
+                    <div class="card-header">
+                        <h3 class="card-title">Starter</h3>
+                        <div class="card-price">
+                            <div class="price-label">Starting From</div>
+                            <div class="price-value">AED 499<span class="price-asterisk">+VAT</span></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">1 Page Dynamic Website</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Basic Website Design</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Mobile Optimized</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">WhatsApp Integration</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Google Map Integration</div></li>
+                        </ul>
+                        <a class="card-button" href="#contact">Book Now</a>
+                    </div>
+                </div>
+                <!-- Standard Package -->
+                <div class="setup-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Standard</h3>
+                        <div class="card-price">
+                            <div class="price-label">Starting From</div>
+                            <div class="price-value">AED 999<span class="price-asterisk">+VAT</span></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">5 Page Dynamic Website</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Custom Website Design</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Mobile Optimized</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">WhatsApp & Call Button</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Google Map Integration</div></li>
+                        </ul>
+                        <a class="card-button" href="#contact">Book Now</a>
+                    </div>
+                </div>
+                <!-- Premium Package -->
+                <div class="setup-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Premium</h3>
+                        <div class="card-price">
+                            <div class="price-label">Starting From</div>
+                            <div class="price-value">AED 1999<span class="price-asterisk">+VAT</span></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">10 Page Dynamic Website</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Custom Website Design</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">Company Profile Design</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">SEO Friendly</div></li>
+                            <li class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><div class="feature-text">WhatsApp & Call Button</div></li>
+                        </ul>
+                        <a class="card-button" href="#contact">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Connect With Us</h2>
+                <p>Let's discuss how we can elevate your brand's digital presence</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Ready to Transform Your Digital Strategy?</h3>
+                    <p>Our team of experts is ready to create customized social media and web solutions that align with your brand's luxury positioning and business objectives.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Our Headquarters</h4>
+                                <p>RAKEZ, UAE</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+971 522797168</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>Faisal.Alamir@4pillars.ae</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formsubmit.co/faisal4pillars@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://4pillars.ae/#contact">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input id="name" name="name" required="" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" required="" type="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input id="company" name="company" required="" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" pattern="[0-9]{10,15}" required="" title="Enter a valid phone number" type="tel"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service" required="">
+                                <option value="">Select a service</option>
+                                <option value="Social Media Management">Social Media Management</option>
+                                <option value="Website Design">Website Design</option>
+                                <option value="Content Creation">Content Creation</option>
+                                <option value="Digital Strategy">Digital Strategy</option>
+                                <option value="Business Setup">Business Setup</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">How can we help?</label>
+                            <textarea id="message" name="message" required="" rows="5"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Submit Request</button>
+                        <div class="form-loading" id="formLoading">
+                            <div class="spinner"></div>
+                            <p>Submitting your request...</p>
+                        </div>
+                    </form>
+                    <!-- Thank You Message -->
+                    <div class="thank-you-message" id="thank-you">
+                        <div class="icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Thank You!</h3>
+                        <p>We've received your message and will get back to you shortly.</p>
+                        <a class="btn" href="#" onclick="resetForm()">Send Another Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a class="footer-logo" href="#"><img alt="Four Pillars Logo" src="your-logo.png"/></a>
+                    <p class="footer-about">We specialize in premium social media management, website design, and business setup for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
+                    <div class="social-links">
+                        <a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+                        <a aria-label="LinkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+                        <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Strategy &amp; Planning</a></li>
+                        <li><a href="#">Content Creation</a></li>
+                        <li><a href="#">Community Management</a></li>
+                        <li><a href="#">Paid Advertising</a></li>
+                        <li><a href="#">Analytics &amp; Reporting</a></li>
+                        <li><a href="#">Website Design</a></li>
+                        <li><a href="#">Business Setup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#website">Website Design</a></li>
+                        <li><a href="#website-packages">Website Packages</a></li>
+                        <li><a href="#business-setup">Business Setup</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> RAKEZ, UAE</li>
+                        <li><i class="fas fa-phone-alt"></i> +971 522797168</li>
+                        <li><i class="fas fa-envelope"></i> Faisal.Alamir@4pillars.ae</li>
+                        <li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Four Pillars. All rights reserved. Premium Digital Solutions for Luxury Brands.</p>
+            </div>
+        </div>
+    </footer>
 
-<!-- Contact Section -->
-<section class="contact-section" id="contact">
-<div class="container">
-<div class="section-title">
-<h2>Connect With Us</h2>
-<p>Let's discuss how we can elevate your brand's digital presence</p>
-</div>
-<div class="contact-container">
-<div class="contact-info">
-<h3>Ready to Transform Your Digital Strategy?</h3>
-<p>Our team of experts is ready to create customized social media and web solutions that align with your brand's luxury positioning and business objectives.</p>
-<div class="contact-details">
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fas fa-map-marker-alt"></i>
-</div>
-<div class="contact-text">
-<h4>Our Headquarters</h4>
-<p>RAKEZ, UAE</p>
-</div>
-</div>
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fas fa-phone-alt"></i>
-</div>
-<div class="contact-text">
-<h4>Phone</h4>
-<p>+971 522797168</p>
-</div>
-</div>
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fas fa-envelope"></i>
-</div>
-<div class="contact-text">
-<h4>Email</h4>
-<p>Faisal.Alamir@4pillars.ae</p>
-</div>
-</div>
-</div>
-</div>
-<div class="contact-form">
-<form id="contactForm" action="https://formsubmit.co/faisal4pillars@gmail.com" method="POST">
-    <input type="hidden" name="_next" value="https://4pillars.ae/#contact">
-    <input type="hidden" name="_captcha" value="false">
-<div class="form-group">
-<label for="name">Full Name</label>
-<input id="name" name="name" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="email">Email Address</label>
-<input id="email" name="email" required="" type="email"/>
-</div>
-<div class="form-group">
-<label for="company">Company</label>
-<input id="company" name="company" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="phone">Phone Number</label>
-<input id="phone" name="phone" pattern="[0-9]{10,15}" required="" title="Enter a valid phone number" type="tel"/>
-</div>
-<div class="form-group">
-<label for="service">Service Interest</label>
-<select id="service" name="service" required="">
-<option value="">Select a service</option>
-<option value="Social Media Management">Social Media Management</option>
-<option value="Website Design">Website Design</option>
-<option value="Content Creation">Content Creation</option>
-<option value="Digital Strategy">Digital Strategy</option>
-<option value="Business Setup">Business Setup</option>
-<option value="Other">Other</option>
-</select>
-</div>
-<div class="form-group">
-<label for="message">How can we help?</label>
-<textarea id="message" name="message" required="" rows="5"></textarea>
-</div>
-<button class="btn" type="submit">Submit Request</button>
-<div class="form-loading" id="formLoading">
-<div class="spinner"></div>
-<p>Submitting your request...</p>
-</div>
-</form>
-<!-- Thank You Message -->
-<div class="thank-you-message" id="thank-you">
-<div class="icon">
-<i class="fas fa-check-circle"></i>
-</div>
-<h3>Thank You!</h3>
-<p>We've received your message and will get back to you shortly.</p>
-<a class="btn" href="#" onclick="resetForm()">Send Another Message</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer>
-<div class="container">
-<div class="footer-grid">
-<div class="footer-col">
-<a class="footer-logo" href="#"><img alt="Four Pillars Logo" src="logo.png"/></a>
-<p class="footer-about">We specialize in premium social media management, website design, and business setup for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
-<div class="social-links">
-<a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
-<a aria-label="LinkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
-<a aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
-<a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-</div>
-</div>
-<div class="footer-col">
-<h3 class="footer-title">Services</h3>
-<ul class="footer-links">
-<li><a href="#">Strategy &amp; Planning</a></li>
-<li><a href="#">Content Creation</a></li>
-<li><a href="#">Community Management</a></li>
-<li><a href="#">Paid Advertising</a></li>
-<li><a href="#">Analytics &amp; Reporting</a></li>
-<li><a href="#">Website Design</a></li>
-<li><a href="#">Business Setup</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<h3 class="footer-title">Quick Links</h3>
-<ul class="footer-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About Us</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#website">Website Design</a></li>
-<li><a href="#website-packages">Website Packages</a></li>
-<li><a href="#business-setup">Business Setup</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<h3 class="footer-title">Contact</h3>
-<ul class="footer-links">
-<li><i class="fas fa-map-marker-alt"></i> RAKEZ, UAE</li>
-<li><i class="fas fa-phone-alt"></i> +971 522797168</li>
-<li><i class="fas fa-envelope"></i> Faisal.Alamir@4pillars.ae</li>
-<li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
-</ul>
-</div>
-</div>
-<div class="copyright">
-<p>© 2023 Four Pillars. All rights reserved. Premium Digital Solutions for Luxury Brands.</p>
-</div>
-</div>
-</footer>
-<script>
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
+    <script>
+        // Particle System
+        class Particle {
+            constructor(canvas, ctx) {
+                this.canvas = canvas;
+                this.ctx = ctx;
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = Math.random() * 3 - 1.5;
+                this.speedY = Math.random() * 3 - 1.5;
+                this.color = this.getRandomColor();
             }
-        });
+            
+            getRandomColor() {
+                const colors = ['#3D52A0', '#7091E6', '#8697C4', '#ADBBDA', '#EDE8F5'];
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+            
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                
+                if (this.x < 0 || this.x > this.canvas.width) this.speedX = -this.speedX;
+                if (this.y < 0 || this.y > this.canvas.height) this.speedY = -this.speedY;
+            }
+            
+            draw() {
+                this.ctx.fillStyle = this.color;
+                this.ctx.beginPath();
+                this.ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                this.ctx.fill();
+            }
+        }
 
-        // Mobile menu toggle
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
-        
-        mobileMenu.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-        });
+        class ParticleSystem {
+            constructor(canvas) {
+                this.canvas = canvas;
+                this.ctx = canvas.getContext('2d');
+                this.particles = [];
+                this.particleCount = 150;
+                this.isPlaying = true;
+                this.darkMode = false;
+                this.init();
+            }
+            
+            init() {
+                this.resizeCanvas();
+                window.addEventListener('resize', () => this.resizeCanvas());
+                
+                // Create particles
+                for (let i = 0; i < this.particleCount; i++) {
+                    this.particles.push(new Particle(this.canvas, this.ctx));
+                }
+                
+                this.animate();
+            }
+            
+            resizeCanvas() {
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+            }
+            
+            drawConnections() {
+                for (let i = 0; i < this.particles.length; i++) {
+                    for (let j = i; j < this.particles.length; j++) {
+                        const dx = this.particles[i].x - this.particles[j].x;
+                        const dy = this.particles[i].y - this.particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (distance < 100) {
+                            this.ctx.beginPath();
+                            this.ctx.strokeStyle = this.darkMode ? 
+                                `rgba(173, 187, 218, ${1 - distance/100})` : 
+                                `rgba(61, 82, 160, ${1 - distance/100})`;
+                            this.ctx.lineWidth = 0.5;
+                            this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
+                            this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
+                            this.ctx.stroke();
+                        }
+                    }
+                }
+            }
+            
+            animate() {
+                if (!this.isPlaying) return;
+                
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                
+                // Draw gradient background
+                const gradient = this.ctx.createLinearGradient(0, 0, this.canvas.width, this.canvas.height);
+                if (this.darkMode) {
+                    gradient.addColorStop(0, '#12121E');
+                    gradient.addColorStop(1, '#1A1A27');
+                } else {
+                    gradient.addColorStop(0, '#3D52A0');
+                    gradient.addColorStop(1, '#7091E6');
+                }
+                this.ctx.fillStyle = gradient;
+                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                
+                // Draw connections first
+                this.drawConnections();
+                
+                // Update and draw particles
+                for (let i = 0; i < this.particles.length; i++) {
+                    this.particles[i].update();
+                    this.particles[i].draw();
+                }
+                
+                requestAnimationFrame(() => this.animate());
+            }
+            
+            togglePlay() {
+                this.isPlaying = !this.isPlaying;
+                if (this.isPlaying) this.animate();
+            }
+            
+            toggleTheme() {
+                this.darkMode = !this.darkMode;
+            }
+        }
 
-        // Tab functionality
-        const tabs = document.querySelectorAll('.tab');
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Remove active class from all tabs
-                tabs.forEach(t => t.classList.remove('active'));
-                
-                // Add active class to clicked tab
-                tab.classList.add('active');
-                
-                // Hide all tab content
-                document.querySelectorAll('.tab-content').forEach(content => {
-                    content.classList.remove('active');
-                });
-                
-                // Show corresponding content
-                const tabId = tab.getAttribute('data-tab');
-                document.getElementById(`${tabId}-content`).classList.add('active');
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('particle-canvas');
+            const particleSystem = new ParticleSystem(canvas);
+            
+            // Control buttons
+            const playPauseBtn = document.getElementById('play-pause');
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            
+            playPauseBtn.addEventListener('click', () => {
+                particleSystem.togglePlay();
+                playPauseBtn.innerHTML = particleSystem.isPlaying ? 
+                    '<i class="fas fa-pause"></i>' : '<i class="fas fa-play"></i>';
             });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 100,
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
-                if (navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
+            
+            themeToggleBtn.addEventListener('click', () => {
+                particleSystem.toggleTheme();
+                themeToggleBtn.innerHTML = particleSystem.darkMode ? 
+                    '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+            });
+            
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
                 }
             });
-        });
 
-        // Simple animation on scroll
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
+            // Mobile menu toggle
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenu.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
             });
-        }, observerOptions);
 
-        // Apply to sections
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = 0;
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
-        });
-        
-        // Preloader
-        window.addEventListener('load', function() {
-            const preloader = document.getElementById('preloader');
-            setTimeout(() => {
-                preloader.style.display = 'none';
-            }, 1000);
-        });
-        
-        // Card animation
-        document.addEventListener('DOMContentLoaded', function() {
-            const observer = new IntersectionObserver(entries => {
+            // Tab functionality
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+                    
+                    // Hide all tab content
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Show corresponding content
+                    const tabId = tab.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-content`).classList.add('active');
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                    }
+                });
+            });
+
+            // Simple animation on scroll
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Apply to sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+            
+            // Preloader
+            window.addEventListener('load', function() {
+                const preloader = document.getElementById('preloader');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 1000);
+            });
+            
+            // Card animation
+            const cardObserver = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
@@ -1803,8 +1986,37 @@
             }, { threshold: 0.1 });
         
             document.querySelectorAll('.setup-card').forEach(card => {
-                observer.observe(card);
+                cardObserver.observe(card);
             });
+
+            // Form submission handling
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const form = this;
+                    const formLoading = document.getElementById('formLoading');
+                    const thankYou = document.getElementById('thank-you');
+                    
+                    formLoading.style.display = 'block';
+                    
+                    // Simulate form submission
+                    setTimeout(() => {
+                        form.reset();
+                        formLoading.style.display = 'none';
+                        thankYou.style.display = 'block';
+                        form.style.display = 'none';
+                    }, 2000);
+                });
+            }
+            
+            window.resetForm = function() {
+                const form = document.getElementById('contactForm');
+                const thankYou = document.getElementById('thank-you');
+                
+                thankYou.style.display = 'none';
+                form.style.display = 'block';
+            }
         });
     </script>
 </body>
