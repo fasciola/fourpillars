@@ -1167,7 +1167,7 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <a class="logo" href="#"><img alt="Four Pillars Logo" src="your-logo.png" style="height: 70px;"/></a>
+            <a class="logo" href="#"><img alt="Four Pillars Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZiIvPjx0ZXh0IHg9IjEwMCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzNENTJBMCI+Zm91cnBpbGxhcnM8L3RleHQ+PC9zdmc+" style="height: 70px;"/></a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -1633,8 +1633,11 @@
                 </div>
                 <div class="contact-form">
                     <form id="contactForm" action="https://formsubmit.co/faisal4pillars@gmail.com" method="POST">
-                        <input type="hidden" name="_next" value="https://4pillars.ae/#contact">
                         <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="New Inquiry from Four Pillars Website">
+                        <input type="hidden" name="_next" value="https://4pillars.ae/#contact">
+                        
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input id="name" name="name" required="" type="text"/>
@@ -1692,7 +1695,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a class="footer-logo" href="#"><img alt="Four Pillars Logo" src="your-logo.png"/></a>
+                    <a class="footer-logo" href="#"><img alt="Four Pillars Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzNENTJBMCIvPjx0ZXh0IHg9IjEwMCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiI+Zm91cnBpbGxhcnM8L3RleHQ+PC9zdmc+"/></a>
                     <p class="footer-about">We specialize in premium social media management, website design, and business setup for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
                     <div class="social-links">
                         <a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
@@ -2000,13 +2003,29 @@
                     
                     formLoading.style.display = 'block';
                     
-                    // Simulate form submission
-                    setTimeout(() => {
-                        form.reset();
+                    // Create FormData from form
+                    const formData = new FormData(form);
+                    
+                    // Send form data to FormSubmit
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            form.reset();
+                            formLoading.style.display = 'none';
+                            thankYou.style.display = 'block';
+                            form.style.display = 'none';
+                        } else {
+                            throw new Error('Form submission failed');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
                         formLoading.style.display = 'none';
-                        thankYou.style.display = 'block';
-                        form.style.display = 'none';
-                    }, 2000);
+                        alert('There was an error submitting the form. Please try again.');
+                    });
                 });
             }
             
