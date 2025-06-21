@@ -1174,9 +1174,10 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#business-setup">Business Setup</a></li>
                 <li><a href="#website">Website Design</a></li>
-                <li><a href="#website-packages">Website Packages</a></li>
-                <li><a href="#stats">Results</a></li>
-                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#stats">Results</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
@@ -1591,6 +1592,22 @@
     </section>
     
     <!-- Contact Section -->
+    
+<section class="portfolio-section" id="portfolio" style="padding: 80px 0; background: var(--background-alt); background-image: url('Projects.png'); background-size: cover; background-position: center;">
+  <div class="container" style="background-color: rgba(255,255,255,0.9); padding: 40px; border-radius: 12px;">
+    <div class="section-title">
+      <h2>Website Projects</h2>
+      <p>Here are a few websites we've built and hosted on Netlify</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <a href="https://magical-queijadas-a9e89a.netlify.app/" target="_blank" class="btn">Chocolate Company Website</a>
+      <a href="https://playful-kleicha-b2cf14.netlify.app/" target="_blank" class="btn">Business Services Website</a>
+      <a href="https://unique-frangipane-41f170.netlify.app/" target="_blank" class="btn">Mining Consultancy Website</a>
+    </div>
+  </div>
+</section>
+
+
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="section-title">
@@ -1633,11 +1650,8 @@
                 </div>
                 <div class="contact-form">
                     <form id="contactForm" action="https://formsubmit.co/faisal4pillars@gmail.com" method="POST">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_subject" value="New Inquiry from Four Pillars Website">
                         <input type="hidden" name="_next" value="https://4pillars.ae/#contact">
-                        
+                        <input type="hidden" name="_captcha" value="false">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input id="name" name="name" required="" type="text"/>
@@ -1691,6 +1705,12 @@
     </section>
     
     <!-- Footer -->
+    
+
+
+
+
+
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -1723,8 +1743,9 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#website">Website Design</a></li>
-                        <li><a href="#website-packages">Website Packages</a></li>
-                        <li><a href="#business-setup">Business Setup</a></li>
+                                                <li><a href="#business-setup">Business Setup</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -2003,29 +2024,13 @@
                     
                     formLoading.style.display = 'block';
                     
-                    // Create FormData from form
-                    const formData = new FormData(form);
-                    
-                    // Send form data to FormSubmit
-                    fetch(form.action, {
-                        method: 'POST',
-                        body: formData
-                    })
-                    .then(response => {
-                        if (response.ok) {
-                            form.reset();
-                            formLoading.style.display = 'none';
-                            thankYou.style.display = 'block';
-                            form.style.display = 'none';
-                        } else {
-                            throw new Error('Form submission failed');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
+                    // Simulate form submission
+                    setTimeout(() => {
+                        form.reset();
                         formLoading.style.display = 'none';
-                        alert('There was an error submitting the form. Please try again.');
-                    });
+                        thankYou.style.display = 'block';
+                        form.style.display = 'none';
+                    }, 2000);
                 });
             }
             
