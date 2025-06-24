@@ -7,6 +7,92 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
+    .services-gallery {
+        padding: 100px 0;
+        background-color: #000;
+    }
+
+    .flex-gallery {
+        display: flex;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .panel {
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+        transition: flex 0.5s ease;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+
+        .panel:hover {
+            flex: 3;
+        }
+
+        .panel::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            border-radius: 30px;
+        }
+
+    .panel-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: white;
+    }
+
+    .panel h2.glow {
+        color: white;
+        text-shadow: 0 0 10px white, 0 0 20px white;
+    }
+
+    .panel p {
+        color: #ccc;
+    }
+
+    .section-number {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 3rem;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.2);
+        z-index: 2;
+    }
+
+    .icon-circle {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+        .icon-circle i {
+            color: white;
+            font-size: 1.2rem;
+        }
+</style>
+<style>
         :root {
             /* Blue Color Palette */
             --primary-dark: #3D52A0;
@@ -1288,7 +1374,304 @@
                 font-size: 12px;
             }
         }
-    </style>
+
+.premium-design-section {
+     background-color: #0a1a3c !important;
+     padding: 100px 0;
+     color: white !important;
+     font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.design-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.premium-design-section .section-subtitle {
+  font-weight: 700;
+  background: -webkit-linear-gradient(90deg, #00f6d2, #7d5fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.premium-design-section .section-title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.design-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-5px);
+}
+
+.design-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.design-meta {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.design-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.design-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.design-card .read-more {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.design-card .read-more:hover {
+  color: #7091e6;
+}
+
+
+/* Premium Website Design Color-Palette Styling */
+    .premium-design-section {
+        background-color: #0a1a3c !important;
+        padding: 100px 0;
+        color: white !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+.design-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.premium-design-section .section-subtitle {
+  font-weight: 700;
+  background: -webkit-linear-gradient(90deg, #3D52A0, #7091E6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.premium-design-section .section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary, #3D52A0);
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.design-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid var(--neutral, #ADBBDA);
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.design-card:hover {
+  transform: translateY(-5px);
+}
+
+.design-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.design-meta {
+  font-size: 0.9rem;
+  color: var(--secondary, #8697C4);
+  margin-bottom: 10px;
+}
+
+.design-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--primary, #3D52A0);
+}
+
+.design-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.design-card .read-more {
+  color: var(--primary-light, #7091E6);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.design-card .read-more:hover {
+  color: var(--primary, #3D52A0);
+}
+
+
+
+/* 3D Glowing Ring Background */
+.glow-ring-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.premium-design-section {
+  background-color: #000000 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateRed 10s linear infinite;
+}
+.circle::before,
+.circle::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: ovalRotate 4s ease-in-out infinite;
+}
+.circle::before {
+    box-shadow: 
+        0 0 20px lightcoral,
+        0 0 40px lightcoral,
+        0 0 60px lightcoral,
+        0 0 80px lightcoral;
+    animation: rotateYellow 12s linear infinite reverse;
+}
+.circle::after {
+    box-shadow: 
+        0 0 20px lightblue,
+        0 0 40px lightblue,
+        0 0 60px lightblue,
+        0 0 80px lightblue;
+    animation: rotateBlue 8s linear infinite;
+}
+.circle-inner {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 20px lemonchiffon,
+        0 0 40px lemonchiffon,
+        0 0 60px lemonchiffon,
+        0 0 80px lemonchiffon;
+    animation: rotateRed 14s linear infinite reverse;
+}
+.center-dot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 20px white,
+        0 0 40px white;
+    z-index: 10;
+}
+@keyframes rotateRed {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes rotateYellow {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(0.9); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes rotateBlue {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes ovalRotate {
+    0%, 100% { height: 300px; width: 300px; }
+    25% { height: 200px; width: 300px; }
+    50% { height: 300px; width: 200px; }
+    75% { height: 200px; width: 300px; }
+}
+
+/* Glass effect for design cards */
+.design-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.design-meta {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.design-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+</style>
 <style>
 /* Night mode toggle styles */
 .switch {
@@ -1344,6 +1727,302 @@ body.dark-mode {
   padding: 20px;
   margin: 0 auto 40px;
 }
+
+.premium-design-section {
+  background-color: #000000 !important;
+  background-color: #121212;
+  padding: 100px 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.design-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.premium-design-section .section-subtitle {
+  font-weight: 700;
+  background: -webkit-linear-gradient(90deg, #00f6d2, #7d5fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.premium-design-section .section-title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.design-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-5px);
+}
+
+.design-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.design-meta {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.design-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.design-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.design-card .read-more {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.design-card .read-more:hover {
+  color: #7091e6;
+}
+
+
+/* Premium Website Design Color-Palette Styling */
+.premium-design-section {
+  background-color: #000000 !important;
+  background-color: var(--background, #EDE8F5);
+  padding: 100px 0;
+  color: var(--primary, #3D52A0);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.design-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.premium-design-section .section-subtitle {
+  font-weight: 700;
+  background: -webkit-linear-gradient(90deg, #3D52A0, #7091E6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.premium-design-section .section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary, #3D52A0);
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.design-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid var(--neutral, #ADBBDA);
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.design-card:hover {
+  transform: translateY(-5px);
+}
+
+.design-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.design-meta {
+  font-size: 0.9rem;
+  color: var(--secondary, #8697C4);
+  margin-bottom: 10px;
+}
+
+.design-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--primary, #3D52A0);
+}
+
+.design-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.design-card .read-more {
+  color: var(--primary-light, #7091E6);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.design-card .read-more:hover {
+  color: var(--primary, #3D52A0);
+}
+
+
+
+/* 3D Glowing Ring Background */
+.glow-ring-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.premium-design-section {
+  background-color: #000000 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateRed 10s linear infinite;
+}
+.circle::before,
+.circle::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: ovalRotate 4s ease-in-out infinite;
+}
+.circle::before {
+    box-shadow: 
+        0 0 20px lightcoral,
+        0 0 40px lightcoral,
+        0 0 60px lightcoral,
+        0 0 80px lightcoral;
+    animation: rotateYellow 12s linear infinite reverse;
+}
+.circle::after {
+    box-shadow: 
+        0 0 20px lightblue,
+        0 0 40px lightblue,
+        0 0 60px lightblue,
+        0 0 80px lightblue;
+    animation: rotateBlue 8s linear infinite;
+}
+.circle-inner {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 20px lemonchiffon,
+        0 0 40px lemonchiffon,
+        0 0 60px lemonchiffon,
+        0 0 80px lemonchiffon;
+    animation: rotateRed 14s linear infinite reverse;
+}
+.center-dot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 20px white,
+        0 0 40px white;
+    z-index: 10;
+}
+@keyframes rotateRed {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes rotateYellow {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(0.9); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes rotateBlue {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes ovalRotate {
+    0%, 100% { height: 300px; width: 300px; }
+    25% { height: 200px; width: 300px; }
+    50% { height: 300px; width: 200px; }
+    75% { height: 200px; width: 300px; }
+}
+
+/* Glass effect for design cards */
+.design-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.design-meta {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.design-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
 </style><style>
 .hero-circle {
     position: relative;
@@ -1383,805 +2062,1132 @@ body.dark-mode {
     background-color: white;
     color: #3D52A0;
 }
+
+.premium-design-section {
+  background-color: #000000 !important;
+  background-color: #121212;
+  padding: 100px 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.design-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.premium-design-section .section-subtitle {
+  font-weight: 700;
+  background: -webkit-linear-gradient(90deg, #00f6d2, #7d5fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.premium-design-section .section-title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.design-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-5px);
+}
+
+.design-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.design-meta {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.design-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.design-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.design-card .read-more {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.design-card .read-more:hover {
+  color: #7091e6;
+}
+
+
+/* Premium Website Design Color-Palette Styling */
+.premium-design-section {
+  background-color: #000000 !important;
+  background-color: var(--background, #EDE8F5);
+  padding: 100px 0;
+  color: var(--primary, #3D52A0);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.design-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.premium-design-section .section-subtitle {
+  font-weight: 700;
+  background: -webkit-linear-gradient(90deg, #3D52A0, #7091E6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.premium-design-section .section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary, #3D52A0);
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.design-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid var(--neutral, #ADBBDA);
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.design-card:hover {
+  transform: translateY(-5px);
+}
+
+.design-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.design-meta {
+  font-size: 0.9rem;
+  color: var(--secondary, #8697C4);
+  margin-bottom: 10px;
+}
+
+.design-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--primary, #3D52A0);
+}
+
+.design-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.design-card .read-more {
+  color: var(--primary-light, #7091E6);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.design-card .read-more:hover {
+  color: var(--primary, #3D52A0);
+}
+
+
+
+/* 3D Glowing Ring Background */
+.glow-ring-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.premium-design-section {
+  background-color: #000000 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateRed 10s linear infinite;
+}
+.circle::before,
+.circle::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: ovalRotate 4s ease-in-out infinite;
+}
+.circle::before {
+    box-shadow: 
+        0 0 20px lightcoral,
+        0 0 40px lightcoral,
+        0 0 60px lightcoral,
+        0 0 80px lightcoral;
+    animation: rotateYellow 12s linear infinite reverse;
+}
+.circle::after {
+    box-shadow: 
+        0 0 20px lightblue,
+        0 0 40px lightblue,
+        0 0 60px lightblue,
+        0 0 80px lightblue;
+    animation: rotateBlue 8s linear infinite;
+}
+.circle-inner {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 20px lemonchiffon,
+        0 0 40px lemonchiffon,
+        0 0 60px lemonchiffon,
+        0 0 80px lemonchiffon;
+    animation: rotateRed 14s linear infinite reverse;
+}
+.center-dot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 20px white,
+        0 0 40px white;
+    z-index: 10;
+}
+@keyframes rotateRed {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes rotateYellow {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(0.9); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes rotateBlue {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes ovalRotate {
+    0%, 100% { height: 300px; width: 300px; }
+    25% { height: 200px; width: 300px; }
+    50% { height: 300px; width: 200px; }
+    75% { height: 200px; width: 300px; }
+}
+
+/* Glass effect for design cards */
+.design-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.design-meta {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.design-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
 </style></head>
 <body>
-<!-- Preloader -->
-<div id="preloader">
-<div class="loader">
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-</div>
-</div>
-<!-- Header -->
-<header>
-<div class="container header-container">
-<a class="logo" href="#"><img alt="Four Pillars Logo" src="your-logo.png"/></a>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#business-setup">Business Setup</a></li>
-<li><a href="#website">Website Design</a></li>
-<li><a href="#stats">Results</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<div class="mobile-menu">
-<i class="fas fa-bars"></i>
-</div>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="hero" id="home" style=" position: relative; z-index: 1;">
-<div class="hero-circle">
-<h1>Premium Digital Solutions for Luxury Brands</h1>
-<a class="circle-btn" href="#services">Our Services</a>
-</div>
-<div id="theme-toggle-wrapper" style="position: absolute; top: 20px; right: 20px; z-index: 10;">
-<label class="switch">
-<input id="theme-toggle" type="checkbox"/>
-<span class="slider round"></span>
-</label>
-</div>
-<canvas id="particle-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;"></canvas>
-<div class="hero-content">
-<h1></h1>
-<p>Four Pillars transforms how premium brands approach digital engagement through strategic insight and creative excellence.</p>
-<div class="hero-cta">
-<a class="btn" href="#contact">Get Started</a>
-<a class="btn btn-outline" href="#services">Our Services</a>
-</div>
-</div>
-<div class="controls">
-<button class="control-btn" id="play-pause">
-<i class="fas fa-pause"></i>
-</button>
-<button class="control-btn" id="theme-toggle">
-<i class="fas fa-moon"></i>
-</button>
-</div>
-</section>
-<!-- Stats Section -->
-<!-- About Section -->
-<section class="about-section" id="about">
-<div class="container">
-<div class="about-content">
-<div class="about-image"></div>
-<div class="about-text">
-<div class="tabs">
-<div class="tab active" data-tab="about">About</div>
-<div class="tab" data-tab="mission">Mission</div>
-<div class="tab" data-tab="vision">Vision</div>
-</div>
-<div class="tab-content active" id="about-content">
-<h2>Redefining Digital Excellence</h2>
-<p>Four Pillars was founded to transform how premium brands approach digital engagement. We combine strategic insight with creative excellence to build social media presences and websites that resonate with discerning audiences.</p>
-<p>Our team of digital strategists, content creators, and web designers work together to craft bespoke solutions for luxury brands across industries.</p>
-<a class="btn" href="#contact" style="margin-top: 20px;">Learn More</a>
-</div>
-<div class="tab-content" id="mission-content">
-<h2>Our Mission</h2>
-<p>To elevate premium brands through strategic digital storytelling, stunning web experiences, and measurable results. We partner with our clients to build authentic connections that drive growth and brand loyalty.</p>
-<p>We're committed to innovation, excellence, and delivering exceptional value at every touchpoint of the customer journey.</p>
-<a class="btn" href="#contact" style="margin-top: 20px;">Connect With Us</a>
-</div>
-<div class="tab-content" id="vision-content">
-<h2>Our Vision</h2>
-<p>To become the most trusted partner for luxury brands seeking to maximize their digital impact. We envision a world where every premium brand has a cohesive digital presence that truly reflects its excellence.</p>
-<p>By 2025, we aim to transform the digital presence of 100+ luxury brands worldwide.</p>
-<a class="btn" href="#contact" style="margin-top: 20px;">Join Our Vision</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="services-section" id="services">
-<div class="container">
-<div class="section-title">
-<h2>Our Premium Services</h2>
-<p>Tailored solutions for luxury brands seeking digital excellence</p>
-</div>
-<div class="services-grid">
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-chess"></i>
-</div>
-<h3>Strategy &amp; Planning</h3>
-<p>Data-driven digital roadmaps</p>
-</div>
-<div class="service-card-back">
-<h3>Strategy &amp; Planning</h3>
-<p>Comprehensive audience analysis, competitive benchmarking, and bespoke digital strategies tailored to your brand objectives.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-pen-fancy"></i>
-</div>
-<h3>Content Creation</h3>
-<p>Premium visual storytelling</p>
-</div>
-<div class="service-card-back">
-<h3>Content Creation</h3>
-<p>Editorial-quality photography, videography, and copywriting that embodies your brand's luxury aesthetic across all platforms.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-comments"></i>
-</div>
-<h3>Community Management</h3>
-<p>Engaging premium audiences</p>
-</div>
-<div class="service-card-back">
-<h3>Community Management</h3>
-<p>24/7 engagement with your audience, building authentic relationships that foster brand loyalty and advocacy.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-bullhorn"></i>
-</div>
-<h3>Paid Advertising</h3>
-<p>Targeted premium campaigns</p>
-</div>
-<div class="service-card-back">
-<h3>Paid Advertising</h3>
-<p>Strategic ad campaigns designed to reach high-value audiences with precision targeting and measurable ROI.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-chart-line"></i>
-</div>
-<h3>Analytics &amp; Insights</h3>
-<p>Performance intelligence</p>
-</div>
-<div class="service-card-back">
-<h3>Analytics &amp; Insights</h3>
-<p>Comprehensive performance reporting with actionable insights to continuously optimize your digital strategy.</p>
-</div>
-</div>
-</div>
-<div class="service-card">
-<div class="service-card-inner">
-<div class="service-card-front">
-<div class="service-icon">
-<i class="fas fa-laptop-code"></i>
-</div>
-<h3>Website Design</h3>
-<p>Premium digital experiences</p>
-</div>
-<div class="service-card-back">
-<h3>Website Design</h3>
-<p>Custom website design and development that reflects your brand's luxury positioning and drives conversions.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Business Setup Section -->
-<section class="business-setup-section" id="business-setup">
-<div class="container">
-    <!-- Banner Placement -->
-    <div class="banner-container">
-        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Business Setup in Dubai">
-        <div class="banner-overlay">
-            <div class="banner-content">
-                <h2>Establish Your Business in Dubai</h2>
-                <p>Professional company formation services for mainland and free zone setups</p>
-                <a href="#contact" class="btn">Get Started Today</a>
-            </div>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
-    
-    <div class="setup-header">
-        <span class="setup-badge">Company Formation Experts</span>
-        <h2 class="setup-title">Dubai Mainland & Free Zone <span>Business Setup Services</span></h2>
-        <p class="setup-intro">Start your business in the UAE with confidence. Whether you're launching a local venture or a global brand, our experts guide you through the process of establishing a company in Dubai Mainland or Free Zones like IFZA and RAKEZ.</p>
-    </div>
-
-    <div class="setup-options">
-        <!-- Mainland Option -->
-        <div class="setup-option-card">
-            <div class="option-header">
-                <h3>Mainland Company Setup</h3>
-                <div class="price-tag">Starting from <span>AED 18,500*</span></div>
-            </div>
-            <p class="option-description">Gain unrestricted access to UAE markets and government contracts with Dubai mainland company formation. Recent reforms now allow 100% foreign ownership in most business categories.</p>
-            <ul class="feature-list">
-                <li><i class="fas fa-check-circle"></i> 100% Business Ownership</li>
-                <li><i class="fas fa-check-circle"></i> Investor Visa & Residency</li>
-                <li><i class="fas fa-check-circle"></i> All-inclusive DED Licenses</li>
-                <li><i class="fas fa-check-circle"></i> Banking Support</li>
-                <li><i class="fas fa-check-circle"></i> Free VAT Consultation</li>
-                <li><i class="fas fa-check-circle"></i> 24-hour License Issuance</li>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a class="logo" href="#"><img alt="Four Pillars Logo" src="your-logo.png" /></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#business-setup">Business Setup</a></li>
+                <li><a href="#website">Website Design</a></li>
+                <li><a href="#stats">Results</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-
-        <!-- Free Zone Option -->
-        <div class="setup-option-card highlight">
-            <div class="option-header">
-                <h3>Free Zone Company Setup</h3>
-                <div class="price-tag">Starting from <span>AED 5,750*</span></div>
-            </div>
-            <p class="option-description">Ideal for international entrepreneurs, Dubai Free Zones like IFZA and RAKEZ offer tax-free incentives, 100% ownership, and full capital repatriation.</p>
-            <ul class="feature-list">
-                <li><i class="fas fa-check-circle"></i> IFZA / RAKEZ Registration Options</li>
-                <li><i class="fas fa-check-circle"></i> 100% Foreign Ownership</li>
-                <li><i class="fas fa-check-circle"></i> Investor & Employee Visa Assistance</li>
-                <li><i class="fas fa-check-circle"></i> Corporate Bank Account Guidance</li>
-                <li><i class="fas fa-check-circle"></i> Dedicated Account Manager</li>
-                <li><i class="fas fa-check-circle"></i> Free VAT Advisory</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="why-choose-us">
-        <h3 class="why-title">Why Choose Us?</h3>
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-landmark"></i>
-                </div>
-                <h4>Local UAE Expertise</h4>
-                <p>Deep knowledge of local regulations and legal compliance</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-tag"></i>
-                </div>
-                <h4>Transparent Pricing</h4>
-                <p>No hidden fees - clear cost breakdowns</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <h4>Speedy Formation</h4>
-                <p>Fast-track setup with DED & Free Zones</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-user-tie"></i>
-                </div>
-                <h4>Personalized Guidance</h4>
-                <p>Tailored advice for your business activity</p>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home" style=" position: relative; z-index: 1;">
+        <div class="hero-circle">
+            <h1>Premium Digital Solutions for Luxury Brands</h1>
+            <a class="circle-btn" href="#services">Our Services</a>
+        </div>
+        <div id="theme-toggle-wrapper" style="position: absolute; top: 20px; right: 20px; z-index: 10;">
+            <label class="switch">
+                <input id="theme-toggle" type="checkbox" />
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <canvas id="particle-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;"></canvas>
+        <div class="hero-content">
+            <h1></h1>
+            <p>Four Pillars transforms how premium brands approach digital engagement through strategic insight and creative excellence.</p>
+            <div class="hero-cta">
+                <a class="btn" href="#contact">Get Started</a>
+                <a class="btn btn-outline" href="#services">Our Services</a>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="control-btn" id="play-pause">
+                <i class="fas fa-pause"></i>
+            </button>
+            <button class="control-btn" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </section>
+    <!-- Stats Section -->
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image"></div>
+                <div class="about-text">
+                    <div class="tabs">
+                        <div class="tab active" data-tab="about">About</div>
+                        <div class="tab" data-tab="mission">Mission</div>
+                        <div class="tab" data-tab="vision">Vision</div>
+                    </div>
+                    <div class="tab-content active" id="about-content">
+                        <h2>Redefining Digital Excellence</h2>
+                        <p>Four Pillars was founded to transform how premium brands approach digital engagement. We combine strategic insight with creative excellence to build social media presences and websites that resonate with discerning audiences.</p>
+                        <p>Our team of digital strategists, content creators, and web designers work together to craft bespoke solutions for luxury brands across industries.</p>
+                        <a class="btn" href="#contact" style="margin-top: 20px;">Learn More</a>
+                    </div>
+                    <div class="tab-content" id="mission-content">
+                        <h2>Our Mission</h2>
+                        <p>To elevate premium brands through strategic digital storytelling, stunning web experiences, and measurable results. We partner with our clients to build authentic connections that drive growth and brand loyalty.</p>
+                        <p>We're committed to innovation, excellence, and delivering exceptional value at every touchpoint of the customer journey.</p>
+                        <a class="btn" href="#contact" style="margin-top: 20px;">Connect With Us</a>
+                    </div>
+                    <div class="tab-content" id="vision-content">
+                        <h2>Our Vision</h2>
+                        <p>To become the most trusted partner for luxury brands seeking to maximize their digital impact. We envision a world where every premium brand has a cohesive digital presence that truly reflects its excellence.</p>
+                        <p>By 2025, we aim to transform the digital presence of 100+ luxury brands worldwide.</p>
+                        <a class="btn" href="#contact" style="margin-top: 20px;">Join Our Vision</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Premium Services</h2>
+                <p>Tailored solutions for luxury brands seeking digital excellence</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-chess"></i>
+                            </div>
+                            <h3>Strategy &amp; Planning</h3>
+                            <p>Data-driven digital roadmaps</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Strategy &amp; Planning</h3>
+                            <p>Comprehensive audience analysis, competitive benchmarking, and bespoke digital strategies tailored to your brand objectives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                            <h3>Content Creation</h3>
+                            <p>Premium visual storytelling</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Content Creation</h3>
+                            <p>Editorial-quality photography, videography, and copywriting that embodies your brand's luxury aesthetic across all platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Community Management</h3>
+                            <p>Engaging premium audiences</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Community Management</h3>
+                            <p>24/7 engagement with your audience, building authentic relationships that foster brand loyalty and advocacy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3>Paid Advertising</h3>
+                            <p>Targeted premium campaigns</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Paid Advertising</h3>
+                            <p>Strategic ad campaigns designed to reach high-value audiences with precision targeting and measurable ROI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Analytics &amp; Insights</h3>
+                            <p>Performance intelligence</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Analytics &amp; Insights</h3>
+                            <p>Comprehensive performance reporting with actionable insights to continuously optimize your digital strategy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Website Design</h3>
+                            <p>Premium digital experiences</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Website Design</h3>
+                            <p>Custom website design and development that reflects your brand's luxury positioning and drives conversions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="cta-section">
-        <a href="#contact" class="btn btn-large">Request Free Consultation</a>
-        <p class="disclaimer">*Prices exclude VAT. Actual cost depends on business activity and visa requirements.</p>
-    </div>
-</div>
-</section>
-<!-- Website Showcase Section -->
-<section class="website-showcase" id="website">
-<div class="container">
-<div class="showcase-container">
-<div class="showcase-text">
-<h2>Premium Website Design</h2>
-<p>Your website is the digital storefront for your luxury brand. We create stunning, responsive websites that captivate your audience and convert visitors into customers.</p>
-<div class="showcase-features">
-<div class="feature">
-<div class="feature-icon">
-<i class="fas fa-paint-brush"></i>
-</div>
-<div class="feature-text">
-<h4>Luxury Aesthetic</h4>
-<p>Designs that reflect your premium brand identity</p>
-</div>
-</div>
-<div class="feature">
-<div class="feature-icon">
-<i class="fas fa-mobile-alt"></i>
-</div>
-<div class="feature-text">
-<h4>Fully Responsive</h4>
-<p>Perfect experience on all devices and screen sizes</p>
-</div>
-</div>
-<div class="feature">
-<div class="feature-icon">
-<i class="fas fa-bolt"></i>
-</div>
-<div class="feature-text">
-<h4>Lightning Fast</h4>
-<p>Optimized for speed and performance</p>
-</div>
-</div>
-<div class="feature">
-<div class="feature-icon">
-<i class="fas fa-shopping-cart"></i>
-</div>
-<div class="feature-text">
-<h4>E-commerce Ready</h4>
-<p>Seamless shopping experiences for premium products</p>
-</div>
-</div>
-</div>
-<a class="btn" href="#contact">Request Web Design Consultation</a>
-</div>
-<div class="showcase-image"></div>
-</div>
-</div>
-</section>
-<!-- Portfolio Section -->
-<section class="portfolio-section" id="portfolio">
-<div class="container portfolio-container">
-<div class="section-title">
-<h2>Website Projects</h2>
-<p>Here are a few websites we've built and hosted on Netlify</p>
-</div>
-<div class="portfolio-buttons">
-<a class="btn" href="https://magical-queijadas-a9e89a.netlify.app/" target="_blank">Chocolate Company Website</a>
-<a class="btn" href="https://playful-kleicha-b2cf14.netlify.app/" target="_blank">Business Services Website</a>
-<a class="btn" href="https://unique-frangipane-41f170.netlify.app/" target="_blank">Mining Consultancy Website</a>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="stats-section" id="stats">
-<div class="container">
-<div class="section-title">
-<h2 style="color: white;">Our Impressive Results</h2>
-<p style="color: rgba(255,255,255,0.8);">Delivering measurable success for luxury brands</p>
-</div>
-<div class="stats-grid">
-<div class="stat-item">
-<div class="stat-number">250+</div>
-<div class="stat-text">Premium Clients</div>
-</div>
-<div class="stat-item">
-<div class="stat-number">98%</div>
-<div class="stat-text">Client Retention</div>
-</div>
-<div class="stat-item">
-<div class="stat-number">120+</div>
-<div class="stat-text">Websites Designed</div>
-</div>
-<div class="stat-item">
-<div class="stat-number">12</div>
-<div class="stat-text">Industry Awards</div>
-</div>
-</div>
-</div>
-</section><section class="contact-section" id="contact">
-<div class="container">
-<div class="section-title">
-<h2>Connect With Us</h2>
-<p>Let's discuss how we can elevate your brand's digital presence</p>
-</div>
-<div class="contact-container">
-<div class="contact-info">
-<h3>Ready to Transform Your Digital Strategy?</h3>
-<p>Our team of experts is ready to create customized social media and web solutions that align with your brand's luxury positioning and business objectives.</p>
-<div class="contact-details">
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fas fa-map-marker-alt"></i>
-</div>
-<div class="contact-text">
-<h4>Our Headquarters</h4>
-<p>RAKEZ, UAE</p>
-</div>
-</div>
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fas fa-phone-alt"></i>
-</div>
-<div class="contact-text">
-<h4>Phone</h4>
-<p>+971 522797168</p>
-</div>
-</div>
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fas fa-envelope"></i>
-</div>
-<div class="contact-text">
-<h4>Email</h4>
-<p>Faisal.Alamir@4pillars.ae</p>
-</div>
-</div>
-</div>
-</div>
-<div class="contact-form">
-<form action="https://formsubmit.co/faisal4pillars@gmail.com" id="contactForm" method="POST">
-<input name="_next" type="hidden" value="https://4pillars.ae/#contact"/>
-<input name="_captcha" type="hidden" value="false"/>
-<div class="form-group">
-<label for="name">Full Name</label>
-<input id="name" name="name" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="email">Email Address</label>
-<input id="email" name="email" required="" type="email"/>
-</div>
-<div class="form-group">
-<label for="company">Company</label>
-<input id="company" name="company" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="phone">Phone Number</label>
-<input id="phone" name="phone" pattern="[0-9]{10,15}" required="" title="Enter a valid phone number" type="tel"/>
-</div>
-<div class="form-group">
-<label for="service">Service Interest</label>
-<select id="service" name="service" required="">
-<option value="">Select a service</option>
-<option value="Social Media Management">Social Media Management</option>
-<option value="Website Design">Website Design</option>
-<option value="Content Creation">Content Creation</option>
-<option value="Digital Strategy">Digital Strategy</option>
-<option value="Business Setup">Business Setup</option>
-<option value="Other">Other</option>
-</select>
-</div>
-<div class="form-group">
-<label for="message">How can we help?</label>
+    <!-- Website Showcase Section -->
+
+    <section class="premium-design-section" id="website-design">
+        <div class="glow-ring-container">
+            <div class="circle">
+                <div class="circle-inner"></div>
+                <div class="center-dot"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="design-header" style="position: relative; z-index: 2;">
+                <p class="section-subtitle">OUR SERVICES</p>
+                <h2 class="section-title">Premium Website Design</h2>
+            </div>
+            <div class="design-grid">
+                <div class="design-card">
+                    <img src="web-design.jpg" alt="Premium Web Design" />
+                    <div class="design-meta">
+                        <p>Tailored for luxury brands</p>
+                    </div>
+                    <h3>Luxury Aesthetic</h3>
+                    <p>Designs that reflect your premium brand identity.</p>
+                    <a href="#" class="read-more">Request Consultation →</a>
+                </div>
+                <div class="design-card">
+                    <img src="responsive.jpg" alt="Responsive Design" />
+                    <div class="design-meta">
+                        <p>Across all screens</p>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Perfect experience on all devices and screen sizes.</p>
+                    <a href="#" class="read-more">Request Consultation →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-gallery" id="services-gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white; text-shadow: 0 0 10px #fff;">Our Services Gallery</h2>
+                <p style="color: #ccc;">Interactive showcase of our premium services</p>
+            </div>
+
+            <div class="flex-gallery">
+                <div class="panel" style="background-image: url('your-image-1.jpg');">
+                    <div class="icon-circle"><i class="fas fa-bullhorn"></i></div>
+                    <div class="section-number">01</div>
+                    <div class="panel-content">
+                        <h2 class="glow">Digital Marketing</h2>
+                        <p>Campaigns & Content</p>
+                    </div>
+                </div>
+                <div class="panel" style="background-image: url('your-image-2.jpg');">
+                    <div class="icon-circle"><i class="fas fa-feather"></i></div>
+                    <div class="section-number">02</div>
+                    <div class="panel-content">
+                        <h2 class="glow">Branding</h2>
+                        <p>Brand Visuals</p>
+                    </div>
+                </div>
+                <div class="panel" style="background-image: url('your-image-3.jpg');">
+                    <div class="icon-circle"><i class="fas fa-palette"></i></div>
+                    <div class="section-number">03</div>
+                    <div class="panel-content">
+                        <h2 class="glow">Graphic Design</h2>
+                        <p>Visual Identity</p>
+                    </div>
+                </div>
+                <div class="panel" style="background-image: url('your-image-4.jpg');">
+                    <div class="icon-circle"><i class="fas fa-laptop-code"></i></div>
+                    <div class="section-number">04</div>
+                    <div class="panel-content">
+                        <h2 class="glow">Website Development</h2>
+                        <p>UX & Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Business Setup Section -->
+    <section class="business-setup-section" id="business-setup">
+        <div class="container">
+            <!-- Banner Placement -->
+            <div class="banner-container">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Business Setup in Dubai">
+                <div class="banner-overlay">
+                    <div class="banner-content">
+                        <h2>Establish Your Business in Dubai</h2>
+                        <p>Professional company formation services for mainland and free zone setups</p>
+                        <a href="#contact" class="btn">Get Started Today</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setup-header">
+                <span class="setup-badge">Company Formation Experts</span>
+                <h2 class="setup-title">Dubai Mainland & Free Zone <span>Business Setup Services</span></h2>
+                <p class="setup-intro">Start your business in the UAE with confidence. Whether you're launching a local venture or a global brand, our experts guide you through the process of establishing a company in Dubai Mainland or Free Zones like IFZA and RAKEZ.</p>
+            </div>
+
+            <div class="setup-options">
+                <!-- Mainland Option -->
+                <div class="setup-option-card">
+                    <div class="option-header">
+                        <h3>Mainland Company Setup</h3>
+                        <div class="price-tag">Starting from <span>AED 18,500*</span></div>
+                    </div>
+                    <p class="option-description">Gain unrestricted access to UAE markets and government contracts with Dubai mainland company formation. Recent reforms now allow 100% foreign ownership in most business categories.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> 100% Business Ownership</li>
+                        <li><i class="fas fa-check-circle"></i> Investor Visa & Residency</li>
+                        <li><i class="fas fa-check-circle"></i> All-inclusive DED Licenses</li>
+                        <li><i class="fas fa-check-circle"></i> Banking Support</li>
+                        <li><i class="fas fa-check-circle"></i> Free VAT Consultation</li>
+                        <li><i class="fas fa-check-circle"></i> 24-hour License Issuance</li>
+                    </ul>
+                </div>
+
+                <!-- Free Zone Option -->
+                <div class="setup-option-card highlight">
+                    <div class="option-header">
+                        <h3>Free Zone Company Setup</h3>
+                        <div class="price-tag">Starting from <span>AED 5,750*</span></div>
+                    </div>
+                    <p class="option-description">Ideal for international entrepreneurs, Dubai Free Zones like IFZA and RAKEZ offer tax-free incentives, 100% ownership, and full capital repatriation.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> IFZA / RAKEZ Registration Options</li>
+                        <li><i class="fas fa-check-circle"></i> 100% Foreign Ownership</li>
+                        <li><i class="fas fa-check-circle"></i> Investor & Employee Visa Assistance</li>
+                        <li><i class="fas fa-check-circle"></i> Corporate Bank Account Guidance</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated Account Manager</li>
+                        <li><i class="fas fa-check-circle"></i> Free VAT Advisory</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="why-choose-us">
+                <h3 class="why-title">Why Choose Us?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h4>Local UAE Expertise</h4>
+                        <p>Deep knowledge of local regulations and legal compliance</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h4>Transparent Pricing</h4>
+                        <p>No hidden fees - clear cost breakdowns</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Speedy Formation</h4>
+                        <p>Fast-track setup with DED & Free Zones</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Personalized Guidance</h4>
+                        <p>Tailored advice for your business activity</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="#contact" class="btn btn-large">Request Free Consultation</a>
+                <p class="disclaimer">*Prices exclude VAT. Actual cost depends on business activity and visa requirements.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container portfolio-container">
+            <div class="section-title">
+                <h2>Website Projects</h2>
+                <p>Here are a few websites we've built and hosted on Netlify</p>
+            </div>
+            <div class="portfolio-buttons">
+                <a class="btn" href="https://magical-queijadas-a9e89a.netlify.app/" target="_blank">Chocolate Company Website</a>
+                <a class="btn" href="https://playful-kleicha-b2cf14.netlify.app/" target="_blank">Business Services Website</a>
+                <a class="btn" href="https://unique-frangipane-41f170.netlify.app/" target="_blank">Mining Consultancy Website</a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Our Impressive Results</h2>
+                <p style="color: rgba(255,255,255,0.8);">Delivering measurable success for luxury brands</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-text">Premium Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-text">Client Retention</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">120+</div>
+                    <div class="stat-text">Websites Designed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-text">Industry Awards</div>
+                </div>
+            </div>
+        </div>
+    </section><section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Connect With Us</h2>
+                <p>Let's discuss how we can elevate your brand's digital presence</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Ready to Transform Your Digital Strategy?</h3>
+                    <p>Our team of experts is ready to create customized social media and web solutions that align with your brand's luxury positioning and business objectives.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Our Headquarters</h4>
+                                <p>RAKEZ, UAE</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+971 522797168</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>Faisal.Alamir@4pillars.ae</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formsubmit.co/faisal4pillars@gmail.com" id="contactForm" method="POST">
+                        <input name="_next" type="hidden" value="https://4pillars.ae/#contact" />
+                        <input name="_captcha" type="hidden" value="false" />
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input id="name" name="name" required="" type="text" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" required="" type="email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input id="company" name="company" required="" type="text" />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" pattern="[0-9]{10,15}" required="" title="Enter a valid phone number" type="tel" />
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service" required="">
+                                <option value="">Select a service</option>
+                                <option value="Social Media Management">Social Media Management</option>
+                                <option value="Website Design">Website Design</option>
+                                <option value="Content Creation">Content Creation</option>
+                                <option value="Digital Strategy">Digital Strategy</option>
+                                <option value="Business Setup">Business Setup</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">How can we help?</label>
 <textarea id="message" name="message" required="" rows="5"></textarea>
-</div>
-<button class="btn" type="submit">Submit Request</button>
-<div class="form-loading" id="formLoading">
-<div class="spinner"></div>
-<p>Submitting your request...</p>
-</div>
-</form>
-<!-- Thank You Message -->
-<div class="thank-you-message" id="thank-you">
-<div class="icon">
-<i class="fas fa-check-circle"></i>
-</div>
-<h3>Thank You!</h3>
-<p>We've received your message and will get back to you shortly.</p>
-<a class="btn" href="#" onclick="resetForm()">Send Another Message</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer>
-<div class="container">
-<div class="footer-grid">
-<div class="footer-col">
-<a class="footer-logo" href="#"><img alt="Four Pillars Logo" src="your-logo.png"/></a>
-<p class="footer-about">We specialize in premium social media management, website design, and business setup for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
-<div class="social-links">
-<a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
-<a aria-label="LinkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
-<a aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
-<a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-</div>
-</div>
-<div class="footer-col">
-<h3 class="footer-title">Services</h3>
-<ul class="footer-links">
-<li><a href="#">Strategy &amp; Planning</a></li>
-<li><a href="#">Content Creation</a></li>
-<li><a href="#">Community Management</a></li>
-<li><a href="#">Paid Advertising</a></li>
-<li><a href="#">Analytics &amp; Reporting</a></li>
-<li><a href="#">Website Design</a></li>
-<li><a href="#">Business Setup</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<h3 class="footer-title">Quick Links</h3>
-<ul class="footer-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About Us</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#website">Website Design</a></li>
-<li><a href="#business-setup">Business Setup</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<h3 class="footer-title">Contact</h3>
-<ul class="footer-links">
-<li><i class="fas fa-map-marker-alt"></i> RAKEZ, UAE</li>
-<li><i class="fas fa-phone-alt"></i> +971 522797168</li>
-<li><i class="fas fa-envelope"></i> Faisal.Alamir@4pillars.ae</li>
-<li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
-</ul>
-</div>
-</div>
-<div class="copyright">
-<p>© 2023 Four Pillars. All rights reserved. Premium Digital Solutions for Luxury Brands.</p>
-</div>
-</div>
-</footer>
-<!-- WhatsApp Button -->
-<a class="whatsapp-button" href="https://wa.me/971522797168" target="_blank">
-<img alt="WhatsApp" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"/>
-</a>
-<script>
-    // Mobile Menu Toggle
-    document.querySelector('.mobile-menu').addEventListener('click', function() {
-        document.querySelector('.nav-links').classList.toggle('active');
-    });
+                        </div>
+                        <button class="btn" type="submit">Submit Request</button>
+                        <div class="form-loading" id="formLoading">
+                            <div class="spinner"></div>
+                            <p>Submitting your request...</p>
+                        </div>
+                    </form>
+                    <!-- Thank You Message -->
+                    <div class="thank-you-message" id="thank-you">
+                        <div class="icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Thank You!</h3>
+                        <p>We've received your message and will get back to you shortly.</p>
+                        <a class="btn" href="#" onclick="resetForm()">Send Another Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a class="footer-logo" href="#"><img alt="Four Pillars Logo" src="your-logo.png" /></a>
+                    <p class="footer-about">We specialize in premium social media management, website design, and business setup for luxury brands, crafting bespoke strategies that elevate digital presence and drive meaningful engagement.</p>
+                    <div class="social-links">
+                        <a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+                        <a aria-label="LinkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+                        <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Strategy &amp; Planning</a></li>
+                        <li><a href="#">Content Creation</a></li>
+                        <li><a href="#">Community Management</a></li>
+                        <li><a href="#">Paid Advertising</a></li>
+                        <li><a href="#">Analytics &amp; Reporting</a></li>
+                        <li><a href="#">Website Design</a></li>
+                        <li><a href="#">Business Setup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#website">Website Design</a></li>
+                        <li><a href="#business-setup">Business Setup</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> RAKEZ, UAE</li>
+                        <li><i class="fas fa-phone-alt"></i> +971 522797168</li>
+                        <li><i class="fas fa-envelope"></i> Faisal.Alamir@4pillars.ae</li>
+                        <li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Four Pillars. All rights reserved. Premium Digital Solutions for Luxury Brands.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- WhatsApp Button -->
+    <a class="whatsapp-button" href="https://wa.me/971522797168" target="_blank">
+        <img alt="WhatsApp" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" />
+    </a>
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
 
-    // Smooth Scrolling for Anchor Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            window.scrollTo({
-                top: targetElement.offsetTop - 100,
-                behavior: 'smooth'
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                if (document.querySelector('.nav-links').classList.contains('active')) {
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
             });
-            
-            // Close mobile menu if open
-            if (document.querySelector('.nav-links').classList.contains('active')) {
-                document.querySelector('.nav-links').classList.remove('active');
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
         });
-    });
 
-    // Header Scroll Effect
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+        // Tab Functionality
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
 
-    // Tab Functionality
-    const tabs = document.querySelectorAll('.tab');
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            // Remove active class from all tabs
-            tabs.forEach(t => t.classList.remove('active'));
-            
-            // Add active class to clicked tab
-            tab.classList.add('active');
-            
-            // Hide all tab content
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.remove('active');
+                // Add active class to clicked tab
+                tab.classList.add('active');
+
+                // Hide all tab content
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // Show corresponding content
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(`${tabId}-content`).classList.add('active');
             });
-            
-            // Show corresponding content
-            const tabId = tab.getAttribute('data-tab');
-            document.getElementById(`${tabId}-content`).classList.add('active');
         });
-    });
 
-    // Form Submission Handling
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const form = this;
-            const formLoading = document.getElementById('formLoading');
+        // Form Submission Handling
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const form = this;
+                const formLoading = document.getElementById('formLoading');
+                const thankYou = document.getElementById('thank-you');
+
+                formLoading.style.display = 'block';
+
+                // Simulate form submission
+                setTimeout(() => {
+                    form.reset();
+                    formLoading.style.display = 'none';
+                    thankYou.style.display = 'block';
+                    form.style.display = 'none';
+                }, 2000);
+            });
+        }
+
+        // Reset Form Function
+        window.resetForm = function () {
+            const form = document.getElementById('contactForm');
             const thankYou = document.getElementById('thank-you');
-            
-            formLoading.style.display = 'block';
-            
-            // Simulate form submission
+
+            thankYou.style.display = 'none';
+            form.style.display = 'block';
+        }
+
+        // Preloader
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
             setTimeout(() => {
-                form.reset();
-                formLoading.style.display = 'none';
-                thankYou.style.display = 'block';
-                form.style.display = 'none';
-            }, 2000);
+                preloader.style.display = 'none';
+            }, 1000);
         });
-    }
-    
-    // Reset Form Function
-    window.resetForm = function() {
-        const form = document.getElementById('contactForm');
-        const thankYou = document.getElementById('thank-you');
-        
-        thankYou.style.display = 'none';
-        form.style.display = 'block';
-    }
 
-    // Preloader
-    window.addEventListener('load', function() {
-        const preloader = document.getElementById('preloader');
-        setTimeout(() => {
-            preloader.style.display = 'none';
-        }, 1000);
-    });
+        // Animation on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
 
-    // Animation on Scroll
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = 'translateY(0)';
-            }
+        // Apply to sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
         });
-    }, { threshold: 0.1 });
-
-    // Apply to sections
-    document.querySelectorAll('section').forEach(section => {
-        section.style.opacity = 0;
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(section);
-    });
-</script>
- of your JavaScript section --&gt;
-<script>
-    // Particle System
-    class Particle {
-        constructor(canvas, ctx) {
-            this.canvas = canvas;
-            this.ctx = ctx;
-            this.x = Math.random() * canvas.width;
-            this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 3 + 1;
-            this.speedX = Math.random() * 3 - 1.5;
-            this.speedY = Math.random() * 3 - 1.5;
-            this.color = this.getRandomColor();
-        }
-        
-        getRandomColor() {
-            const colors = ['#3D52A0', '#7091E6', '#8697C4', '#ADBBDA', '#EDE8F5'];
-            return colors[Math.floor(Math.random() * colors.length)];
-        }
-        
-        update() {
-            this.x += this.speedX;
-            this.y += this.speedY;
-            
-            if (this.x < 0 || this.x > this.canvas.width) this.speedX = -this.speedX;
-            if (this.y < 0 || this.y > this.canvas.height) this.speedY = -this.speedY;
-        }
-        
-        draw() {
-            this.ctx.fillStyle = this.color;
-            this.ctx.beginPath();
-            this.ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            this.ctx.fill();
-        }
-    }
-
-    class ParticleSystem {
-        constructor(canvas) {
-            this.canvas = canvas;
-            this.ctx = canvas.getContext('2d');
-            this.particles = [];
-            this.particleCount = 150;
-            this.isPlaying = true;
-            this.darkMode = false;
-            this.init();
-        }
-        
-        init() {
-            this.resizeCanvas();
-            window.addEventListener('resize', () => this.resizeCanvas());
-            
-            // Create particles
-            for (let i = 0; i < this.particleCount; i++) {
-                this.particles.push(new Particle(this.canvas, this.ctx));
+    </script>
+    of your JavaScript section --&gt;
+    <script>
+        // Particle System
+        class Particle {
+            constructor(canvas, ctx) {
+                this.canvas = canvas;
+                this.ctx = ctx;
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = Math.random() * 3 - 1.5;
+                this.speedY = Math.random() * 3 - 1.5;
+                this.color = this.getRandomColor();
             }
-            
-            this.animate();
+
+            getRandomColor() {
+                const colors = ['#3D52A0', '#7091E6', '#8697C4', '#ADBBDA', '#EDE8F5'];
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x < 0 || this.x > this.canvas.width) this.speedX = -this.speedX;
+                if (this.y < 0 || this.y > this.canvas.height) this.speedY = -this.speedY;
+            }
+
+            draw() {
+                this.ctx.fillStyle = this.color;
+                this.ctx.beginPath();
+                this.ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                this.ctx.fill();
+            }
         }
-        
-        resizeCanvas() {
-            this.canvas.width = window.innerWidth;
-            this.canvas.height = window.innerHeight;
-        }
-        
-        drawConnections() {
-            for (let i = 0; i < this.particles.length; i++) {
-                for (let j = i; j < this.particles.length; j++) {
-                    const dx = this.particles[i].x - this.particles[j].x;
-                    const dy = this.particles[i].y - this.particles[j].y;
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-                    
-                    if (distance < 100) {
-                        this.ctx.beginPath();
-                        this.ctx.strokeStyle = this.darkMode ? 
-                            `rgba(173, 187, 218, ${1 - distance/100})` : 
-                            `rgba(61, 82, 160, ${1 - distance/100})`;
-                        this.ctx.lineWidth = 0.5;
-                        this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
-                        this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
-                        this.ctx.stroke();
+
+        class ParticleSystem {
+            constructor(canvas) {
+                this.canvas = canvas;
+                this.ctx = canvas.getContext('2d');
+                this.particles = [];
+                this.particleCount = 150;
+                this.isPlaying = true;
+                this.darkMode = false;
+                this.init();
+            }
+
+            init() {
+                this.resizeCanvas();
+                window.addEventListener('resize', () => this.resizeCanvas());
+
+                // Create particles
+                for (let i = 0; i < this.particleCount; i++) {
+                    this.particles.push(new Particle(this.canvas, this.ctx));
+                }
+
+                this.animate();
+            }
+
+            resizeCanvas() {
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+            }
+
+            drawConnections() {
+                for (let i = 0; i < this.particles.length; i++) {
+                    for (let j = i; j < this.particles.length; j++) {
+                        const dx = this.particles[i].x - this.particles[j].x;
+                        const dy = this.particles[i].y - this.particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < 100) {
+                            this.ctx.beginPath();
+                            this.ctx.strokeStyle = this.darkMode ?
+                                `rgba(173, 187, 218, ${1 - distance / 100})` :
+                                `rgba(61, 82, 160, ${1 - distance / 100})`;
+                            this.ctx.lineWidth = 0.5;
+                            this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
+                            this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
+                            this.ctx.stroke();
+                        }
                     }
                 }
             }
-        }
-        
-        animate() {
-            if (!this.isPlaying) return;
-            
-            this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-            
-            // Draw gradient background
-            const gradient = this.ctx.createLinearGradient(0, 0, this.canvas.width, this.canvas.height);
-            if (this.darkMode) {
-                gradient.addColorStop(0, '#12121E');
-                gradient.addColorStop(1, '#1A1A27');
-            } else {
-                gradient.addColorStop(0, '#3D52A0');
-                gradient.addColorStop(1, '#7091E6');
-            }
-            this.ctx.fillStyle = gradient;
-            this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-            
-            // Draw connections first
-            this.drawConnections();
-            
-            // Update and draw particles
-            for (let i = 0; i < this.particles.length; i++) {
-                this.particles[i].update();
-                this.particles[i].draw();
-            }
-            
-            requestAnimationFrame(() => this.animate());
-        }
-        
-        togglePlay() {
-            this.isPlaying = !this.isPlaying;
-            if (this.isPlaying) this.animate();
-        }
-        
-        toggleTheme() {
-            this.darkMode = !this.darkMode;
-        }
-    }
 
-    // Initialize when page loads
-    document.addEventListener('DOMContentLoaded', () => {
-        const canvas = document.getElementById('particle-canvas');
-        const particleSystem = new ParticleSystem(canvas);
-        
-        // Control buttons
-        const playPauseBtn = document.getElementById('play-pause');
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        
-        playPauseBtn.addEventListener('click', () => {
-            particleSystem.togglePlay();
-            playPauseBtn.innerHTML = particleSystem.isPlaying ? 
-                '<i class="fas fa-pause"></i>' : '<i class="fas fa-play"></i>';
+            animate() {
+                if (!this.isPlaying) return;
+
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+                // Draw gradient background
+                const gradient = this.ctx.createLinearGradient(0, 0, this.canvas.width, this.canvas.height);
+                if (this.darkMode) {
+                    gradient.addColorStop(0, '#12121E');
+                    gradient.addColorStop(1, '#1A1A27');
+                } else {
+                    gradient.addColorStop(0, '#3D52A0');
+                    gradient.addColorStop(1, '#7091E6');
+                }
+                this.ctx.fillStyle = gradient;
+                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+                // Draw connections first
+                this.drawConnections();
+
+                // Update and draw particles
+                for (let i = 0; i < this.particles.length; i++) {
+                    this.particles[i].update();
+                    this.particles[i].draw();
+                }
+
+                requestAnimationFrame(() => this.animate());
+            }
+
+            togglePlay() {
+                this.isPlaying = !this.isPlaying;
+                if (this.isPlaying) this.animate();
+            }
+
+            toggleTheme() {
+                this.darkMode = !this.darkMode;
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('particle-canvas');
+            const particleSystem = new ParticleSystem(canvas);
+
+            // Control buttons
+            const playPauseBtn = document.getElementById('play-pause');
+            const themeToggleBtn = document.getElementById('theme-toggle');
+
+            playPauseBtn.addEventListener('click', () => {
+                particleSystem.togglePlay();
+                playPauseBtn.innerHTML = particleSystem.isPlaying ?
+                    '<i class="fas fa-pause"></i>' : '<i class="fas fa-play"></i>';
+            });
+
+            themeToggleBtn.addEventListener('click', () => {
+                particleSystem.toggleTheme();
+                themeToggleBtn.innerHTML = particleSystem.darkMode ?
+                    '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+            });
         });
-        
-        themeToggleBtn.addEventListener('click', () => {
-            particleSystem.toggleTheme();
-            themeToggleBtn.innerHTML = particleSystem.darkMode ? 
-                '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggle = document.getElementById('theme-toggle');
+            toggle.addEventListener('change', function () {
+                document.body.classList.toggle('dark-mode', toggle.checked);
+            });
         });
-    });
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const toggle = document.getElementById('theme-toggle');
-  toggle.addEventListener('change', function () {
-    document.body.classList.toggle('dark-mode', toggle.checked);
-  });
-});
-</script></body>
+    </script>
+</body>
 </html>
