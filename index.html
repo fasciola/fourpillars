@@ -1654,41 +1654,36 @@
     <section id="contact" class="contact">
         <div class="section-title">
             <h2>Contact Us</h2>
-            <p>Let's discuss how we can elevate your brand</p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-form glass fade-in">
-                <h3>Send us a message</h3>
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Full Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Phone Number" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Company Name" required>
-                    </div>
-                    <div class="form-group">
-                        <select required>
-                            <option value="" disabled selected>Select Service</option>
-                            <option>Strategy & Planning</option>
-                            <option>Content Creation</option>
-                            <option>Community Management</option>
-                            <option>Paid Advertising</option>
-                            <option>Analytics & Insights</option>
-                            <option>Website Design</option>
-                            <option>Business Setup</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Submit Request</button>
-                </form>
+           <form action="https://formspree.io/f/xblypwjn" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="company" placeholder="Company Name" required>
+      </div>
+      <div class="form-group">
+        <select name="service" required>
+          <option value="" disabled selected>Select Service</option>
+          <option>Strategy & Planning</option>
+          <option>Content Creation</option>
+          <option>Community Management</option>
+          <option>Paid Advertising</option>
+          <option>Analytics & Insights</option>
+          <option>Website Design</option>
+          <option>Business Setup</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
             </div>
             <div class="contact-info glass fade-in">
                 <h3>Get in touch</h3>
