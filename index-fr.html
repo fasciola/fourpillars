@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Pillars | Agence Digitale de Luxe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --base-bg: #0B0C10;
+            --card-bg: #1F2833;
+            --text: #C5C6C7;
+            --accent: #66FCF1;
+            --heading: #45A29E;
+            --transition: all 0.4s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--base-bg);
+            color: var(--text);
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle at 20% 30%, rgba(31, 40, 51, 0.8), transparent 70%), radial-gradient(circle at 80% 70%, rgba(69, 162, 158, 0.1), transparent 70%);
+                z-index: -1;
+            }
+
+        /* Glassmorphism Effect */
+        .glass {
+            background: rgba(31, 40, 51, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            border: 1px solid rgba(102, 252, 241, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 5%;
+            transition: var(--transition);
+        }
+
+            header.scrolled {
+                background: rgba(11, 12, 16, 0.9);
+                backdrop-filter: blur(10px);
+                padding: 15px 5%;
+            }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 180px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--accent), var(--heading));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--base-bg);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+            .nav-links a {
+                color: var(--text);
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1rem;
+                transition: var(--transition);
+                position: relative;
+            }
+
+                .nav-links a:hover {
+                    color: var(--accent);
+                }
+
+                .nav-links a::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: var(--accent);
+                    transition: var(--transition);
+                }
+
+                .nav-links a:hover::after {
+                    width: 100%;
+                }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glow-ring {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            animation: rotateRing 20s linear infinite;
+            z-index: -1;
+        }
+
+        .ring-1 {
+            border: 3px solid var(--accent);
+            box-shadow: 0 0 50px var(--accent);
+            animation-delay: 0s;
+        }
+
+        .ring-2 {
+            width: 600px;
+            height: 600px;
+            border: 2px solid var(--heading);
+            box-shadow: 0 0 40px var(--heading);
+            animation-delay: -5s;
+        }
+
+        .ring-3 {
+            width: 700px;
+            height: 700px;
+            border: 1px solid rgba(197, 198, 199, 0.2);
+            box-shadow: 0 0 30px rgba(197, 198, 199, 0.1);
+            animation-delay: -10s;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 0 0 10px rgba(102, 252, 241, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--accent);
+            color: var(--base-bg);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            border: 2px solid var(--accent);
+            box-shadow: 0 0 20px rgba(102, 252, 241, 0.4);
+        }
+
+            .btn:hover {
+                background: transparent;
+                color: var(--accent);
+                transform: translateY(-3px);
+                box-shadow: 0 0 30px rgba(102, 252, 241, 0.6);
+            }
+
+        /* Section Styling */
+        section {
+            padding: 100px 5%;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+            .section-title h2 {
+                font-size: 2.5rem;
+                color: white;
+                margin-bottom: 15px;
+                position: relative;
+                display: inline-block;
+            }
+
+                .section-title h2::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 4px;
+                    background: var(--accent);
+                    border-radius: 2px;
+                }
+
+            .section-title p {
+                max-width: 700px;
+                margin: 20px auto 0;
+                font-size: 1.1rem;
+            }
+
+        /* About Section */
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-content {
+            padding: 40px;
+        }
+
+            .about-content h3 {
+                font-size: 1.8rem;
+                color: white;
+                margin-bottom: 25px;
+            }
+
+            .about-content p {
+                margin-bottom: 20px;
+                line-height: 1.8;
+            }
+
+        .about-image {
+            height: 450px;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+        }
+
+            .about-image::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, rgba(102, 252, 241, 0.2), rgba(69, 162, 158, 0.4));
+                z-index: 1;
+            }
+
+        /* Services Gallery Section */
+        .services-gallery {
+            padding: 100px 0;
+            background-color: #000;
+        }
+
+        .flex-gallery {
+            display: flex;
+            overflow: hidden;
+            border-radius: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 500px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .panel {
+            flex: 0.5;
+            background-size: cover;
+            background-position: center;
+            transition: flex 0.5s ease-in-out;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+            .panel:hover {
+                flex: 3;
+            }
+
+            .panel::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+                border-radius: 30px;
+                transition: background 0.4s ease;
+            }
+
+            .panel:hover::before {
+                background: rgba(0, 0, 0, 0.2);
+            }
+
+        .panel-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;
+        }
+
+        .panel:hover .panel-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .panel h2.glow {
+            color: white;
+            text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .panel p {
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        .section-number {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 3rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.2);
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+
+        .panel:hover .section-number {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 4rem;
+        }
+
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: rgba(102, 252, 241, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: var(--accent);
+            transition: all 0.5s ease;
+        }
+
+        .panel:hover .icon-circle {
+            transform: scale(1.2);
+            background: rgba(102, 252, 241, 0.3);
+        }
+
+        /* Premium Design Section */
+        .design-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .design-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .design-img {
+            height: 300px;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+            .design-img::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, rgba(102, 252, 241, 0.1), rgba(69, 162, 158, 0.2));
+            }
+
+        .design-content {
+            padding: 20px;
+        }
+
+            .design-content h3 {
+                font-size: 2rem;
+                color: white;
+                margin-bottom: 20px;
+            }
+
+        .design-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(102, 252, 241, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .feature-text h4 {
+            font-size: 1.3rem;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        /* Business Setup */
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .pricing-card {
+            width: 350px;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+            .pricing-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .pricing-card h3 {
+                font-size: 1.8rem;
+                color: white;
+                margin-bottom: 20px;
+            }
+
+        .price {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+            .features-list li {
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(197, 198, 199, 0.1);
+            }
+
+        .pricing-card.popular {
+            border: 2px solid var(--accent);
+            box-shadow: 0 0 30px rgba(102, 252, 241, 0.2);
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--accent);
+            color: var(--base-bg);
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Projects Section */
+        .projects {
+            background: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            padding: 150px 5%;
+            text-align: center;
+        }
+
+            .projects::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(11, 12, 16, 0.8);
+            }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card {
+            height: 300px;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+            .project-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to top, rgba(11, 12, 16, 0.9), transparent);
+                z-index: 1;
+            }
+
+        .project-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            z-index: 2;
+            text-align: left;
+        }
+
+            .project-info h3 {
+                color: white;
+                margin-bottom: 5px;
+            }
+
+        /* Results Section */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        .stat-text {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-form {
+            padding: 40px;
+        }
+
+            .contact-form h3 {
+                color: white;
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group input, .form-group select, .form-group textarea {
+                width: 100%;
+                padding: 15px;
+                background: rgba(31, 40, 51, 0.5);
+                border: 1px solid rgba(102, 252, 241, 0.1);
+                border-radius: 8px;
+                color: var(--text);
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+            }
+
+            .form-group textarea {
+                height: 150px;
+                resize: vertical;
+            }
+
+        .contact-info {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .contact-info h3 {
+                color: white;
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(102, 252, 241, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .contact-text {
+            flex: 1;
+        }
+
+            .contact-text h4 {
+                color: white;
+                margin-bottom: 5px;
+            }
+
+        /* Footer */
+        footer {
+            padding: 70px 5% 30px;
+            position: relative;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-logo {
+            width: 180px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--accent), var(--heading));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--base-bg);
+            margin-bottom: 20px;
+        }
+
+        .footer-links h4 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+            .footer-links h4::after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                width: 40px;
+                height: 3px;
+                background: var(--accent);
+                border-radius: 2px;
+            }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--text);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+            .footer-links a:hover {
+                color: var(--accent);
+                padding-left: 5px;
+            }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(197, 198, 199, 0.1);
+        }
+
+        /* 3D Cursor */
+        .cursor {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            mix-blend-mode: difference;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            transition: transform 0.1s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: var(--base-bg);
+            text-align: center;
+            opacity: 0.8;
+        }
+
+            .cursor.hover {
+                transform: translate(-50%, -50%) scale(1.5);
+                background: rgba(102, 252, 241, 0.8);
+            }
+
+        /* What Sets Us Apart Section */
+        .luxury-section {
+            position: relative;
+            padding: 100px 20px;
+            background: #0F1C2E;
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+            .luxury-section .particles {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                overflow: hidden;
+            }
+
+            .luxury-section .particle {
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.7);
+                border-radius: 50%;
+                opacity: 0;
+                animation: float 15s infinite linear;
+            }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.6;
+            }
+
+            90% {
+                opacity: 0.4;
+            }
+
+            100% {
+                transform: translateY(-100vh) translateX(20vw);
+                opacity: 0;
+            }
+        }
+
+        .luxury-section .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .luxury-section .section-subtitle {
+            font-size: 18px;
+            font-weight: 500;
+            color: #66FCF1;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .luxury-section .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1.2;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #FFFFFF;
+        }
+
+            .luxury-section .section-title::after {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 3px;
+                background: linear-gradient(90deg, #66FCF1, #F2C94C);
+            }
+
+        .luxury-section .section-description {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        .luxury-section .cards-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .luxury-section .card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s ease;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .luxury-section .card::before {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: linear-gradient(45deg, rgba(102, 252, 241, 0) 0%, rgba(102, 252, 241, 0.1) 30%, rgba(102, 252, 241, 0.3) 50%, rgba(102, 252, 241, 0.1) 70%, rgba(102, 252, 241, 0) 100%);
+                z-index: -1;
+                border-radius: 18px;
+                transition: all 0.4s ease;
+            }
+
+            .luxury-section .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 40px rgba(102, 252, 241, 0.25);
+            }
+
+                .luxury-section .card:hover::before {
+                    background: linear-gradient(45deg, rgba(102, 252, 241, 0) 0%, rgba(102, 252, 241, 0.4) 30%, rgba(102, 252, 241, 0.6) 50%, rgba(102, 252, 241, 0.4) 70%, rgba(102, 252, 241, 0) 100%);
+                }
+
+        .luxury-section .card-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(28, 40, 51, 0.6);
+            border-radius: 12px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+            .luxury-section .card-icon::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 12px;
+                border: 1px solid rgba(102, 252, 241, 0.3);
+            }
+
+            .luxury-section .card-icon svg {
+                width: 30px;
+                height: 30px;
+                fill: #66FCF1;
+            }
+
+        .luxury-section .card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #66FCF1, #F2C94C);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            display: inline-block;
+        }
+
+            .luxury-section .card h3::after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                width: 40px;
+                height: 2px;
+                background: #66FCF1;
+            }
+
+        .luxury-section .card p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.85);
+            flex-grow: 1;
+        }
+
+        /* Animations */
+        @keyframes rotateRing {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-container, .design-container, .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 90px;
+                left: 0;
+                width: 100%;
+                background: rgba(11, 12, 16, 0.95);
+                flex-direction: column;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+                .nav-links.active {
+                    display: flex;
+                }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .design-images {
+                grid-template-columns: 1fr;
+                margin-bottom: 30px;
+            }
+
+            .luxury-section .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .stat-number {
+                font-size: 2.8rem;
+            }
+
+            .pricing-card {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .glow-ring {
+                width: 300px;
+                height: 300px;
+            }
+
+            .ring-2 {
+                width: 400px;
+                height: 400px;
+            }
+
+            .ring-3 {
+                width: 500px;
+                height: 500px;
+            }
+
+            /* Responsive Gallery Fix */
+            .flex-gallery {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .panel {
+                flex: 1 1 100%;
+                height: 300px;
+                margin-bottom: 5px;
+            }
+
+            .panel-content {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .project-card {
+                height: 250px;
+            }
+
+            .panel h2.glow {
+                font-size: 1.7rem;
+            }
+
+            .panel p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 3D Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Four Pillars Logo" style="height: 90px;">
+            </div>
+            <div class="nav-links">
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#services">Services</a>
+                <a href="#services-gallery">Galerie</a>
+                <a href="#business-setup">Implantation</a>
+                <a href="#website-design">Design Web</a>
+                <a href="#results">Résultats</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="glow-ring ring-1"></div>
+        <div class="glow-ring ring-2"></div>
+        <div class="glow-ring ring-3"></div>
+        <div class="hero-content fade-in">
+            <h1>Solutions Digitales Premium pour Marques de Luxe</h1>
+            <p>Nous créons des expériences numériques sur mesure qui élèvent votre marque et captivent votre audience</p>
+            <a href="#contact" class="btn">Commencer</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>À Propos de Nous</h2>
+            <p>Découvrez la vision et la mission qui guident notre engagement pour l'excellence</p>
+        </div>
+        <div class="about-container">
+            <div class="about-content glass fade-in">
+                <h3>Notre Vision</h3>
+                <p>Devenir l'agence digitale leader pour les marques de luxe dans le monde, reconnue pour nos solutions innovantes et nos résultats exceptionnels.</p>
+                <h3>Notre Mission</h3>
+                <p>Nous permettons aux marques de luxe de prospérer dans le paysage numérique en créant des stratégies sur mesure, des designs époustouflants et des résultats mesurables qui dépassent les attentes.</p>
+                <a href="#contact" class="btn">Rejoignez Notre Vision</a>
+            </div>
+            <div class="about-image fade-in" style="background-image: url('a_digital_painting_in_a_semi-realistic,_fantasy_ar.png'); background-size: cover; background-position: center; border-radius: 16px;"></div>
+        </div>
+    </section>
+
+    <!-- What Sets Us Apart Section -->
+    <section class="luxury-section">
+        <div class="particles" id="what-sets-particles"></div>
+
+        <div class="section-header">
+            <div class="section-subtitle">Excellence Numérique</div>
+            <h2 class="section-title">Ce Qui Nous Distingue</h2>
+            <p class="section-description">Dans un paysage d'agences numériques ordinaires, nous redéfinissons le luxe grâce à une créativité, une stratégie et une exécution inégalées. Découvrez les piliers de notre service exceptionnel.</p>
+        </div>
+
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12,4C7.31,4 4.07,7.92 4.42,12.56C4.61,15.08 5.71,17.4 7.5,19.09C8.29,19.85 9.19,20.47 10.18,20.92C10.45,21.05 10.72,21.17 11,21.27V16.5H8.5V14.5H11V12.5C11,10.84 12.34,9.5 14,9.5H16.5V11.5H14V14.5H16.5L17.5,16.5H14V21.94C18.5,21.12 22,17.05 22,12C22,6.48 17.52,2 12,2V4Z" />
+                    </svg>
+                </div>
+                <h3>Approche Holistique</h3>
+                <p>Notre équipe intégrée collabore de manière transparente, combinant son expertise pour développer des stratégies complètes couvrant le branding, les relations publiques, le marketing numérique, les médias sociaux et les événements. Cette approche cohérente garantit que le message de votre marque reste constant sur tous les points de contact, maximisant son impact.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12,3L1,9L5,11.18V17.18L12,21L19,17.18V11.18L21,10.09V17H23V9L12,3M18.82,9L12,12.72L5.18,9L12,5.28L18.82,9M17,16L12,18.72L7,16V12.27L12,15L17,12.27V16Z" />
+                    </svg>
+                </div>
+                <h3>Créativité et Innovation</h3>
+                <p>Notre équipe s'épanouit en repoussant les limites et en explorant de nouveaux horizons. Ils recherchent continuellement des moyens innovants d'élever votre marque, en exploitant des techniques de pointe et des tendances émergentes pour vous démarquer de la concurrence.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                    </svg>
+                </div>
+                <h3>Approche Centrée Client</h3>
+                <p>Nous accordons une immense valeur à la compréhension de vos objectifs, défis et aspirations uniques. Notre équipe adopte une approche centrée sur le client, adaptant ses solutions à vos besoins spécifiques et fournissant constamment des résultats exceptionnels qui correspondent à votre vision.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.1 14.8,9.5V11C15.4,11 16,11.6 16,12.3V15.8C16,16.4 15.4,17 14.7,17H9.2C8.6,17 8,16.4 8,15.7V12.2C8,11.6 8.6,11 9.2,11V9.5C9.2,8.1 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,9.5V11H13.5V9.5C13.5,8.7 12.8,8.2 12,8.2Z" />
+                    </svg>
+                </div>
+                <h3>Passion et Engagement</h3>
+                <p>Chaque membre de notre équipe est animé par une passion authentique pour son métier. Ils s'engagent à aller au-delà des attentes, en ne laissant aucune pierre non retournée dans leur quête pour propulser votre marque vers l'avant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Gallery Section -->
+    <section class="services-gallery" id="services-gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white; text-shadow: 0 0 10px var(--accent);">Galerie de Nos Services</h2>
+                <p style="color: #ccc;">Présentation interactive de nos services premium</p>
+            </div>
+
+            <div class="flex-gallery">
+                <div class="panel" style="background-image: url('your-image-1.jpg');">
+                    <div class="icon-circle"><i class="fas fa-bullhorn"></i></div>
+                    <div class="section-number">01</div>
+                    <div class="panel-content">
+                        <h2 class="glow">Marketing Digital</h2>
+                        <p>Campagnes & Contenu</p>
+                    </div>
+                </div>
+                <div class="panel" style="background-image: url('your-image-2.jpg');">
+                    <div class="icon-circle"><i class="fas fa-feather"></i></div>
+                    <div class="section-number">02</div>
+                    <div class="panel-content">
+                        <h2 class="glow">Branding</h2>
+                        <p>Identité Visuelle</p>
+                    </div>
+                </div>
+                <div class="panel" style="background-image: url('your-image-3.jpg');">
+                    <div class="icon-circle"><i class="fas fa-palette"></i></div>
+                    <div class="section-number">03</div>
+                    <div class="panel-content">
+                        <h2 class="glow">Design Graphique</h2>
+                        <p>Identité Visuelle</p>
+                    </div>
+                </div>
+                <div class="panel" style="background-image: url('your-image-4.jpg');">
+                    <div class="icon-circle"><i class="fas fa-laptop-code"></i></div>
+                    <div class="section-number">04</div>
+                    <div class="panel-content">
+                        <h2 class="glow">Développement Web</h2>
+                        <p>UX & Ingénierie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Website Design -->
+    <section id="website-design" class="web-design">
+        <div class="section-title">
+            <h2>Design Web Premium</h2>
+            <p>Des expériences numériques qui reflètent l'excellence de votre marque</p>
+        </div>
+        <div class="design-container">
+            <div class="design-images">
+                <div class="design-img fade-in">
+                    <img src="design1.png" alt="Aperçu Design 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                </div>
+                <div class="design-img fade-in">
+                    <img src="design2.png" alt="Aperçu Design 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                </div>
+            </div>
+
+            <div class="design-content glass fade-in">
+                <h3>Création de Chefs-d'œuvre Numériques</h3>
+                <div class="design-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Esthétique Luxueuse</h4>
+                        <p>Design sophistiqué qui incarne l'élégance et l'exclusivité</p>
+                    </div>
+                </div>
+                <div class="design-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Entièrement Responsive</h4>
+                        <p>Expérience fluide sur tous les appareils et tailles d'écran</p>
+                    </div>
+                </div>
+                <div class="design-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Extrêmement Rapide</h4>
+                        <p>Optimisé pour la vitesse et les performances</p>
+                    </div>
+                </div>
+                <a href="#contact" class="btn">Demander une Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Setup -->
+    <section id="business-setup" class="business-setup">
+        <div class="section-title">
+            <h2>Solutions d'Implantation d'Entreprise</h2>
+            <p>Établissez votre présence aux Émirats Arabes Unis avec notre expertise</p>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-card glass fade-in">
+                <h3>Implantation Continentale</h3>
+                <div class="price">18 500 AED</div>
+                <ul class="features-list">
+                    <li>100% Propriété</li>
+                    <li>Visa & Résidence</li>
+                    <li>Licence DED</li>
+                    <li>Assistance Bancaire</li>
+                    <li>Consultation TVA</li>
+                </ul>
+                <a href="#contact" class="btn">Consultation Gratuite</a>
+            </div>
+            <div class="pricing-card glass fade-in popular">
+                <div class="popular-tag">POPULAIRE</div>
+                <h3>Implantation en Zone Franche</h3>
+                <div class="price">5 750 AED</div>
+                <ul class="features-list">
+                    <li>100% Propriété</li>
+                    <li>Visa & Résidence</li>
+                    <li>Licence DED</li>
+                    <li>Assistance Bancaire</li>
+                    <li>Consultation TVA</li>
+                </ul>
+                <a href="#contact" class="btn">Consultation Gratuite</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="portfolio" class="projects">
+        <div class="section-title">
+            <h2>Projets de Sites Web</h2>
+            <p>Découvrez notre portfolio d'expériences numériques premium</p>
+        </div>
+        <div class="projects-container">
+            <div class="project-card fade-in" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');">
+                <div class="project-info">
+                    <h3>E-Commerce de Luxe Mode</h3>
+                    <p>Expérience Shopping Premium</p>
+                </div>
+            </div>
+            <div class="project-card fade-in" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');">
+                <div class="project-info">
+                    <h3>Immobilier Haut de Gamme</h3>
+                    <p>Présentation Virtuelle de Propriétés</p>
+                </div>
+            </div>
+            <div class="project-card fade-in" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');">
+                <div class="project-info">
+                    <h3>Marque Exclusive de Joaillerie</h3>
+                    <p>Présentation Élégante de Produits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="results">
+        <div class="section-title">
+            <h2>Nos Résultats</h2>
+            <p>Livrer l'excellence qui parle d'elle-même</p>
+        </div>
+        <div class="stats-container">
+            <div class="stat-card glass fade-in">
+                <div class="stat-number" data-target="250">0+</div>
+                <div class="stat-text">Clients Premium</div>
+            </div>
+            <div class="stat-card glass fade-in">
+                <div class="stat-number" data-target="98">0%</div>
+                <div class="stat-text">Fidélisation Client</div>
+            </div>
+            <div class="stat-card glass fade-in">
+                <div class="stat-number" data-target="120">0+</div>
+                <div class="stat-text">Sites Web Conçus</div>
+            </div>
+            <div class="stat-card glass fade-in">
+                <div class="stat-number" data-target="12">0</div>
+                <div class="stat-text">Prix de l'Industrie</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contactez-Nous</h2>
+            <p>Discutons de la façon dont nous pouvons élever votre marque</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-form glass fade-in">
+                <h3>Envoyez-nous un message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Nom Complet" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Adresse Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Numéro de Téléphone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Nom de l'Entreprise" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Sélectionnez un Service</option>
+                            <option>Stratégie & Planification</option>
+                            <option>Création de Contenu</option>
+                            <option>Gestion de Communauté</option>
+                            <option>Publicité Payante</option>
+                            <option>Analytique & Insights</option>
+                            <option>Design de Site Web</option>
+                            <option>Implantation d'Entreprise</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Soumettre la Demande</button>
+                </form>
+            </div>
+            <div class="contact-info glass fade-in">
+                <h3>Contactez-nous</h3>
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Localisation</h4>
+                        <p>RAKEZ, Émirats Arabes Unis</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Téléphone</h4>
+                        <p>+971 522797168</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>Faisal.Alamir@4pillars.ae</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Heures d'Ouverture</h4>
+                        <p>Dimanche–Jeudi, 9h–18h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="footer-logo">FOUR PILLARS</div>
+                <p>Élever les marques de luxe avec des solutions numériques premium depuis 2015.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos de Nous</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services-gallery">Galerie</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Stratégie & Planification</a></li>
+                    <li><a href="#services">Création de Contenu</a></li>
+                    <li><a href="#website-design">Design de Site Web</a></li>
+                    <li><a href="#business-setup">Implantation d'Entreprise</a></li>
+                    <li><a href="#services">Analytique & Insights</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Coordonnées</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> RAKEZ, Émirats Arabes Unis</li>
+                    <li><i class="fas fa-phone-alt"></i> +971 522797168</li>
+                    <li><i class="fas fa-envelope"></i> Faisal.Alamir@4pillars.ae</li>
+                    <li><i class="fas fa-clock"></i> Dimanche–Jeudi, 9h–18h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Four Pillars Digital Agency. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 3D Cursor
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+
+        document.querySelectorAll('a, button, .project-card, .panel').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('hover');
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Sticky Header
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText.replace('+', '').replace('%', '');
+
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc) + (counter.innerText.includes('%') ? '%' : counter.innerText.includes('+') ? '+' : '');
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target + (counter.innerText.includes('%') ? '%' : counter.innerText.includes('+') ? '+' : '');
+                }
+            };
+
+            const counterObserver = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    updateCount();
+                    counterObserver.unobserve(counter);
+                }
+            }, { threshold: 0.5 });
+
+            counterObserver.observe(counter);
+        });
+
+        // Create particle background for "What Sets Us Apart" section
+        document.addEventListener('DOMContentLoaded', function () {
+            const particlesContainer = document.getElementById('what-sets-particles');
+            if (!particlesContainer) return;
+
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+
+                const size = Math.random() * 4 + 4;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 15}s`;
+
+                // Random animation duration
+                const duration = 10 + Math.random() * 20;
+                particle.style.animationDuration = `${duration}s`;
+
+                particlesContainer.appendChild(particle);
+            }
+        });
+    </script>
+</body>
+</html>
