@@ -9,6 +9,101 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        .project-thumbnails {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #0d0d0d;
+            color: #fff;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+            .project-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+
+            .project-card h3 {
+                font-size: 18px;
+                margin: 15px 0 5px;
+                color: #ffffff;
+            }
+
+            .project-card p {
+                font-size: 14px;
+                color: #adbbda;
+                margin-bottom: 16px;
+            }
+
+            .project-card:hover {
+                background: rgba(255, 255, 255, 0.08);
+                transform: translateY(-6px);
+            }
+        .video-section {
+            position: relative;
+            height: 100vh; /* Full screen height */
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-button {
+            position: absolute;
+            bottom: -40px; /* Distance from bottom */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+            .video-button .btn {
+                padding: 8px 20px;
+                background-color: #1a1a1a;
+                color: #fff;
+                font-size: 14px;
+                text-decoration: none;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.6);
+                transition: background-color 0.3s ease;
+            }
+
+                .video-button .btn:hover {
+                    background-color: #333;
+                }
+
          .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -1420,68 +1515,32 @@
         </div>
     </section>
 
-    <!-- Business Setup -->
-    <section id="business-setup" class="business-setup">
-        <div class="section-title">
-            <h2>Solutions d'Implantation d'Entreprise</h2>
-            <p>Établissez votre présence aux Émirats Arabes Unis avec notre expertise</p>
-        </div>
-        <div class="pricing-container">
-            <div class="pricing-card glass fade-in">
-                <h3>Implantation Continentale</h3>
-                <div class="price">18 500 AED</div>
-                <ul class="features-list">
-                    <li>100% Propriété</li>
-                    <li>Visa & Résidence</li>
-                    <li>Licence DED</li>
-                    <li>Assistance Bancaire</li>
-                    <li>Consultation TVA</li>
-                </ul>
-                <a href="#contact" class="btn">Consultation Gratuite</a>
-            </div>
-            <div class="pricing-card glass fade-in popular">
-                <div class="popular-tag">POPULAIRE</div>
-                <h3>Implantation en Zone Franche</h3>
-                <div class="price">5 750 AED</div>
-                <ul class="features-list">
-                    <li>100% Propriété</li>
-                    <li>Visa & Résidence</li>
-                    <li>Licence DED</li>
-                    <li>Assistance Bancaire</li>
-                    <li>Consultation TVA</li>
-                </ul>
-                <a href="#contact" class="btn">Consultation Gratuite</a>
-            </div>
+    <!-- Projects -->
+    <section class="project-thumbnails" id="projets">
+        <h2>Découvrez notre portfolio d'expériences numériques haut de gamme</h2>
+        <div class="project-grid">
+
+            <a href="https://stupendous-hummingbird-03080a.netlify.app/" class="project-card" target="_blank">
+                <img src="fashion.png" alt="Mode de Luxe">
+                <h3>E-Commerce Mode de Luxe</h3>
+                <p>Expérience d'achat haut de gamme</p>
+            </a>
+
+            <a href="https://deft-sundae-510258.netlify.app/" class="project-card" target="_blank">
+                <img src="real.png" alt="Immobilier de Prestige">
+                <h3>Immobilier de Prestige</h3>
+                <p>Présentation virtuelle de propriétés</p>
+            </a>
+
+            <a href="https://papaya-vacherin-fee6b2.netlify.app/" class="project-card" target="_blank">
+                <img src="jewl.png" alt="Marque de Bijoux Exclusive">
+                <h3>Marque de Bijoux Exclusive</h3>
+                <p>Présentation élégante des produits</p>
+            </a>
+
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id="portfolio" class="projects">
-        <div class="section-title">
-            <h2>Projets de Sites Web</h2>
-            <p>Découvrez notre portfolio d'expériences numériques premium</p>
-        </div>
-        <div class="projects-container">
-            <div class="project-card fade-in" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');">
-                <div class="project-info">
-                    <h3>E-Commerce de Luxe Mode</h3>
-                    <p>Expérience Shopping Premium</p>
-                </div>
-            </div>
-            <div class="project-card fade-in" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');">
-                <div class="project-info">
-                    <h3>Immobilier Haut de Gamme</h3>
-                    <p>Présentation Virtuelle de Propriétés</p>
-                </div>
-            </div>
-            <div class="project-card fade-in" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');">
-                <div class="project-info">
-                    <h3>Marque Exclusive de Joaillerie</h3>
-                    <p>Présentation Élégante de Produits</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Results -->
     <section id="results" class="results">
@@ -1508,82 +1567,94 @@
             </div>
         </div>
     </section>
+    <!-- Video -->
+    <section id="promo-video" class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="hero-background.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <div class="video-button">
+                <a href="#contact" class="btn">Réserver une consultation</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact -->
     <section id="contact" class="contact">
         <div class="section-title">
             <h2>Contactez-Nous</h2>
             <p>Discutons de la façon dont nous pouvons élever votre marque</p>
-       <form action="https://formspree.io/f/xblypwjn" method="POST">
-  <div class="form-group">
-    <input type="text" name="name" placeholder="Nom Complet" required>
-  </div>
-  <div class="form-group">
-    <input type="email" name="email" placeholder="Adresse Email" required>
-  </div>
-  <div class="form-group">
-    <input type="tel" name="phone" placeholder="Numéro de Téléphone" required>
-  </div>
-  <div class="form-group">
-    <input type="text" name="company" placeholder="Nom de l'entreprise" required>
-  </div>
-  <div class="form-group">
-    <select name="service" required>
-      <option value="" disabled selected>Choisissez un service</option>
-      <option>Stratégie et Planification</option>
-      <option>Création de Contenu</option>
-      <option>Gestion de Communauté</option>
-      <option>Publicité Payante</option>
-      <option>Analytique & Statistiques</option>
-      <option>Conception de Sites Web</option>
-      <option>Création d'entreprise</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <textarea name="message" placeholder="Votre Message" required></textarea>
-  </div>
-  <button type="submit" class="btn">Envoyer la Demande</button>
-</form>
-            </div>
-            <div class="contact-info glass fade-in">
-                <h3>Contactez-nous</h3>
-                <div class="contact-detail">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Localisation</h4>
-                        <p>RAKEZ, Émirats Arabes Unis</p>
-                    </div>
+            <form action="https://formspree.io/f/xblypwjn" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Nom Complet" required>
                 </div>
-                <div class="contact-detail">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Téléphone</h4>
-                        <p>+971 522797168</p>
-                    </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Adresse Email" required>
                 </div>
-                <div class="contact-detail">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Email</h4>
-                        <p>Faisal.Alamir@4pillars.ae</p>
-                    </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Numéro de Téléphone" required>
                 </div>
-                <div class="contact-detail">
-                    <div class="contact-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Heures d'Ouverture</h4>
-                        <p>Dimanche–Jeudi, 9h–18h</p>
-                    </div>
+                <div class="form-group">
+                    <input type="text" name="company" placeholder="Nom de l'entreprise" required>
+                </div>
+                <div class="form-group">
+                    <select name="service" required>
+                        <option value="" disabled selected>Choisissez un service</option>
+                        <option>Stratégie et Planification</option>
+                        <option>Création de Contenu</option>
+                        <option>Gestion de Communauté</option>
+                        <option>Publicité Payante</option>
+                        <option>Analytique & Statistiques</option>
+                        <option>Conception de Sites Web</option>
+                        <option>Création d'entreprise</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Votre Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer la Demande</button>
+            </form>
+        </div>
+        <div class="contact-info glass fade-in">
+            <h3>Contactez-nous</h3>
+            <div class="contact-detail">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                    <h4>Localisation</h4>
+                    <p>RAKEZ, Émirats Arabes Unis</p>
                 </div>
             </div>
+            <div class="contact-detail">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-text">
+                    <h4>Téléphone</h4>
+                    <p>+971 522797168</p>
+                </div>
+            </div>
+            <div class="contact-detail">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                    <h4>Email</h4>
+                    <p>Faisal.Alamir@4pillars.ae</p>
+                </div>
+            </div>
+            <div class="contact-detail">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-text">
+                    <h4>Heures d'Ouverture</h4>
+                    <p>Dimanche–Jeudi, 9h–18h</p>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -1759,7 +1830,7 @@
         });
     </script>
     <a href="https://wa.me/971522797168" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
