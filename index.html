@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Four Pillars | Digital Marketing Solutions</title>
     <meta name="description" content="Premium digital marketing services for luxury brands and high-end businesses">
-    
+
     <!-- SEO Meta Tags -->
     <meta name="robots" content="index, follow">
     <meta name="author" content="Four Pillars">
@@ -15,136 +15,26 @@
     <meta property="og:url" content="https://4pillars.ae/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://github.com/fasciola/fourpillars/raw/main/logo.png">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GT-5R8NMN93');</script>
-    <!-- End Google Tag Manager -->
-    
-    <!-- Facebook Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '762495109775754');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=762495109775754&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
-    
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GT-5R8NMN93');</script>
+    <!-- End Google Tag Manager -->
+
     <style>
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            color: #fff;
-        }
-
-        /* Video Container */
-        .video-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
-
-        /* Background Video */
-        .bg-video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-        }
-
-        /* Video Overlay */
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient( to bottom right, rgba(25, 25, 112, 0.85), rgba(25, 25, 112, 0.7) );
-            z-index: 1;
-        }
-
-        /* Fallback Image */
-        .fallback-image {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
-            z-index: 0;
-        }
-
-        /* Hero Content */
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            max-width: 1200px;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        /* Mobile Optimization */
-        @media (max-width: 768px) {
-            .bg-video {
-                display: none;
-            }
-
-            .fallback-image {
-                display: block;
-            }
-        }
-
-        /* Update existing hero styles */
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 100px 20px 20px;
-            overflow: hidden;
-            color: white;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-            padding: 20px;
-        }
         /* ===== VARIABLES & BASE STYLES ===== */
         :root {
             --navy: #191970;
@@ -153,7 +43,7 @@
             --gold-light: #E6C567;
             --cream: #F5F5DC;
             --charcoal: #333333;
-            --transition: all 0.4s ease;
+            --transition: all 0.3s ease;
             --gold-gradient: linear-gradient(135deg, #D4AF37, #F5D76E);
         }
 
@@ -181,8 +71,39 @@
 
         /* ===== ANIMATIONS ===== */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translateX(-50%) scale(1);
+            }
+
+            50% {
+                transform: translateX(-50%) scale(1.05);
+            }
+
+            100% {
+                transform: translateX(-50%) scale(1);
+            }
         }
 
         .fade-in {
@@ -197,10 +118,21 @@
             transform: translateY(30px);
         }
 
-        .delay-1 { animation-delay: 0.1s; }
-        .delay-2 { animation-delay: 0.2s; }
-        .delay-3 { animation-delay: 0.3s; }
-        .delay-4 { animation-delay: 0.4s; }
+        .delay-1 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-4 {
+            animation-delay: 0.4s;
+        }
 
         /* ===== LUXURY ELEMENTS ===== */
         .gold-accent {
@@ -234,10 +166,10 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        header.scrolled {
-            padding: 10px 5%;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-        }
+            header.scrolled {
+                padding: 10px 5%;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            }
 
         .navbar {
             display: flex;
@@ -267,50 +199,56 @@
             color: white;
         }
 
-        .logo-text span {
-            color: var(--gold);
-        }
+            .logo-text span {
+                color: var(--gold);
+            }
 
         .nav-links {
             display: flex;
             gap: 30px;
+            transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
         }
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-            transition: var(--transition);
-            position: relative;
-            padding: 5px 0;
-        }
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1rem;
+                transition: var(--transition);
+                position: relative;
+                padding: 5px 0;
+            }
 
-        .nav-links a:hover {
-            color: var(--gold);
-        }
+                .nav-links a:hover {
+                    color: var(--gold);
+                }
 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gold);
-            transition: var(--transition);
-        }
+                .nav-links a::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: var(--gold);
+                    transition: var(--transition);
+                }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
+                .nav-links a:hover::after {
+                    width: 100%;
+                }
 
         .mobile-menu {
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
             color: white;
+            transition: transform 0.3s ease;
         }
+
+            .mobile-menu.active {
+                transform: rotate(90deg);
+            }
 
         /* ===== HERO SECTION ===== */
         .hero {
@@ -322,8 +260,7 @@
             padding: 100px 20px 20px;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(rgba(25, 25, 112, 0.7), rgba(25, 25, 112, 0.7)), 
-                        url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(25, 25, 112, 0.7), rgba(25, 25, 112, 0.7)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
             color: white;
         }
 
@@ -349,6 +286,7 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
+        /* ===== BUTTONS ===== */
         .btn {
             display: inline-block;
             padding: 14px 32px;
@@ -368,11 +306,11 @@
             z-index: 1;
         }
 
-        .btn:hover {
-            color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
-        }
+            .btn:hover {
+                color: white;
+                transform: translateY(-3px);
+                box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+            }
 
         .btn-outline {
             background: transparent;
@@ -381,10 +319,10 @@
             margin-left: 15px;
         }
 
-        .btn-outline:hover {
-            background: var(--gold);
-            color: white;
-        }
+            .btn-outline:hover {
+                background: var(--gold);
+                color: white;
+            }
 
         /* ===== SECTION STYLING ===== */
         section {
@@ -397,31 +335,73 @@
             margin-bottom: 60px;
         }
 
-        .section-title h2 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            position: relative;
-            display: inline-block;
+            .section-title h2 {
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+                position: relative;
+                display: inline-block;
+            }
+
+                .section-title h2::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 4px;
+                    background: var(--gold);
+                    border-radius: 2px;
+                }
+
+            .section-title p {
+                max-width: 700px;
+                margin: 20px auto 0;
+                font-size: 1.1rem;
+                color: var(--charcoal);
+            }
+
+        /* ===== BREADCRUMBS ===== */
+        .breadcrumbs {
+            padding: 1rem 0;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
         }
 
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--gold);
-            border-radius: 2px;
-        }
+            .breadcrumbs ol {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
 
-        .section-title p {
-            max-width: 700px;
-            margin: 20px auto 0;
-            font-size: 1.1rem;
-            color: var(--charcoal);
-        }
+            .breadcrumbs li {
+                display: flex;
+                align-items: center;
+                font-size: 0.9rem;
+            }
+
+                .breadcrumbs li:not(:last-child)::after {
+                    content: '/';
+                    margin: 0 0.5rem;
+                    color: var(--gold);
+                }
+
+            .breadcrumbs a {
+                color: var(--navy);
+                text-decoration: none;
+                transition: var(--transition);
+            }
+
+                .breadcrumbs a:hover {
+                    color: var(--gold);
+                }
+
+            .breadcrumbs [aria-current] {
+                color: var(--gold);
+                font-weight: 500;
+            }
 
         /* ===== SERVICES SECTION ===== */
         .services-container {
@@ -443,11 +423,11 @@
             border: 1px solid rgba(212, 175, 55, 0.1);
         }
 
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            border-color: var(--gold);
-        }
+            .service-card:hover {
+                transform: translateY(-10px) scale(1.02);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+                border-color: var(--gold);
+            }
 
         .service-icon {
             width: 80px;
@@ -484,6 +464,7 @@
             object-fit: cover;
             border-radius: 8px;
             margin-bottom: 20px;
+            transition: var(--transition);
         }
 
         /* ===== PORTFOLIO SECTION ===== */
@@ -505,7 +486,12 @@
             overflow: hidden;
             height: 300px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
         }
+
+            .portfolio-item:hover {
+                transform: scale(1.03);
+            }
 
         .portfolio-img {
             width: 100%;
@@ -554,7 +540,13 @@
             padding: 30px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: var(--transition);
         }
+
+            .testimonial-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            }
 
         .testimonial-content {
             font-style: italic;
@@ -611,17 +603,17 @@
             padding: 40px;
         }
 
-        .about-content h3 {
-            font-size: 1.8rem;
-            margin-bottom: 25px;
-            color: var(--navy);
-        }
+            .about-content h3 {
+                font-size: 1.8rem;
+                margin-bottom: 25px;
+                color: var(--navy);
+            }
 
-        .about-content p {
-            margin-bottom: 20px;
-            line-height: 1.8;
-            color: var(--charcoal);
-        }
+            .about-content p {
+                margin-bottom: 20px;
+                line-height: 1.8;
+                color: var(--charcoal);
+            }
 
         /* ===== BLOG SECTION ===== */
         .blog {
@@ -644,15 +636,16 @@
             transition: var(--transition);
         }
 
-        .blog-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
+            .blog-card:hover {
+                transform: translateY(-10px) rotate(1deg);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            }
 
         .blog-img {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            transition: var(--transition);
         }
 
         .blog-content {
@@ -681,11 +674,15 @@
             font-weight: 600;
             text-decoration: none;
             transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
         }
 
-        .read-more:hover {
-            color: var(--gold);
-        }
+            .read-more:hover {
+                color: var(--gold);
+                gap: 10px;
+            }
 
         /* ===== CONTACT SECTION ===== */
         .contact-grid {
@@ -703,48 +700,73 @@
             min-width: 300px;
         }
 
-        .contact-form form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+            .contact-form form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
 
-        .contact-form .form-group input,
-        .contact-form .form-group select,
-        .contact-form .form-group textarea {
+            .contact-form .form-group input,
+            .contact-form .form-group select,
+            .contact-form .form-group textarea {
+                width: 100%;
+                padding: 12px;
+                border-radius: 8px;
+                border: 1px solid rgba(25, 25, 112, 0.2);
+                background: white;
+                color: var(--charcoal);
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                transition: var(--transition);
+            }
+
+                .contact-form .form-group input:focus,
+                .contact-form .form-group select:focus,
+                .contact-form .form-group textarea:focus {
+                    border-color: var(--gold);
+                    outline: none;
+                    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+                }
+
+            .contact-form .btn {
+                margin-top: 10px;
+                padding: 12px 20px;
+                border: none;
+                background: var(--gold);
+                color: var(--navy);
+                border-radius: 8px;
+                cursor: pointer;
+                transition: var(--transition);
+                font-weight: 600;
+            }
+
+                .contact-form .btn:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+                }
+
+        .form-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid rgba(25, 25, 112, 0.2);
-            background: white;
-            color: var(--charcoal);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            transition: var(--transition);
+            height: 100%;
+            background: rgba(25, 25, 112, 0.9);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            color: white;
         }
 
-        .contact-form .form-group input:focus,
-        .contact-form .form-group select:focus,
-        .contact-form .form-group textarea:focus {
-            border-color: var(--gold);
-            outline: none;
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
-        }
-
-        .contact-form .btn {
-            margin-top: 10px;
-            padding: 12px 20px;
-            border: none;
-            background: var(--gold);
-            color: var(--navy);
-            border-radius: 8px;
-            cursor: pointer;
-            transition: var(--transition);
-            font-weight: 600;
-        }
-
-        .contact-form .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        .loader-spinner {
+            border: 5px solid rgba(212, 175, 55, 0.3);
+            border-top: 5px solid var(--gold);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
         }
 
         .contact-info {
@@ -772,16 +794,16 @@
             margin-bottom: 5px;
         }
 
-        .contact-text p, 
+        .contact-text p,
         .contact-text a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             transition: var(--transition);
         }
 
-        .contact-text a:hover {
-            color: var(--gold);
-        }
+            .contact-text a:hover {
+                color: var(--gold);
+            }
 
         .map-wrapper {
             width: 100%;
@@ -832,9 +854,9 @@
             color: white;
         }
 
-        .footer-logo-text span {
-            color: var(--gold);
-        }
+            .footer-logo-text span {
+                color: var(--gold);
+            }
 
         .footer-about p {
             color: rgba(255, 255, 255, 0.7);
@@ -847,22 +869,23 @@
             gap: 15px;
         }
 
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            transition: var(--transition);
-        }
+            .social-links a {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                transition: var(--transition);
+            }
 
-        .social-links a:hover {
-            background: var(--gold);
-            color: var(--navy);
-        }
+                .social-links a:hover {
+                    background: var(--gold);
+                    color: var(--navy);
+                    transform: translateY(-3px) scale(1.1);
+                }
 
         .footer-links h4 {
             font-size: 1.3rem;
@@ -871,16 +894,16 @@
             color: white;
         }
 
-        .footer-links h4::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 40px;
-            height: 3px;
-            background: var(--gold);
-            border-radius: 2px;
-        }
+            .footer-links h4::after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                width: 40px;
+                height: 3px;
+                background: var(--gold);
+                border-radius: 2px;
+            }
 
         .footer-links ul {
             list-style: none;
@@ -896,10 +919,10 @@
             transition: var(--transition);
         }
 
-        .footer-links a:hover {
-            color: var(--gold);
-            padding-left: 5px;
-        }
+            .footer-links a:hover {
+                color: var(--gold);
+                padding-left: 5px;
+            }
 
         .copyright {
             text-align: center;
@@ -927,11 +950,42 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 16px rgba(0, 0, 0, 0.3), 0 0 25px #25D366, 0 0 50px #25D366;
-            color: white;
-            text-decoration: none;
+            .whatsapp-float:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 16px rgba(0, 0, 0, 0.3), 0 0 25px #25D366, 0 0 50px #25D366;
+                color: white;
+                text-decoration: none;
+            }
+
+        /* ===== STICKY CTA ===== */
+        .sticky-cta {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            display: none;
+            animation: pulse 2s infinite;
+        }
+
+            .sticky-cta .btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+                white-space: nowrap;
+            }
+
+        /* ===== PAGE TRANSITION ===== */
+        #page-transition {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--navy);
+            z-index: 9998;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
         }
 
         /* ===== RESPONSIVE DESIGN ===== */
@@ -945,15 +999,15 @@
             .about-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .section-title h2 {
                 font-size: 2rem;
             }
-            
+
             .nav-links {
                 display: none;
                 position: absolute;
@@ -965,18 +1019,36 @@
                 padding: 20px 0;
                 text-align: center;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                height: 0;
+                overflow: hidden;
             }
-            
-            .nav-links.active {
-                display: flex;
-            }
-            
+
+                .nav-links.active {
+                    transform: translateY(0);
+                    opacity: 1;
+                    height: auto;
+                    display: flex;
+                }
+
+                .nav-links a {
+                    padding: 15px 20px;
+                    font-size: 1.1rem;
+                }
+
             .mobile-menu {
                 display: block;
             }
-            
+
             .about-image {
                 min-height: 300px;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 15px;
+                display: block;
             }
         }
 
@@ -984,18 +1056,28 @@
             section {
                 padding: 80px 5%;
             }
-            
+
             .hero h1 {
                 font-size: 2.3rem;
             }
-            
+
             .section-title h2 {
                 font-size: 1.8rem;
             }
-            
-            .btn-outline {
-                margin-left: 0;
-                margin-top: 15px;
+
+            .sticky-cta {
+                display: block;
+                width: 90%;
+                max-width: 300px;
+            }
+
+                .sticky-cta .btn {
+                    width: 100%;
+                }
+        }
+
+        @media (min-width: 769px) {
+            header.scrolled .sticky-cta {
                 display: block;
             }
         }
@@ -1005,21 +1087,21 @@
                 font-size: 2rem;
                 line-height: 1.2;
             }
-            
+
             .btn {
                 padding: 12px 25px;
                 font-size: 0.9rem;
             }
-            
+
             .section-title h2 {
                 font-size: 1.6rem;
             }
-            
+
             .contact-form,
             .contact-info {
                 flex: 1 1 100%;
             }
-            
+
             .footer-logo {
                 flex-direction: column;
                 align-items: flex-start;
@@ -1034,12 +1116,20 @@
                 height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <!-- Page Transition Overlay -->
+    <div id="page-transition"></div>
+
+    <!-- Form Loader -->
+    <div class="form-loader">
+        <div class="loader-spinner"></div>
+        <p>Processing your request...</p>
+    </div>
+
     <!-- Header -->
     <header id="header">
         <nav class="navbar">
             <a href="#" class="logo">
                 <img src="https://github.com/fasciola/fourpillars/raw/main/logo.png" alt="Four Pillars Logo" class="logo-img">
-
             </a>
             <div class="nav-links">
                 <a href="#services">Services</a>
@@ -1054,35 +1144,16 @@
             </div>
         </nav>
     </header>
-    <!-- Hero Section with Optimized Video Background -->
+
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- Video Background Container -->
-        <div class="video-container">
-            <!-- Optimized Video with Multiple Sources -->
-            <video class="bg-video" autoplay muted loop playsinline
-                   poster="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
-               
-              
-                <source src="hero-video-file.mp4" type="video/mp4">
-                <!-- Fallback Text -->
-                Your browser does not support HTML5 video.
-            </video>
-
-            <!-- Color Overlay with Gradient -->
-            <div class="video-overlay" aria-hidden="true"></div>
-
-            <!-- Fallback Image (Shown if video fails) -->
-            <div class="fallback-image"></div>
-        </div>
-
-        <!-- Hero Content -->
         <div class="hero-content">
             <div class="content-wrapper fade-in">
                 <h1 class="hero-title">Elevate Your Brand With Digital Marketing Excellence</h1>
                 <p class="hero-subtitle">Strategic marketing solutions crafted for premium brands seeking exceptional growth and prestige in the digital space</p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                    <a href="#services" class="btn btn-outline">Our Services</a>
                 </div>
             </div>
         </div>
@@ -1091,51 +1162,54 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="section-title slide-up">
-            <h2>Our Premium Services</h2>
-            <p>Tailored digital marketing solutions designed for luxury brands and high-end businesses</p>
+            <h2>Our Exquisite Services</h2>
+            <p>Bespoke digital marketing solutions crafted exclusively for luxury brands and elite businesses</p>
         </div>
         <div class="services-container">
             <!-- Service 1 -->
             <div class="service-card fade-in delay-1">
                 <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury SEO" class="service-img">
                 <h3>Luxury SEO</h3>
-                <p>Premium search optimization strategies to ensure your brand dominates search results with sophistication and style.</p>
+                <p>Elevate your brand's visibility with refined search optimization, blending sophistication with strategic dominance.</p>
             </div>
 
             <!-- Service 2 -->
             <div class="service-card fade-in delay-2">
                 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Paid Media" class="service-img">
                 <h3>Paid Media</h3>
-                <p>Exclusive paid advertising campaigns that target high-net-worth individuals and luxury consumers.</p>
+                <p>Curated advertising campaigns targeting affluent audiences with precision and elegance.</p>
             </div>
 
             <!-- Service 3 -->
             <div class="service-card fade-in delay-3">
                 <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Content Creation" class="service-img">
                 <h3>Content Creation</h3>
-                <p>Elegant, high-end content that tells your brand story with sophistication and appeals to discerning audiences.</p>
+                <p>Artfully crafted content that narrates your brand's legacy with elegance and allure.</p>
             </div>
 
             <!-- Service 4 -->
             <div class="service-card fade-in delay-4">
                 <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Brand Strategy" class="service-img">
                 <h3>Brand Strategy</h3>
-                <p>Premium branding services to position your business as the undisputed leader in your luxury niche.</p>
+                <p>Strategic branding to establish your business as the pinnacle of luxury in your market.</p>
             </div>
 
             <!-- Service 5 -->
             <div class="service-card fade-in delay-1">
                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Web Design" class="service-img">
                 <h3>Web Design</h3>
-                <p>Bespoke website design that reflects the exclusivity and elegance of your luxury brand.</p>
+                <p>Custom-designed websites that embody the exclusivity and refinement of your brand.</p>
             </div>
 
             <!-- Service 6 -->
             <div class="service-card fade-in delay-2">
                 <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Social Media" class="service-img">
                 <h3>Social Media</h3>
-                <p>Sophisticated social media management that enhances your brand's prestige and engagement.</p>
+                <p>Refined social media strategies to amplify your brand's prestige and connect with elite audiences.</p>
             </div>
+        </div>
+        <div class="text-center mt-12">
+            <a href="#contact" class="btn">Explore Our Services</a>
         </div>
     </section>
 
@@ -1262,43 +1336,43 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
     <section id="blog" class="blog">
         <div class="section-title slide-up">
             <h2>Latest Insights</h2>
             <p>Expert perspectives on digital marketing</p>
         </div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="#home">Home</a></li>
+                <li aria-current="page">Insights</li>
+            </ol>
+        </nav>
         <div class="blog-grid">
-            <!-- Blog Post 1 -->
             <div class="blog-card fade-in delay-1">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Marketing Analytics" class="blog-img">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Luxury Psychology" class="blog-img">
                 <div class="blog-content">
                     <div class="blog-date">June 15, 2023</div>
                     <h3>The Psychology of Luxury Purchasing Online</h3>
-                    <p>Understanding how high-net-worth consumers make purchasing decisions in digital spaces and how to optimize your strategy accordingly.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    <p>How high-net-worth consumers make digital purchasing decisions and how to optimize your strategy.</p>
+                    <a href="psychology-of-luxury-purchasing.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-
-            <!-- Blog Post 2 -->
             <div class="blog-card fade-in delay-2">
                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SEO Strategy" class="blog-img">
                 <div class="blog-content">
-                    <div class="blog-date">May 28, 2023</div>
-                    <h3>SEO Strategies for Luxury Brands</h3>
-                    <p>Why traditional SEO approaches often fail premium brands and how to adapt your strategy for the luxury market.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    <div class="blog-date">June 15, 2023</div>
+                    <h3>Advanced SEO Strategies for Luxury Brands</h3>
+                    <p>Why traditional SEO approaches often fail premium brands and how to adapt your strategy.</p>
+                    <a href="advanced-seo-luxury-brands.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-
-            <!-- Blog Post 3 -->
             <div class="blog-card fade-in delay-3">
                 <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Website Design" class="blog-img">
                 <div class="blog-content">
-                    <div class="blog-date">May 10, 2023</div>
+                    <div class="blog-date">June 15, 2023</div>
                     <h3>Designing for Exclusivity</h3>
-                    <p>The key elements that make a website feel premium and how to balance aesthetics with functionality for luxury consumers.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    <p>The key elements that make a website feel premium and how to balance aesthetics with functionality.</p>
+                    <a href="designing-for-exclusivity.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -1442,6 +1516,12 @@
         </div>
     </footer>
 
+    <!-- Sticky CTA -->
+    <div class="sticky-cta">
+        <a href="#contact" class="btn">Get a Free Consultation</a>
+    </div>
+
+    <!-- WhatsApp Float -->
     <a href="https://wa.me/971522797168" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -1452,31 +1532,57 @@
         const navLinks = document.querySelector('.nav-links');
         mobileMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            mobileMenu.innerHTML = navLinks.classList.contains('active') ?
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
 
         // Sticky Header
         const header = document.getElementById('header');
+        const stickyCta = document.querySelector('.sticky-cta');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
                 header.classList.add('scrolled');
+                if (window.innerWidth > 768) {
+                    stickyCta.style.display = 'block';
+                }
             } else {
                 header.classList.remove('scrolled');
+                if (window.innerWidth > 768) {
+                    stickyCta.style.display = 'none';
+                }
             }
         });
 
-        // Smooth Scrolling
+        // Smooth Scrolling with Page Transition
+        const pageTransition = document.getElementById('page-transition');
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return;
+
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
+                pageTransition.style.opacity = '1';
+
+                setTimeout(() => {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                    pageTransition.style.opacity = '0';
                     navLinks.classList.remove('active');
-                }
+                    mobileMenu.classList.remove('active');
+                    mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
+                }, 300);
             });
+        });
+
+        // Form Loader
+        const formLoader = document.querySelector('.form-loader');
+        document.querySelector('form').addEventListener('submit', function (e) {
+            formLoader.style.display = 'flex';
         });
 
         // Scroll Animations
