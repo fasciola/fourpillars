@@ -99,137 +99,117 @@
     <!-- End Facebook Pixel Code -->
     
     <style>
-        /* ===== VIDEO BANNER SECTION ===== */
-        .video-banner {
-            position: relative;
+        /* ===== LUXURY VIDEO BANNER WITH TEXT ABOVE ===== */
+        .video-banner-vertical {
             width: 100%;
-            height: 80vh;
-            min-height: 600px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 100px 0;
-            isolation: isolate;
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
         }
 
-            .video-banner video {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                min-width: 100%;
-                min-height: 100%;
-                width: auto;
-                height: auto;
-                z-index: 1;
-                object-fit: cover;
+        .video-text-content {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+            .video-text-content h2 {
+                font-size: clamp(2rem, 5vw, 3.5rem);
+                margin-bottom: 20px;
+                color: var(--navy);
+                line-height: 1.3;
             }
 
-        .video-banner-overlay {
+            .video-text-content .gold-gradient {
+                background: var(--gold-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+            .video-text-content p {
+                font-size: clamp(1rem, 2vw, 1.4rem);
+                color: var(--charcoal);
+                max-width: 700px;
+                margin: 0 auto;
+                line-height: 1.6;
+            }
+
+        .video-container {
+            width: 100%;
+            height: 60vh;
+            min-height: 400px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+            .video-container video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+        .video-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to right, rgba(25, 25, 112, 0.3), rgba(212, 175, 55, 0.3));
-            z-index: 2;
+            background: linear-gradient(135deg, rgba(25, 25, 112, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
         }
 
-        .video-banner-content {
-            position: relative;
-            z-index: 3;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .video-banner h2 {
-            font-size: 3.5rem;
-            margin-bottom: 25px;
-            color: white;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-            line-height: 1.3;
-        }
-
-        .video-banner p {
-            font-size: 1.4rem;
-            margin-bottom: 40px;
-            color: rgba(255, 255, 255, 0.9);
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .video-banner .cta-buttons {
+        .video-cta-buttons {
             display: flex;
             gap: 20px;
             justify-content: center;
+            margin-top: 40px;
             flex-wrap: wrap;
         }
 
-        /* Responsive adjustments */
-        @media (max-width: 1200px) {
-            .video-banner h2 {
-                font-size: 3rem;
-            }
-        }
-
+        /* Responsive Adjustments */
         @media (max-width: 992px) {
-            .video-banner {
-                height: 70vh;
-                min-height: 500px;
+            .video-container {
+                height: 50vh;
             }
 
-                .video-banner h2 {
-                    font-size: 2.5rem;
-                }
-
-                .video-banner p {
-                    font-size: 1.2rem;
-                }
+            .video-text-content {
+                margin-bottom: 30px;
+            }
         }
 
         @media (max-width: 768px) {
-            .video-banner {
-                height: 60vh;
-                min-height: 400px;
-                margin: 60px 0;
+            .video-banner-vertical {
+                margin: 60px auto;
             }
 
-                .video-banner h2 {
-                    font-size: 2rem;
-                }
+            .video-container {
+                height: 40vh;
+                min-height: 300px;
+            }
 
-                .video-banner p {
-                    font-size: 1.1rem;
-                    margin-bottom: 30px;
-                }
+            .video-cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                margin-top: 30px;
+            }
 
-                .video-banner .cta-buttons {
-                    flex-direction: column;
-                    gap: 15px;
-                }
-
-            .btn-outline {
-                margin-left: 0;
+            .btn, .btn-outline {
+                width: 100%;
+                max-width: 280px;
             }
         }
 
         @media (max-width: 576px) {
-            .video-banner {
-                height: 50vh;
+            .video-container {
+                height: 35vh;
             }
 
-                .video-banner h2 {
-                    font-size: 1.8rem;
-                }
-
-                .video-banner p {
-                    font-size: 1rem;
-                }
+            .video-text-content {
+                margin-bottom: 25px;
+            }
         }
         /* ===== VARIABLES & BASE STYLES ===== */
         :root {
@@ -1320,20 +1300,26 @@
         </div>
     </section>
     <!-- Video Banner Section -->
-    <section class="video-banner fade-in">
-        <video autoplay muted loop playsinline>
-            <source src="video-banner.mp4" type="video/mp4">
-            <!-- Add additional source formats if needed -->
-            Your browser does not support the video tag.
-        </video>
-        <div class="video-banner-overlay"></div>
-        <div class="video-banner-content">
-            
+    <section class="video-banner-vertical">
+        <!-- Text Content Above Video -->
+        <div class="video-text-content">
+            <h2><span class="gold-gradient">Boost Your Brand</span> With Premium Digital Excellence</h2>
             <p>Our bespoke strategies elevate luxury brands to new heights in Dubai's competitive digital landscape</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn">Get Exclusive Strategy</a>
-               
-            </div>
+        </div>
+
+        <!-- Video Container -->
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="video-banner.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- Buttons Below Video -->
+        <div class="video-cta-buttons">
+            <a href="#contact" class="btn">Get Exclusive Strategy</a>
+            
         </div>
     </section>
 
