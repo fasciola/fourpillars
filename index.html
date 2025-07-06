@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,6 +101,144 @@
     <!-- End Facebook Pixel Code -->
     
     <style>
+        /* Industries Section */
+        .industries {
+            padding: 100px 0;
+            background-color: #F8F5F2; /* Updated to match original light-bg */
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+            .section-header h2 {
+                font-size: 2.5rem;
+                color: #3E362E; /* Updated to dark-brown */
+                margin-bottom: 15px;
+                position: relative;
+                display: inline-block;
+            }
+
+                .section-header h2::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 4px;
+                    background: #93785B; /* Updated to light-brown */
+                    border-radius: 2px;
+                }
+
+            .section-header p {
+                max-width: 700px;
+                margin: 20px auto 0;
+                font-size: 1.15rem;
+                color: #865D36; /* Updated to medium-brown */
+            }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .industry-card {
+            background: #fff; /* Updated to white */
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(172, 137, 104, 0.2); /* Updated to beige with opacity */
+            overflow: hidden;
+        }
+
+            .industry-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            }
+
+        .industry-image {
+            width: 100%;
+            height: 375px;
+            object-fit: cover;
+            border-bottom: 3px solid #93785B; /* Updated to light-brown */
+        }
+
+        .industry-content {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .industry-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #3E362E; /* Updated to dark-brown */
+        }
+
+        .industry-card p {
+            color: #865D36; /* Updated to medium-brown */
+            font-size: 1rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 0;
+            background: linear-gradient(to bottom, #F8F5F2 0%, #fff 100%); /* Updated gradient */
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #fff; /* Updated to white */
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(172, 137, 104, 0.2); /* Updated to beige with opacity */
+        }
+
+            .feature-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+            }
+
+            .feature-card::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 5px;
+                height: 100%;
+                background: #93785B; /* Updated to light-brown */
+            }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #865D36; /* Updated to medium-brown */
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            color: #3E362E; /* Updated to dark-brown */
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: #865D36; /* Updated to medium-brown */
+            font-size: 1.05rem;
+        }
+
         /* ===== LUXURY VIDEO BANNER WITH TEXT ABOVE ===== */
         .video-banner-vertical {
             width: 100%;
@@ -740,7 +880,6 @@
             }
 
         /* ===== BLOG SECTION ===== */
-        /* ===== BLOG SECTION ===== */
         .blog {
             position: relative;
             padding: 100px 20px;
@@ -1319,7 +1458,150 @@
         <!-- Buttons Below Video -->
         <div class="video-cta-buttons">
             <a href="#contact" class="btn">Get Exclusive Strategy</a>
-            
+
+        </div>
+    </section>
+    <!-- Industries Section -->
+    <section class="industries" id="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We Help</h2>
+                <p>From local businesses to growing startups, we specialize in building impactful online presences</p>
+            </div>
+
+            <div class="industries-grid">
+                <!-- Real Estate -->
+                <div class="industry-card">
+                    <img src="real-estate.jpg" alt="Real Estate Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Real Estate</h3>
+                        <p>Showcase properties, generate leads, and build authority in your market</p>
+                    </div>
+                </div>
+
+                <!-- Beauty & Salons -->
+                <div class="industry-card">
+                    <img src="beauty-salons.jpg" alt="Beauty & Salons Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Beauty & Salons</h3>
+                        <p>Highlight services, showcase transformations, and book more appointments</p>
+                    </div>
+                </div>
+
+                <!-- Health & Wellness -->
+                <div class="industry-card">
+                    <img src="health-wellness.jpg" alt="Health & Wellness Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Health & Wellness</h3>
+                        <p>Build trust, share expertise, and attract health-conscious clients</p>
+                    </div>
+                </div>
+
+                <!-- E-commerce & Retail -->
+                <div class="industry-card">
+                    <img src="ecommerce-retail.jpg" alt="E-commerce & Retail Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>E-commerce & Retail</h3>
+                        <p>Drive sales, showcase products, and build brand loyalty</p>
+                    </div>
+                </div>
+
+                <!-- Restaurants & Cafes -->
+                <div class="industry-card">
+                    <img src="restaurants-cafes.jpg" alt="Restaurants & Cafes Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Restaurants & Cafes</h3>
+                        <p>Entice customers, showcase menus, and drive reservations</p>
+                    </div>
+                </div>
+
+                <!-- Education & Online Courses -->
+                <div class="industry-card">
+                    <img src="education-courses.jpg" alt="Education & Online Courses Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Education & Courses</h3>
+                        <p>Attract students, demonstrate value, and boost enrollments</p>
+                    </div>
+                </div>
+
+                <!-- Coaches & Consultants -->
+                <div class="industry-card">
+                    <img src="coaches-consultants.jpg" alt="Coaches & Consultants Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Coaches & Consultants</h3>
+                        <p>Establish authority, share insights, and attract premium clients</p>
+                    </div>
+                </div>
+
+                <!-- Influencers & Creators -->
+                <div class="industry-card">
+                    <img src="influencers-creators.jpg" alt="Influencers & Creators Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Influencers & Creators</h3>
+                        <p>Grow your following, boost engagement, and monetize your content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Social Media Services</h2>
+                <p>Comprehensive solutions designed to grow your brand and drive real business results</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Content Creation</h3>
+                    <p>Visually stunning posts that reflect your brand and drive engagement across all platforms.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Content Calendars</h3>
+                    <p>Consistent, timely calendars aligned with your goals and audience behavior.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Social Ads & Growth</h3>
+                    <p>Geo-targeted ads to reach your ideal customers and boost visibility.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Management</h3>
+                    <p>Build trust, encourage loyalty, and convert interest into action.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Clear monthly reports tracking growth, engagement, and ROI.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Platform Management</h3>
+                    <p>Full management of Instagram, Facebook, LinkedIn, TikTok, and more.</p>
+                </div>
+            </div>
         </div>
     </section>
 
