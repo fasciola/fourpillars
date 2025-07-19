@@ -16,352 +16,26 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://github.com/fasciola/fourpillars/raw/main/logo.png">
 
-    <!-- Google tag (gtag.js) - GA4 Measurement -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54ND7C10E4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-54ND7C10E4');
-    </script>
-
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "ProfessionalService",
-          "name": "Four Pillars",
-          "image": "https://github.com/fasciola/fourpillars/raw/main/logo.png",
-          "@id": "https://4pillars.ae/#G-54ND7C10E4",
-          "url": "https://4pillars.ae/",
-          "telephone": "+971522797168",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "RAKEZ Business Zone",
-            "addressLocality": "Ras Al Khaimah",
-            "addressRegion": "UAE",
-            "postalCode": "",
-            "addressCountry": "AE"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 25.498955918311317,
-            "longitude": 54.96526033722353
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Sunday",
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.instagram.com/fourpillarsfzllc/",
-            "https://www.facebook.com/profile.php?id=615933361599231"
-          ]
-        }
-    </script>
-
-    <!-- hreflang for future Arabic version -->
-    <link rel="alternate" hreflang="en" href="https://4pillars.ae/" />
-    <link rel="alternate" hreflang="ar" href="https://4pillars.ae/ar/" />
-    <link rel="alternate" hreflang="x-default" href="https://4pillars.ae/" />
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '762495109775754');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-             src="https://www.facebook.com/tr?id=762495109775754&ev=PageView&noscript=1" />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-    
     <style>
-        /* Industries Section */
-        .industries {
-            padding: 100px 0;
-            background-color: #F8F5F2; /* Updated to match original light-bg */
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-            .section-header h2 {
-                font-size: 2.5rem;
-                color: #3E362E; /* Updated to dark-brown */
-                margin-bottom: 15px;
-                position: relative;
-                display: inline-block;
-            }
-
-                .section-header h2::after {
-                    content: "";
-                    position: absolute;
-                    bottom: -10px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 80px;
-                    height: 4px;
-                    background: #93785B; /* Updated to light-brown */
-                    border-radius: 2px;
-                }
-
-            .section-header p {
-                max-width: 700px;
-                margin: 20px auto 0;
-                font-size: 1.15rem;
-                color: #865D36; /* Updated to medium-brown */
-            }
-
-        .industries-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .industry-card {
-            background: #fff; /* Updated to white */
-            border-radius: 16px;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(172, 137, 104, 0.2); /* Updated to beige with opacity */
-            overflow: hidden;
-        }
-
-            .industry-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            }
-
-        .industry-image {
-            width: 100%;
-            height: 375px;
-            object-fit: cover;
-            object-position: top center;
-            border-bottom: 3px solid #93785B; /* Updated to light-brown */
-        }
-
-        .industry-content {
-            padding: 25px;
-            text-align: center;
-        }
-
-        .industry-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: #3E362E; /* Updated to dark-brown */
-        }
-
-        .industry-card p {
-            color: #865D36; /* Updated to medium-brown */
-            font-size: 1rem;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 100px 0;
-            background: linear-gradient(to bottom, #F8F5F2 0%, #fff 100%); /* Updated gradient */
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .feature-card {
-            background: #fff; /* Updated to white */
-            padding: 40px 30px;
-            border-radius: 16px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(172, 137, 104, 0.2); /* Updated to beige with opacity */
-        }
-
-            .feature-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-            }
-
-            .feature-card::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 5px;
-                height: 100%;
-                background: #93785B; /* Updated to light-brown */
-            }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            color: #865D36; /* Updated to medium-brown */
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-
-        .feature-card h3 {
-            color: #3E362E; /* Updated to dark-brown */
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        .feature-card p {
-            color: #865D36; /* Updated to medium-brown */
-            font-size: 1.05rem;
-        }
-
-        /* ===== LUXURY VIDEO BANNER WITH TEXT ABOVE ===== */
-        .video-banner-vertical {
-            width: 100%;
-            max-width: 1400px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
-
-        .video-text-content {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-            .video-text-content h2 {
-                font-size: clamp(2rem, 5vw, 3.5rem);
-                margin-bottom: 20px;
-                color: var(--navy);
-                line-height: 1.3;
-            }
-
-            .video-text-content .gold-gradient {
-                background: var(--gold-gradient);
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-            }
-
-            .video-text-content p {
-                font-size: clamp(1rem, 2vw, 1.4rem);
-                color: var(--charcoal);
-                max-width: 700px;
-                margin: 0 auto;
-                line-height: 1.6;
-            }
-
-        .video-container {
-            width: 100%;
-            height: 60vh;
-            min-height: 400px;
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
-
-            .video-container video {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(25, 25, 112, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
-        }
-
-        .video-cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 40px;
-            flex-wrap: wrap;
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 992px) {
-            .video-container {
-                height: 50vh;
-            }
-
-            .video-text-content {
-                margin-bottom: 30px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .video-banner-vertical {
-                margin: 60px auto;
-            }
-
-            .video-container {
-                height: 40vh;
-                min-height: 300px;
-            }
-
-            .video-cta-buttons {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-                margin-top: 30px;
-            }
-
-            .btn, .btn-outline {
-                width: 100%;
-                max-width: 280px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .video-container {
-                height: 35vh;
-            }
-
-            .video-text-content {
-                margin-bottom: 25px;
-            }
-        }
-        /* ===== VARIABLES & BASE STYLES ===== */
+        /* ===== GLOBAL VARIABLES & RESET ===== */
         :root {
-            --navy: #191970;
-            --navy-dark: #0f0f4d;
-            --gold: #D4AF37;
-            --gold-light: #E6C567;
-            --cream: #F5F5DC;
+            --navy: #141c3a;
+            --navy-dark: #0d1227;
+            --gold: #fcd581;
+            --gold-light: #ffdf9e;
+            --pearl: #f8f7f2;
+            --platinum: #e5e3dc;
+            --burgundy: #8d1b3d;
             --charcoal: #333333;
-            --transition: all 0.4s ease;
-            --gold-gradient: linear-gradient(135deg, #D4AF37, #F5D76E);
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --gold-gradient: linear-gradient(135deg, #fcd581, #ffdf9e);
+            --section-padding: 100px 5%;
         }
 
         * {
@@ -370,70 +44,53 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background: white;
+            font-family: 'Poppins', sans-serif;
+            background: var(--pearl);
             color: var(--charcoal);
             overflow-x: hidden;
-            min-height: 100vh;
-            position: relative;
+            line-height: 1.6;
         }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Playfair Display', serif;
             color: var(--navy);
-            letter-spacing: 0.5px;
             font-weight: 600;
+            line-height: 1.2;
         }
 
-        /* ===== ANIMATIONS ===== */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        p {
+            line-height: 1.7;
+            margin-bottom: 1em;
         }
 
-        .fade-in {
-            animation: fadeIn 0.8s ease forwards;
-            opacity: 0;
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
-        .slide-up {
-            animation: fadeIn 0.8s ease forwards;
-            animation-delay: 0.2s;
-            opacity: 0;
-            transform: translateY(30px);
+        section {
+            padding: var(--section-padding);
+            position: relative;
         }
 
-        .delay-1 {
-            animation-delay: 0.1s;
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        .delay-2 {
-            animation-delay: 0.2s;
+        /* ===== UTILITY CLASSES ===== */
+        .text-center {
+            text-align: center;
         }
 
-        .delay-3 {
-            animation-delay: 0.3s;
-        }
-
-        .delay-4 {
-            animation-delay: 0.4s;
-        }
-
-        /* ===== LUXURY ELEMENTS ===== */
         .gold-accent {
             color: var(--gold);
-        }
-
-        .gold-border {
-            border: 1px solid rgba(212, 175, 55, 0.3);
         }
 
         .gold-gradient {
@@ -444,25 +101,54 @@
         }
 
         .luxury-shadow {
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 15px rgba(212, 175, 55, 0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1), 0 0 20px rgba(252, 213, 129, 0.15);
         }
 
-        /* ===== HEADER & NAVIGATION ===== */
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes ripple {
+            0% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(2.5); opacity: 0; }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+
+        /* ===== HEADER ===== */
         header {
             position: fixed;
             top: 0;
+            left: 0;
             width: 100%;
             z-index: 1000;
-            padding: 15px 5%;
+            padding: 20px 5%;
             transition: var(--transition);
-            background: rgba(10, 10, 50, 0.95);
+            background: rgba(20, 28, 58, 0.95);
+            backdrop-filter: blur(10px);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-            header.scrolled {
-                padding: 10px 5%;
-                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-            }
+        header.scrolled {
+            padding: 15px 5%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
 
         .navbar {
             display: flex;
@@ -480,7 +166,7 @@
         }
 
         .logo-img {
-            height: 90px;
+            height: 80px;
             width: auto;
             transition: var(--transition);
         }
@@ -492,43 +178,43 @@
             color: white;
         }
 
-            .logo-text span {
-                color: var(--gold);
-            }
+        .logo-text span {
+            color: var(--gold);
+        }
 
         .nav-links {
             display: flex;
             gap: 30px;
         }
 
-            .nav-links a {
-                color: white;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 1rem;
-                transition: var(--transition);
-                position: relative;
-                padding: 5px 0;
-            }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
 
-                .nav-links a:hover {
-                    color: var(--gold);
-                }
+        .nav-links a:hover {
+            color: var(--gold);
+        }
 
-                .nav-links a::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 0;
-                    height: 2px;
-                    background: var(--gold);
-                    transition: var(--transition);
-                }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
 
-                .nav-links a:hover::after {
-                    width: 100%;
-                }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
 
         .mobile-menu {
             display: none;
@@ -537,75 +223,71 @@
             color: white;
         }
 
-        /* ===== ENHANCED HERO SECTION ===== */
+        /* ===== HERO SECTION ===== */
         .hero {
             position: relative;
-            min-height: 120vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 100px 20px 20px;
+            padding: 120px 20px 60px;
             overflow: hidden;
             color: white;
         }
 
-        /* Background Image Container with Parallax */
-        .hero-bg {
+        #particles-js {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 120vh;
-            z-index: 0;
-            will-change: transform;
-            background-image: url('hero.back.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            height: 100%;
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+            z-index: -2;
         }
 
-        /* Color Overlay */
         .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom right, rgba(25, 25, 112, 0.80), rgba(25, 25, 112, 0.80));
-            z-index: 1;
+            background: rgba(10, 10, 43, 0.7);
+            z-index: -1;
         }
 
-        /* Hero Content */
         .hero-content {
             position: relative;
-            z-index: 2;
+            z-index: 1;
             width: 100%;
             max-width: 1200px;
             padding: 2rem;
-            text-align: center;
-            margin-top: 10vh;
         }
 
         .hero h1 {
-            font-size: 4rem;
+            font-size: clamp(2.5rem, 5vw, 4rem);
             margin-bottom: 30px;
             color: white;
-            text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             line-height: 1.2;
         }
 
         .hero p {
-            font-size: 1.4rem;
+            font-size: clamp(1rem, 2vw, 1.4rem);
             margin-bottom: 50px;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
             color: rgba(255, 255, 255, 0.9);
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
-        /* Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== BUTTONS ===== */
         .btn {
             display: inline-block;
             padding: 16px 36px;
@@ -619,17 +301,18 @@
             letter-spacing: 1px;
             font-size: 1rem;
             border: none;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 20px rgba(252, 213, 129, 0.3);
             position: relative;
             overflow: hidden;
             z-index: 1;
         }
 
-            .btn:hover {
-                color: white;
-                transform: translateY(-3px);
-                box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
-            }
+        .btn:hover {
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(252, 213, 129, 0.4);
+            background: var(--burgundy);
+        }
 
         .btn-outline {
             background: transparent;
@@ -638,47 +321,67 @@
             margin-left: 20px;
         }
 
-            .btn-outline:hover {
-                background: var(--gold);
-                color: white;
-            }
-
-        /* ===== SECTION STYLING ===== */
-        section {
-            padding: 100px 5%;
-            position: relative;
+        .btn-outline:hover {
+            background: var(--gold);
+            color: var(--navy);
         }
 
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%, -50%);
+            transform-origin: 50% 50%;
+        }
+
+        .btn:hover::after {
+            animation: ripple 0.6s ease-out;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== SECTION TITLES ===== */
         .section-title {
             text-align: center;
             margin-bottom: 60px;
         }
 
-            .section-title h2 {
-                font-size: 2.5rem;
-                margin-bottom: 15px;
-                position: relative;
-                display: inline-block;
-            }
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
 
-                .section-title h2::after {
-                    content: '';
-                    position: absolute;
-                    bottom: -10px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 80px;
-                    height: 4px;
-                    background: var(--gold);
-                    border-radius: 2px;
-                }
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
 
-            .section-title p {
-                max-width: 700px;
-                margin: 20px auto 0;
-                font-size: 1.1rem;
-                color: var(--charcoal);
-            }
+        .section-title p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-size: 1.1rem;
+            color: var(--charcoal);
+        }
 
         /* ===== SERVICES SECTION ===== */
         .services-container {
@@ -691,48 +394,21 @@
 
         .service-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             transition: var(--transition);
             text-align: center;
             padding: 40px 30px;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(252, 213, 129, 0.1);
+            position: relative;
+            z-index: 1;
         }
 
-            .service-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-                border-color: var(--gold);
-            }
-
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            background: rgba(212, 175, 55, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px;
-            font-size: 2rem;
-            color: var(--gold);
-            transition: var(--transition);
-        }
-
-        .service-card:hover .service-icon {
-            background: var(--gold);
-            color: white;
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .service-card p {
-            color: var(--charcoal);
-            line-height: 1.7;
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--gold);
         }
 
         .service-img {
@@ -741,13 +417,95 @@
             object-fit: cover;
             border-radius: 8px;
             margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-img {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--navy);
+        }
+
+        .service-card p {
+            color: var(--charcoal);
+            line-height: 1.7;
+        }
+
+        /* ===== INDUSTRIES SECTION ===== */
+        .industries {
+            background-color: var(--platinum);
+        }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .industry-card {
+            background: white;
+            border-radius: 16px;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(252, 213, 129, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .industry-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(130deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.15) 60%, rgba(255, 255, 255, 0) 80%);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+
+        .industry-card:hover::after {
+            transform: translateX(100%);
+        }
+
+        .industry-image {
+            width: 100%;
+            height: 375px;
+            object-fit: cover;
+            object-position: top center;
+            border-bottom: 3px solid var(--gold-light);
+            display: block;
+            transition: var(--transition);
+        }
+
+        .industry-card:hover .industry-image {
+            transform: scale(1.05);
+        }
+
+        .industry-content {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .industry-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--navy);
+        }
+
+        .industry-card p {
+            color: var(--charcoal);
+            font-size: 1rem;
         }
 
         /* ===== PORTFOLIO SECTION ===== */
-        .portfolio {
-            background: var(--cream);
-        }
-
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -758,21 +516,27 @@
 
         .portfolio-item {
             position: relative;
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
             height: 300px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
 
         .portfolio-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: var(--transition);
         }
 
         .portfolio-item:hover .portfolio-img {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
 
         .portfolio-overlay {
@@ -780,7 +544,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(to top, rgba(25, 25, 112, 0.9), transparent);
+            background: linear-gradient(to top, rgba(20, 28, 58, 0.9), transparent);
             color: white;
             padding: 30px 20px 20px;
             transform: translateY(100%);
@@ -796,117 +560,152 @@
             margin-bottom: 10px;
         }
 
-        /* ===== TESTIMONIALS SECTION ===== */
-        .testimonials-container {
-            max-width: 1000px;
-            margin: 0 auto;
+        /* ===== FEATURES SECTION ===== */
+        .features {
+            background: linear-gradient(to bottom, var(--platinum) 0%, var(--pearl) 100%);
+        }
+
+        .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
-        .testimonial-card {
+        .feature-card {
             background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(212, 175, 55, 0.1);
-        }
-
-        .testimonial-content {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: var(--charcoal);
-            line-height: 1.7;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-        }
-
-        .author-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 15px;
-            border: 2px solid var(--gold);
-        }
-
-        .author-info h4 {
-            margin-bottom: 5px;
-            font-size: 1.1rem;
-        }
-
-        .author-info p {
-            color: var(--gold);
-            font-size: 0.9rem;
-        }
-
-        /* ===== ABOUT SECTION ===== */
-        .about-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
+            padding: 40px 30px;
             border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(252, 213, 129, 0.1);
         }
 
-        .about-image {
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
             height: 100%;
+            background: var(--gold);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover .feature-icon {
+            animation: float 2s ease infinite;
+        }
+
+        .feature-card h3 {
+            color: var(--navy);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: var(--charcoal);
+            font-size: 1.05rem;
+        }
+
+        /* ===== VIDEO BANNER ===== */
+        .video-banner-vertical {
+            width: 100%;
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .video-text-content {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .video-text-content h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+            color: var(--navy);
+            line-height: 1.3;
+        }
+
+        .video-text-content p {
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            color: var(--charcoal);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 60vh;
             min-height: 400px;
-            background: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=c=crop&w=1470&q=80') no-repeat center center/cover;
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
         }
 
-        .about-content {
-            padding: 40px;
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: var(--transition);
         }
 
-            .about-content h3 {
-                font-size: 1.8rem;
-                margin-bottom: 25px;
-                color: var(--navy);
-            }
+        .video-container:hover video {
+            transform: scale(1.05);
+        }
 
-            .about-content p {
-                margin-bottom: 20px;
-                line-height: 1.8;
-                color: var(--charcoal);
-            }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(20, 28, 58, 0.2) 0%, rgba(252, 213, 129, 0.1) 100%);
+        }
+
+        .video-cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
 
         /* ===== BLOG SECTION ===== */
         .blog {
             position: relative;
             padding: 100px 20px;
-            background: var(--cream); /* Fallback color */
-            isolation: isolate; /* Creates new stacking context */
+            background: var(--pearl);
+            isolation: isolate;
         }
 
-            .blog::before {
-                content: '';
-                position: absolute;
-                inset: 0;
-                background-image: url('blog.bg.png');
-                background-size: cover;
-                background-position: center;
-                background-attachment: fixed;
-                opacity: 0.4;
-                z-index: -1;
-            }
-
-            .blog::after {
-                content: '';
-                position: absolute;
-                inset: 0;
-                background: rgba(248, 240, 220, 0.50); /* Light beige/yellow overlay */
-                z-index: -1;
-            }
+        .blog::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('blog.bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.1;
+            z-index: -1;
+        }
 
         .blog-grid {
             display: grid;
@@ -919,26 +718,29 @@
 
         .blog-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             transition: var(--transition);
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
         }
 
-            .blog-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
 
         .blog-img {
             width: 100%;
             height: 200px;
             object-fit: cover;
-            transition: transform 0.3s ease;
+            transition: var(--transition);
         }
 
         .blog-card:hover .blog-img {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
 
         .blog-content {
@@ -976,14 +778,51 @@
             gap: 5px;
         }
 
-            .read-more:hover {
-                color: var(--gold);
-                gap: 8px;
-            }
+        .read-more:hover {
+            color: var(--burgundy);
+            gap: 8px;
+        }
 
-            .read-more i {
-                transition: var(--transition);
-            }
+        /* ===== ABOUT SECTION ===== */
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-image {
+            height: 100%;
+            min-height: 400px;
+            background: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            transition: var(--transition);
+        }
+
+        .about-container:hover .about-image {
+            transform: scale(1.03);
+        }
+
+        .about-content {
+            padding: 40px;
+        }
+
+        .about-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--navy);
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: var(--charcoal);
+        }
 
         /* ===== CONTACT SECTION ===== */
         .contact-grid {
@@ -1001,54 +840,56 @@
             min-width: 300px;
         }
 
-            .contact-form form {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-            }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-            .contact-form .form-group input,
-            .contact-form .form-group select,
-            .contact-form .form-group textarea {
-                width: 100%;
-                padding: 12px;
-                border-radius: 8px;
-                border: 1px solid rgba(25, 25, 112, 0.2);
-                background: white;
-                color: var(--charcoal);
-                font-family: 'Plus Jakarta Sans', sans-serif;
-                transition: var(--transition);
-            }
+        .contact-form .form-group input,
+        .contact-form .form-group select,
+        .contact-form .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(252, 213, 129, 0.3);
+            background: white;
+            color: var(--charcoal);
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+        }
 
-                .contact-form .form-group input:focus,
-                .contact-form .form-group select:focus,
-                .contact-form .form-group textarea:focus {
-                    border-color: var(--gold);
-                    outline: none;
-                    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
-                }
+        .contact-form .form-group input:focus,
+        .contact-form .form-group select:focus,
+        .contact-form .form-group textarea:focus {
+            border-color: var(--gold);
+            outline: none;
+            box-shadow: 0 0 10px rgba(252, 213, 129, 0.2);
+        }
 
-            .contact-form .btn {
-                margin-top: 10px;
-                padding: 12px 20px;
-                border: none;
-                background: var(--gold);
-                color: var(--navy);
-                border-radius: 8px;
-                cursor: pointer;
-                transition: var(--transition);
-                font-weight: 600;
-            }
+        .contact-form .btn {
+            margin-top: 10px;
+            padding: 12px 20px;
+            border: none;
+            background: var(--gold);
+            color: var(--navy);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+        }
 
-                .contact-form .btn:hover {
-                    transform: translateY(-3px);
-                    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-                }
+        .contact-form .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(252, 213, 129, 0.4);
+            background: var(--burgundy);
+            color: white;
+        }
 
         .contact-info {
             background: var(--navy);
             padding: 40px;
-            border-radius: 12px;
+            border-radius: 16px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             color: white;
         }
@@ -1077,9 +918,9 @@
             transition: var(--transition);
         }
 
-            .contact-text a:hover {
-                color: var(--gold);
-            }
+        .contact-text a:hover {
+            color: var(--gold);
+        }
 
         .map-wrapper {
             width: 100%;
@@ -1130,9 +971,9 @@
             color: white;
         }
 
-            .footer-logo-text span {
-                color: var(--gold);
-            }
+        .footer-logo-text span {
+            color: var(--gold);
+        }
 
         .footer-about p {
             color: rgba(255, 255, 255, 0.7);
@@ -1145,22 +986,24 @@
             gap: 15px;
         }
 
-            .social-links a {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background: rgba(255, 255, 255, 0.1);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                transition: var(--transition);
-            }
+        .social-links a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
 
-                .social-links a:hover {
-                    background: var(--gold);
-                    color: var(--navy);
-                }
+        .social-links a:hover {
+            background: var(--gold);
+            color: var(--navy);
+            transform: translateY(-3px);
+        }
 
         .footer-links h4 {
             font-size: 1.3rem;
@@ -1169,16 +1012,16 @@
             color: white;
         }
 
-            .footer-links h4::after {
-                content: '';
-                position: absolute;
-                bottom: -8px;
-                left: 0;
-                width: 40px;
-                height: 3px;
-                background: var(--gold);
-                border-radius: 2px;
-            }
+        .footer-links h4::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
 
         .footer-links ul {
             list-style: none;
@@ -1194,16 +1037,16 @@
             transition: var(--transition);
         }
 
-            .footer-links a:hover {
-                color: var(--gold);
-                padding-left: 5px;
-            }
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
 
         .copyright {
             text-align: center;
             padding-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.7);
+            color: white;
         }
 
         /* ===== WHATSAPP FLOAT ===== */
@@ -1219,18 +1062,70 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 30px;
             z-index: 999;
             box-shadow: 0 0 12px rgba(0, 0, 0, 0.3), 0 0 20px #25D366, 0 0 40px #25D366;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: float 3s ease infinite;
         }
 
-            .whatsapp-float:hover {
-                transform: scale(1.1);
-                box-shadow: 0 0 16px rgba(0, 0, 0, 0.3), 0 0 25px #25D366, 0 0 50px #25D366;
-                color: white;
-                text-decoration: none;
-            }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.3), 0 0 25px #25D366, 0 0 50px #25D366;
+            color: white;
+            text-decoration: none;
+            animation: none;
+        }
+
+        .whatsapp-float i {
+            font-size: 32px;
+        }
+
+        /* ===== BACK TO TOP BUTTON ===== */
+        #backToTop {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            z-index: 998;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background: var(--gold);
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        #backToTop:hover {
+            transform: scale(1.05) translateY(-3px);
+            color: white;
+            background: var(--burgundy);
+        }
+
+        /* ===== SCROLL PROGRESS BAR ===== */
+        #scrollProgress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            width: 0;
+            background: var(--gold);
+            z-index: 2000;
+            transition: width 0.1s linear;
+        }
 
         /* ===== RESPONSIVE DESIGN ===== */
         @media (max-width: 1200px) {
@@ -1258,16 +1153,16 @@
                 top: 80px;
                 left: 0;
                 width: 100%;
-                background: rgba(10, 10, 50, 0.95);
+                background: rgba(20, 28, 58, 0.95);
                 flex-direction: column;
                 padding: 20px 0;
                 text-align: center;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             }
 
-                .nav-links.active {
-                    display: flex;
-                }
+            .nav-links.active {
+                display: flex;
+            }
 
             .mobile-menu {
                 display: block;
@@ -1303,6 +1198,14 @@
             .btn {
                 padding: 14px 30px;
             }
+
+            .industry-image {
+                height: 300px;
+            }
+
+            .video-container {
+                height: 50vh;
+            }
         }
 
         @media (max-width: 576px) {
@@ -1310,14 +1213,14 @@
                 min-height: 100vh;
             }
 
-                .hero h1 {
-                    font-size: 2rem;
-                    line-height: 1.2;
-                }
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
 
-                .hero p {
-                    font-size: 1.1rem;
-                }
+            .hero p {
+                font-size: 1.1rem;
+            }
 
             .btn {
                 padding: 12px 25px;
@@ -1337,49 +1240,52 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
+
+            .industry-image {
+                height: 240px;
+            }
+
+            .video-container {
+                height: 40vh;
+            }
         }
     </style>
 </head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GT-5R8NMN93"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<body id="top">
+    <div id="scrollProgress" aria-hidden="true"></div>
+
     <!-- Header -->
     <header id="header">
         <nav class="navbar">
-            <a href="#" class="logo">
+            <a href="#top" class="logo" aria-label="Four Pillars Home">
                 <img src="https://github.com/fasciola/fourpillars/raw/main/logo.png" alt="Four Pillars - Luxury Digital Marketing Agency UAE" class="logo-img">
-
             </a>
-            <div class="nav-links">
+            <div class="nav-links" role="navigation" aria-label="Primary">
                 <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#industries">Industries</a>
+                <a href="#portfolio">Demo Sites</a>
                 <a href="#about">About</a>
                 <a href="#blog">Insights</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div class="mobile-menu">
+            <div class="mobile-menu" aria-label="Open Menu">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section with Background Image -->
+    <!-- Hero Section -->
+    <!-- Hero Section with Particle Background -->
     <section id="home" class="hero">
-        <!-- Background Image with Parallax Effect -->
-        <div class="hero-bg" id="heroBackground"></div>
-
-        <!-- Color Overlay -->
+        <div id="particles-js"></div>
         <div class="hero-overlay"></div>
-
-        <!-- Hero Content -->
         <div class="hero-content">
             <div class="content-wrapper fade-in">
-                <h1 class="hero-title">Luxury Digital Marketing Agency in UAE | Premium Brand Growth</h1>
-                <p class="hero-subtitle">Dubai's premier digital marketing experts crafting sophisticated strategies for high-end brands across UAE and Middle East</p>
+                <h1 class="hero-title">Luxury Digital Marketing <span class="gold-gradient">Excellence</span></h1>
+                <p class="hero-subtitle">
+                    Dubai's premier digital marketing experts crafting sophisticated strategies
+                    for high-end brands across UAE and Middle East
+                </p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn">Get Started</a>
                     <a href="#services" class="btn btn-outline">Our Services</a>
@@ -1388,6 +1294,8 @@
         </div>
     </section>
 
+
+    <!-- Services Section -->
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="section-title slide-up">
@@ -1438,6 +1346,189 @@
             </div>
         </div>
     </section>
+
+    <!-- Industries Section -->
+    <section class="industries" id="industries">
+        <div class="container">
+            <div class="section-title">
+                <h2>Industries We Help</h2>
+                <p>From local businesses to growing startups, we specialize in building impactful online presences</p>
+            </div>
+
+            <div class="industries-grid">
+                <!-- Real Estate -->
+                <div class="industry-card fade-in delay-1">
+                    <img src="real-estate.jpg" alt="Real Estate Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Real Estate</h3>
+                        <p>Showcase properties, generate leads, and build authority in your market</p>
+                    </div>
+                </div>
+
+                <!-- Beauty & Salons -->
+                <div class="industry-card fade-in delay-2">
+                    <img src="beauty-salons.jpg" alt="Beauty & Salons Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Beauty & Salons</h3>
+                        <p>Highlight services, showcase transformations, and book more appointments</p>
+                    </div>
+                </div>
+
+                <!-- Health & Wellness -->
+                <div class="industry-card fade-in delay-3">
+                    <img src="health-wellness.jpg" alt="Health & Wellness Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Health & Wellness</h3>
+                        <p>Build trust, share expertise, and attract health-conscious clients</p>
+                    </div>
+                </div>
+
+                <!-- E-commerce & Retail -->
+                <div class="industry-card fade-in delay-4">
+                    <img src="ecommerce-retail.jpg" alt="E-commerce & Retail Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>E-commerce & Retail</h3>
+                        <p>Drive sales, showcase products, and build brand loyalty</p>
+                    </div>
+                </div>
+
+                <!-- Restaurants & Cafes -->
+                <div class="industry-card fade-in delay-1">
+                    <img src="restaurants-cafes.jpg" alt="Restaurants & Cafes Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Restaurants & Cafes</h3>
+                        <p>Entice customers, showcase menus, and drive reservations</p>
+                    </div>
+                </div>
+
+                <!-- Education & Online Courses -->
+                <div class="industry-card fade-in delay-2">
+                    <img src="education-courses.jpg" alt="Education & Online Courses Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Education & Courses</h3>
+                        <p>Attract students, demonstrate value, and boost enrollments</p>
+                    </div>
+                </div>
+
+                <!-- Coaches & Consultants -->
+                <div class="industry-card fade-in delay-3">
+                    <img src="coaches-consultants.jpg" alt="Coaches & Consultants Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Coaches & Consultants</h3>
+                        <p>Establish authority, share insights, and attract premium clients</p>
+                    </div>
+                </div>
+
+                <!-- Influencers & Creators -->
+                <div class="industry-card fade-in delay-4">
+                    <img src="influencers-creators.jpg" alt="Influencers & Creators Social Media Management" class="industry-image" loading="lazy">
+                    <div class="industry-content">
+                        <h3>Influencers & Creators</h3>
+                        <p>Grow your following, boost engagement, and monetize your content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-title slide-up">
+            <h2>Demo Website Samples</h2>
+            <p style="text-align:center; font-size: 0.9rem; color: #888; margin-top: 20px;">
+                These sample websites are for demonstration only to showcase design capabilities and layout options.
+            </p>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <a href="https://magical-queijadas-a9e89a.netlify.app/" target="_blank" class="portfolio-item fade-in delay-1" aria-label="View PureChoco Dubai demo">
+                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="PureChoco Luxury Chocolate Brand Dubai" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>PureChoco Dubai</h3>
+                    <p>Luxury Chocolate E-commerce</p>
+                </div>
+            </a>
+
+            <!-- Portfolio Item 2 -->
+            <a href="https://papaya-vacherin-fee6b2.netlify.app/" target="_blank" class="portfolio-item fade-in delay-2" aria-label="View Eclat Luxury Dubai demo">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Eclat Luxury Jewelry Brand UAE" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Eclat Luxury Dubai</h3>
+                    <p>High-End Jewelry Brand</p>
+                </div>
+            </a>
+
+            <!-- Portfolio Item 3 -->
+            <a href="https://stupendous-hummingbird-03080a.netlify.app/" target="_blank" class="portfolio-item fade-in delay-3" aria-label="View LUXICOM Dubai demo">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="LUXICOM Retail Dubai" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>LUXICOM Dubai</h3>
+                    <p>Luxury Retail Experience</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Social Media Services</h2>
+                <p>Comprehensive solutions designed to grow your brand and drive real business results</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Content Creation</h3>
+                    <p>Visually stunning posts that reflect your brand and drive engagement across all platforms.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Content Calendars</h3>
+                    <p>Consistent, timely calendars aligned with your goals and audience behavior.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Social Ads & Growth</h3>
+                    <p>Geo-targeted ads to reach your ideal customers and boost visibility.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Management</h3>
+                    <p>Build trust, encourage loyalty, and convert interest into action.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Clear monthly reports tracking growth, engagement, and ROI.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Platform Management</h3>
+                    <p>Full management of Instagram, Facebook, LinkedIn, TikTok, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Video Banner Section -->
     <section class="video-banner-vertical">
         <!-- Text Content Above Video -->
@@ -1458,210 +1549,9 @@
         <!-- Buttons Below Video -->
         <div class="video-cta-buttons">
             <a href="#contact" class="btn">Get Exclusive Strategy</a>
-
-        </div>
-    </section>
-    <!-- Industries Section -->
-    <section class="industries" id="industries">
-        <div class="container">
-            <div class="section-header">
-                <h2>Industries We Help</h2>
-                <p>From local businesses to growing startups, we specialize in building impactful online presences</p>
-            </div>
-
-            <div class="industries-grid">
-                <!-- Real Estate -->
-                <div class="industry-card">
-                    <img src="real-estate.jpg" alt="Real Estate Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Real Estate</h3>
-                        <p>Showcase properties, generate leads, and build authority in your market</p>
-                    </div>
-                </div>
-
-                <!-- Beauty & Salons -->
-                <div class="industry-card">
-                    <img src="beauty-salons.jpg" alt="Beauty & Salons Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Beauty & Salons</h3>
-                        <p>Highlight services, showcase transformations, and book more appointments</p>
-                    </div>
-                </div>
-
-                <!-- Health & Wellness -->
-                <div class="industry-card">
-                    <img src="health-wellness.jpg" alt="Health & Wellness Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Health & Wellness</h3>
-                        <p>Build trust, share expertise, and attract health-conscious clients</p>
-                    </div>
-                </div>
-
-                <!-- E-commerce & Retail -->
-                <div class="industry-card">
-                    <img src="ecommerce-retail.jpg" alt="E-commerce & Retail Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>E-commerce & Retail</h3>
-                        <p>Drive sales, showcase products, and build brand loyalty</p>
-                    </div>
-                </div>
-
-                <!-- Restaurants & Cafes -->
-                <div class="industry-card">
-                    <img src="restaurants-cafes.jpg" alt="Restaurants & Cafes Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Restaurants & Cafes</h3>
-                        <p>Entice customers, showcase menus, and drive reservations</p>
-                    </div>
-                </div>
-
-                <!-- Education & Online Courses -->
-                <div class="industry-card">
-                    <img src="education-courses.jpg" alt="Education & Online Courses Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Education & Courses</h3>
-                        <p>Attract students, demonstrate value, and boost enrollments</p>
-                    </div>
-                </div>
-
-                <!-- Coaches & Consultants -->
-                <div class="industry-card">
-                    <img src="coaches-consultants.jpg" alt="Coaches & Consultants Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Coaches & Consultants</h3>
-                        <p>Establish authority, share insights, and attract premium clients</p>
-                    </div>
-                </div>
-
-                <!-- Influencers & Creators -->
-                <div class="industry-card">
-                    <img src="influencers-creators.jpg" alt="Influencers & Creators Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Influencers & Creators</h3>
-                        <p>Grow your following, boost engagement, and monetize your content</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Social Media Services</h2>
-                <p>Comprehensive solutions designed to grow your brand and drive real business results</p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>Content Creation</h3>
-                    <p>Visually stunning posts that reflect your brand and drive engagement across all platforms.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>Content Calendars</h3>
-                    <p>Consistent, timely calendars aligned with your goals and audience behavior.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Social Ads & Growth</h3>
-                    <p>Geo-targeted ads to reach your ideal customers and boost visibility.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>Community Management</h3>
-                    <p>Build trust, encourage loyalty, and convert interest into action.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Analytics & Reporting</h3>
-                    <p>Clear monthly reports tracking growth, engagement, and ROI.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <h3>Platform Management</h3>
-                    <p>Full management of Instagram, Facebook, LinkedIn, TikTok, and more.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="section-title slide-up">
-            <h2>Demo Website Samples</h2>
-           <p style="text-align:center; font-size: 0.9rem; color: #888; margin-top: 20px;">
-These sample websites are for demonstration only to showcase design capabilities and layout options.
-</p>
-        </div>
-        <div class="portfolio-grid">
-            <!-- Portfolio Item 1 -->
-            <a href="https://magical-queijadas-a9e89a.netlify.app/" target="_blank" class="portfolio-item fade-in delay-1">
-                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="PureChoco Luxury Chocolate Brand Dubai" class="portfolio-img">
-                <div class="portfolio-overlay">
-                    <h3>PureChoco Dubai</h3>
-                    <p>Luxury Chocolate E-commerce</p>
-                </div>
-            </a>
-
-            <!-- Portfolio Item 2 -->
-            <a href="https://papaya-vacherin-fee6b2.netlify.app/" target="_blank" class="portfolio-item fade-in delay-2">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Eclat Luxury Jewelry Brand UAE" class="portfolio-img">
-                <div class="portfolio-overlay">
-                    <h3>Eclat Luxury Dubai</h3>
-                    <p>High-End Jewelry Brand</p>
-                </div>
-            </a>
-
-            <!-- Portfolio Item 3 -->
-            <a href="https://stupendous-hummingbird-03080a.netlify.app/" target="_blank" class="portfolio-item fade-in delay-3">
-                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="LUXICOM Retail Dubai" class="portfolio-img">
-                <div class="portfolio-overlay">
-                    <h3>LUXICOM Dubai</h3>
-                    <p>Luxury Retail Experience</p>
-                </div>
-            </a>
-
-            <!-- Portfolio Item 4 -->
-            <a href="https://wonderful-nasturtium-105135.netlify.app/" target="_blank" class="portfolio-item fade-in delay-4">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Dark Matter Elevators UAE" class="portfolio-img">
-                <div class="portfolio-overlay">
-                    <h3>Dark Matter UAE</h3>
-                    <p>Premium Elevator Solutions</p>
-                </div>
-            </a>
-
-            <!-- Portfolio Item 5 -->
-            <a href="https://deft-sundae-510258.netlify.app/" target="_blank" class="portfolio-item fade-in delay-1">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="EliteEstates Dubai Luxury Properties" class="portfolio-img">
-                <div class="portfolio-overlay">
-                    <h3>EliteEstates Dubai</h3>
-                    <p>Luxury Real Estate</p>
-                </div>
-            </a>
-        </div>
-    </section>
-
-   
     <!-- About Section -->
     <section id="about" class="about">
         <div class="section-title slide-up">
@@ -1680,7 +1570,6 @@ These sample websites are for demonstration only to showcase design capabilities
         </div>
     </section>
 
-    <!-- Blog Section -->
     <!-- Blog Section -->
     <section id="blog" class="blog">
         <div class="blog-content-wrapper">
@@ -1702,7 +1591,7 @@ These sample websites are for demonstration only to showcase design capabilities
 
                 <!-- Blog Post 2 -->
                 <div class="blog-card fade-in delay-2">
-                    <img src=" https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SEO Strategy Dubai UAE" class="blog-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SEO Strategy Dubai UAE" class="blog-img">
                     <div class="blog-content">
                         <div class="blog-date">May 28, 2023</div>
                         <h3>SEO Strategies for Luxury Brands in UAE</h3>
@@ -1713,7 +1602,7 @@ These sample websites are for demonstration only to showcase design capabilities
 
                 <!-- Blog Post 3 -->
                 <div class="blog-card fade-in delay-3">
-                    <img src=" https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Web Design Dubai UAE" class="blog-img">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Web Design Dubai UAE" class="blog-img">
                     <div class="blog-content">
                         <div class="blog-date">May 10, 2023</div>
                         <h3>Designing for Exclusivity in UAE Market</h3>
@@ -1803,7 +1692,7 @@ These sample websites are for demonstration only to showcase design capabilities
 
                 <!-- Google Map -->
                 <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921902.7463506375!2d54.96526033722353!3d25.498955918311317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef67131f14a49b1%3A0xd3b5ffc06b24ab09!2sRas%20Al%20Khaimah%20Economic%20Zone%20-%20RAKEZ!5e0!3m2!1sen!2sae!4v1751447549322!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921902.7463506375!2d54.96526033722353!3d25.498955918311317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef67131f14a49b1%3A0xd3b5ffc06b24ab09!2sRas%20Al%20Khaimah%20Economic%20Zone%20-%20RAKEZ!5e0!3m2!1sen!2sae!4v1751447549322!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map to RAKEZ Business Zone"></iframe>
                 </div>
             </div>
         </div>
@@ -1814,15 +1703,15 @@ These sample websites are for demonstration only to showcase design capabilities
         <div class="footer-container">
             <div class="footer-about">
                 <div class="footer-logo">
-                    <img src="https://github.com/fasciola/fourpillars/raw/main/logo.png" alt="Four Pillars - Luxury Digital Marketing  UAE" class="footer-logo-img">
+                    <img src="https://github.com/fasciola/fourpillars/raw/main/logo.png" alt="Four Pillars - Luxury Digital Marketing UAE" class="footer-logo-img">
                     <span class="footer-logo-text">Four<span>Pillars</span></span>
                 </div>
                 <p>UAE's premier digital marketing agency specializing in luxury brand growth across UAE. We help premium brands elevate their digital presence with sophistication and style in the competitive Middle East market.</p>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/fourpillarsfzllc/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=615933361599231" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/fourpillarsfzllc/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=615933361599231" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
             <div class="footer-links">
@@ -1830,8 +1719,7 @@ These sample websites are for demonstration only to showcase design capabilities
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#portfolio">Demo Sites</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Insights</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -1859,13 +1747,15 @@ These sample websites are for demonstration only to showcase design capabilities
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 Four Pillars Digital Marketing Agency UAE. All Rights Reserved.</p>
+            <p>&copy; 2025 Four Pillars Digital Marketing Agency UAE. All Rights Reserved.</p>
         </div>
     </footer>
 
     <a href="https://wa.me/971567074922" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
 
     <script>
         // Mobile Menu Toggle
@@ -1888,37 +1778,44 @@ These sample websites are for demonstration only to showcase design capabilities
         // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const href = this.getAttribute('href');
+                if (href === "#") return;
+                const target = document.querySelector(href);
                 if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
+                    e.preventDefault();
+                    const offset = header.offsetHeight;
+                    const topPos = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top: topPos, behavior: 'smooth' });
                     navLinks.classList.remove('active');
                 }
             });
         });
 
-        // Scroll Animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        function toggleBackToTop() {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        }
+        window.addEventListener('scroll', toggleBackToTop);
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Scroll Progress Bar
+        const scrollProgressEl = document.getElementById('scrollProgress');
+        function updateScrollProgress() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            scrollProgressEl.style.width = percent + '%';
+        }
+        window.addEventListener('scroll', updateScrollProgress);
+        window.addEventListener('resize', updateScrollProgress);
+        updateScrollProgress();
 
         // Parallax Effect for Hero Background
         function setupParallax() {
@@ -1933,17 +1830,91 @@ These sample websites are for demonstration only to showcase design capabilities
                 if (scrollPosition <= maxScroll) {
                     const moveY = scrollPosition * 0.5;
                     heroBg.style.transform = `translate3d(0, ${moveY}px, 0)`;
-
-                    const overlay = document.querySelector('.hero-overlay');
-                    overlay.style.opacity = 1 - (scrollPosition / maxScroll * 0.3);
                 }
             });
         }
 
+        // Initialize animations when elements come into view
+        const fadeElements = document.querySelectorAll('.fade-in');
+        function checkFade() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 50) {
+                    element.style.opacity = "1";
+                    element.style.transform = "translateY(0)";
+                }
+            });
+        }
+
+        // Set initial styles for fade-in elements
+        fadeElements.forEach(element => {
+            element.style.opacity = "0";
+            element.style.transform = "translateY(20px)";
+            element.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        });
+
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function () {
             setupParallax();
+            checkFade();
+        });
+
+        window.addEventListener('scroll', checkFade);
+        window.addEventListener('load', checkFade);
+    </script>
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Initialize Particles -->
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#fcd581" },
+                shape: { type: "circle", stroke: { width: 0, color: "#000" } },
+                opacity: {
+                    value: 0.8,
+                    random: true,
+                    anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#fcd581",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "grab" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
         });
     </script>
+
 </body>
 </html>
