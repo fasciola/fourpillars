@@ -436,73 +436,254 @@
         }
 
         /* ===== INDUSTRIES SECTION ===== */
+        /* ===== INDUSTRIES SECTION ===== */
         .industries {
             background-color: var(--platinum);
+            padding: 100px 5%;
         }
 
-        .industries-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+        /* ===== 3D CAROUSEL STYLES ===== */
+        .magic-carousel {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 40px;
         }
 
-        .industry-card {
-            background: white;
-            border-radius: 16px;
-            transition: var(--transition);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(252, 213, 129, 0.1);
-            overflow: hidden;
+        .cards-container {
             position: relative;
-        }
-
-        .industry-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .industry-card::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(130deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.15) 60%, rgba(255, 255, 255, 0) 80%);
-            transform: translateX(-100%);
-            transition: transform 0.6s ease;
-        }
-
-        .industry-card:hover::after {
-            transform: translateX(100%);
-        }
-
-        .industry-image {
             width: 100%;
-            height: 375px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+        }
+
+        .industry-carousel-card {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            border-radius: 16px;
+            overflow: hidden;
+            background: white;
+            transition: var(--transition);
+            transform-style: preserve-3d;
+            cursor: pointer;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(252, 213, 129, 0.1);
+        }
+
+            .industry-carousel-card:hover {
+                transform: translateY(-5px);
+            }
+
+        .industry-image-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .industry-carousel-card img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            object-position: top center;
-            border-bottom: 3px solid var(--gold-light);
-            display: block;
             transition: var(--transition);
         }
 
-        .industry-card:hover .industry-image {
+        .industry-carousel-card:hover img {
             transform: scale(1.05);
         }
 
-        .industry-content {
+        .industry-carousel-content {
             padding: 25px;
-            text-align: center;
-        }
-
-        .industry-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: var(--navy);
-        }
-
-        .industry-card p {
+            background: white;
             color: var(--charcoal);
-            font-size: 1rem;
+            flex-grow: 1;
+            border-top: 1px solid rgba(252, 213, 129, 0.1);
+        }
+
+            .industry-carousel-content h3 {
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+                color: var(--navy);
+                font-family: 'Playfair Display', serif;
+            }
+
+            .industry-carousel-content p {
+                font-size: 1rem;
+                opacity: 0.9;
+                line-height: 1.6;
+            }
+
+        /* ===== CARD POSITIONS ===== */
+        .industry-carousel-card.active {
+            transform: translateX(0) scale(1.1) rotateY(0deg);
+            z-index: 3;
+        }
+
+        .industry-carousel-card.left {
+            transform: translateX(-80%) scale(0.9) rotateY(15deg);
+            z-index: 2;
+            filter: brightness(0.8);
+        }
+
+        .industry-carousel-card.right {
+            transform: translateX(80%) scale(0.9) rotateY(-15deg);
+            z-index: 2;
+            filter: brightness(0.8);
+        }
+
+        .industry-carousel-card.far-left {
+            transform: translateX(-160%) scale(0.8) rotateY(25deg);
+            z-index: 1;
+            filter: brightness(0.6);
+            opacity: 0.8;
+        }
+
+        .industry-carousel-card.far-right {
+            transform: translateX(160%) scale(0.8) rotateY(-25deg);
+            z-index: 1;
+            filter: brightness(0.6);
+            opacity: 0.8;
+        }
+
+        .industry-carousel-card.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* ===== NAVIGATION ARROWS ===== */
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 4;
+        }
+
+        .nav-arrow {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.5rem;
+            font-weight: bold;
+            border: none;
+        }
+
+            .nav-arrow:hover {
+                background: var(--burgundy);
+                color: white;
+                transform: scale(1.1);
+            }
+
+        /* ===== RESPONSIVE ADJUSTMENTS ===== */
+        @media (max-width: 1200px) {
+            .industry-carousel-card {
+                width: 280px;
+            }
+
+            .industry-image-container {
+                height: 230px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .magic-carousel {
+                height: 550px;
+            }
+
+            .industry-carousel-card {
+                width: 240px;
+            }
+
+            .industry-image-container {
+                height: 200px;
+            }
+
+            .industry-carousel-card.active {
+                transform: translateX(0) scale(1.05);
+            }
+
+            .industry-carousel-card.left {
+                transform: translateX(-70%) scale(0.85);
+            }
+
+            .industry-carousel-card.right {
+                transform: translateX(70%) scale(0.85);
+            }
+
+            .industry-carousel-card.far-left,
+            .industry-carousel-card.far-right {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .magic-carousel {
+                height: 500px;
+            }
+
+            .industry-carousel-card {
+                width: 200px;
+            }
+
+            .industry-image-container {
+                height: 180px;
+            }
+
+            .industry-carousel-content {
+                padding: 15px;
+            }
+
+                .industry-carousel-content h3 {
+                    font-size: 1.2rem;
+                }
+
+                .industry-carousel-content p {
+                    font-size: 0.9rem;
+                }
+        }
+
+        @media (max-width: 576px) {
+            .industries {
+                padding: 80px 5%;
+            }
+
+            .magic-carousel {
+                height: 450px;
+            }
+
+            .industry-carousel-card {
+                width: 180px;
+            }
+
+            .industry-image-container {
+                height: 160px;
+            }
+
+            .nav-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
         }
 
         /* ===== PORTFOLIO SECTION ===== */
@@ -703,7 +884,7 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            opacity: 0.8;
+            opacity: 0.6;
             z-index: -1;
         }
 
@@ -1278,7 +1459,7 @@
     <!-- Hero Section with Particle Background -->
     <section id="home" class="hero">
         <div id="particles-js"></div>
-       <!-- <div class="hero-overlay"></div> -->
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="content-wrapper fade-in">
                 <h1 class="hero-title">Luxury Digital Marketing <span class="gold-gradient">Excellence</span></h1>
@@ -1293,6 +1474,7 @@
             </div>
         </div>
     </section>
+
 
 
     <!-- Services Section -->
@@ -1355,77 +1537,16 @@
                 <p>From local businesses to growing startups, we specialize in building impactful online presences</p>
             </div>
 
-            <div class="industries-grid">
-                <!-- Real Estate -->
-                <div class="industry-card fade-in delay-1">
-                    <img src="real-estate.jpg" alt="Real Estate Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Real Estate</h3>
-                        <p>Showcase properties, generate leads, and build authority in your market</p>
-                    </div>
+            <!-- 3D Carousel Container -->
+            <div class="magic-carousel">
+                <div class="cards-container" id="industriesCarousel">
+                    <!-- Cards will be inserted by JavaScript -->
                 </div>
 
-                <!-- Beauty & Salons -->
-                <div class="industry-card fade-in delay-2">
-                    <img src="beauty-salons.jpg" alt="Beauty & Salons Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Beauty & Salons</h3>
-                        <p>Highlight services, showcase transformations, and book more appointments</p>
-                    </div>
-                </div>
-
-                <!-- Health & Wellness -->
-                <div class="industry-card fade-in delay-3">
-                    <img src="health-wellness.jpg" alt="Health & Wellness Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Health & Wellness</h3>
-                        <p>Build trust, share expertise, and attract health-conscious clients</p>
-                    </div>
-                </div>
-
-                <!-- E-commerce & Retail -->
-                <div class="industry-card fade-in delay-4">
-                    <img src="ecommerce-retail.jpg" alt="E-commerce & Retail Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>E-commerce & Retail</h3>
-                        <p>Drive sales, showcase products, and build brand loyalty</p>
-                    </div>
-                </div>
-
-                <!-- Restaurants & Cafes -->
-                <div class="industry-card fade-in delay-1">
-                    <img src="restaurants-cafes.jpg" alt="Restaurants & Cafes Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Restaurants & Cafes</h3>
-                        <p>Entice customers, showcase menus, and drive reservations</p>
-                    </div>
-                </div>
-
-                <!-- Education & Online Courses -->
-                <div class="industry-card fade-in delay-2">
-                    <img src="education-courses.jpg" alt="Education & Online Courses Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Education & Courses</h3>
-                        <p>Attract students, demonstrate value, and boost enrollments</p>
-                    </div>
-                </div>
-
-                <!-- Coaches & Consultants -->
-                <div class="industry-card fade-in delay-3">
-                    <img src="coaches-consultants.jpg" alt="Coaches & Consultants Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Coaches & Consultants</h3>
-                        <p>Establish authority, share insights, and attract premium clients</p>
-                    </div>
-                </div>
-
-                <!-- Influencers & Creators -->
-                <div class="industry-card fade-in delay-4">
-                    <img src="influencers-creators.jpg" alt="Influencers & Creators Social Media Management" class="industry-image" loading="lazy">
-                    <div class="industry-content">
-                        <h3>Influencers & Creators</h3>
-                        <p>Grow your following, boost engagement, and monetize your content</p>
-                    </div>
+                <!-- Navigation Arrows -->
+                <div class="carousel-nav">
+                    <div class="nav-arrow" id="industriesPrevBtn">←</div>
+                    <div class="nav-arrow" id="industriesNextBtn">→</div>
                 </div>
             </div>
         </div>
@@ -1870,8 +1991,8 @@
     <script>
         particlesJS('particles-js', {
             particles: {
-                number: { value: 120, density: { enable: true, value_area: 800 } },
-                color: { value: ["#D4AF37", "#F7E7CE", "#FFFFFF", "#B08D57", "#FFC857", "#E6B8A2"] },
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#fcd581" },
                 shape: { type: "circle", stroke: { width: 0, color: "#000" } },
                 opacity: {
                     value: 0.8,
@@ -1913,6 +2034,151 @@
                 }
             },
             retina_detect: true
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Industries Carousel Data
+            const industriesData = [
+                {
+                    image: 'real-estate.jpg',
+                    title: 'Real Estate',
+                    description: 'Showcase properties, generate leads, and build authority in your market'
+                },
+                {
+                    image: 'beauty-salons.jpg',
+                    title: 'Beauty & Salons',
+                    description: 'Highlight services, showcase transformations, and book more appointments'
+                },
+                {
+                    image: 'health-wellness.jpg',
+                    title: 'Health & Wellness',
+                    description: 'Build trust, share expertise, and attract health-conscious clients'
+                },
+                {
+                    image: 'ecommerce-retail.jpg',
+                    title: 'E-commerce & Retail',
+                    description: 'Drive sales, showcase products, and build brand loyalty'
+                },
+                {
+                    image: 'restaurants-cafes.jpg',
+                    title: 'Restaurants & Cafes',
+                    description: 'Entice customers, showcase menus, and drive reservations'
+                },
+                {
+                    image: 'education-courses.jpg',
+                    title: 'Education & Courses',
+                    description: 'Attract students, demonstrate value, and boost enrollments'
+                },
+                {
+                    image: 'coaches-consultants.jpg',
+                    title: 'Coaches & Consultants',
+                    description: 'Establish authority, share insights, and attract premium clients'
+                },
+                {
+                    image: 'influencers-creators.jpg',
+                    title: 'Influencers & Creators',
+                    description: 'Grow your following, boost engagement, and monetize your content'
+                }
+            ];
+
+            const industriesContainer = document.getElementById('industriesCarousel');
+            const industriesPrevBtn = document.getElementById('industriesPrevBtn');
+            const industriesNextBtn = document.getElementById('industriesNextBtn');
+
+            let currentIndustryIndex = 0;
+            let autoPlayInterval;
+
+            // Create Industry Cards
+            function createIndustryCards() {
+                industriesData.forEach((industry, index) => {
+                    const cardElement = document.createElement('div');
+                    cardElement.className = 'industry-carousel-card';
+                    cardElement.innerHTML = `
+                        <div class="industry-image-container">
+                            <img src="${industry.image}" alt="${industry.title}" loading="lazy">
+                        </div>
+                        <div class="industry-carousel-content">
+                            <h3>${industry.title}</h3>
+                            <p>${industry.description}</p>
+                        </div>
+                    `;
+                    industriesContainer.appendChild(cardElement);
+                });
+
+                updateIndustryCards();
+            }
+
+            // Update Card Positions
+            function updateIndustryCards() {
+                const cards = document.querySelectorAll('.industry-carousel-card');
+
+                cards.forEach((card, index) => {
+                    // Reset all cards
+                    card.className = 'industry-carousel-card';
+
+                    // Calculate position relative to currentIndex
+                    const position = index - currentIndustryIndex;
+
+                    // Apply classes based on position
+                    if (position === 0) {
+                        card.classList.add('active');
+                    } else if (position === -1) {
+                        card.classList.add('left');
+                    } else if (position === 1) {
+                        card.classList.add('right');
+                    } else if (position === -2) {
+                        card.classList.add('far-left');
+                    } else if (position === 2) {
+                        card.classList.add('far-right');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
+
+            // Next Card
+            function nextIndustryCard() {
+                currentIndustryIndex = (currentIndustryIndex + 1) % industriesData.length;
+                updateIndustryCards();
+            }
+
+            // Previous Card
+            function prevIndustryCard() {
+                currentIndustryIndex = (currentIndustryIndex - 1 + industriesData.length) % industriesData.length;
+                updateIndustryCards();
+            }
+
+            // Auto-play
+            function startAutoPlay() {
+                autoPlayInterval = setInterval(nextIndustryCard, 3000);
+            }
+
+            // Stop auto-play
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+
+            // Event listeners
+            industriesPrevBtn.addEventListener('click', () => {
+                prevIndustryCard();
+                stopAutoPlay();
+                startAutoPlay();
+            });
+
+            industriesNextBtn.addEventListener('click', () => {
+                nextIndustryCard();
+                stopAutoPlay();
+                startAutoPlay();
+            });
+
+            // Initialize
+            createIndustryCards();
+            startAutoPlay();
+
+            // Pause auto-play on hover
+            industriesContainer.addEventListener('mouseenter', stopAutoPlay);
+            industriesContainer.addEventListener('mouseleave', startAutoPlay);
         });
     </script>
 
