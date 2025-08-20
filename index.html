@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-54ND7C10E4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-54ND7C10E4');
-  </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Four Pillars | Luxury Digital Marketing Agency UAE | Premium SEO Dubai</title>
-    <meta name="description" content="Leading luxury digital marketing agency in UAE specializing in premium SEO Dubai, high-end brand strategy, and exclusive web design for premium brands in Dubai and UAE">
-
-    <!-- SEO Meta Tags -->
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Four Pillars">
-    <link rel="canonical" href="https://4pillars.ae/">
-    <meta property="og:title" content="Four Pillars | Luxury Digital Marketing Agency UAE">
-    <meta property="og:description" content="Premium digital marketing services for luxury brands in Dubai and UAE">
-    <meta property="og:url" content="https://4pillars.ae/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://github.com/fasciola/fourpillars/raw/main/logo.png">
-
-    <!-- Fonts -->
+    <title>Four Pillars | Business Setup & Digital Marketing | UAE & KSA</title>
+    <meta name="description" content="Premier business setup and digital marketing services in UAE and Saudi Arabia. Company formation, licensing, SEO, and brand growth solutions.">
+    
+    <!-- Google Analytics Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54ND7C10E4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-54ND7C10E4');
+    </script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <style>
         /* ===== GLOBAL VARIABLES & RESET ===== */
         :root {
@@ -92,7 +81,6 @@
             padding: 0 20px;
         }
 
-        /* ===== UTILITY CLASSES ===== */
         .text-center {
             text-align: center;
         }
@@ -174,7 +162,7 @@
         }
 
         .logo-img {
-            height: 80px;
+            height: 60px;
             width: auto;
             transition: var(--transition);
         }
@@ -242,16 +230,7 @@
             padding: 120px 20px 60px;
             overflow: hidden;
             color: white;
-        }
-
-        #particles-js {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, var(--navy-dark), var(--navy));
-            z-index: -2;
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
         }
 
         .hero-overlay {
@@ -326,37 +305,11 @@
             background: transparent;
             border: 2px solid var(--gold);
             color: var(--gold);
-            margin-left: 20px;
         }
 
         .btn-outline:hover {
             background: var(--gold);
             color: var(--navy);
-        }
-
-        .btn::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 5px;
-            height: 5px;
-            background: rgba(255, 255, 255, 0.5);
-            opacity: 0;
-            border-radius: 100%;
-            transform: scale(1, 1) translate(-50%, -50%);
-            transform-origin: 50% 50%;
-        }
-
-        .btn:hover::after {
-            animation: ripple 0.6s ease-out;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
         }
 
         /* ===== SECTION TITLES ===== */
@@ -419,17 +372,17 @@
             border-color: var(--gold);
         }
 
-        .service-img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            transition: var(--transition);
-        }
-
-        .service-card:hover .service-img {
-            transform: scale(1.05);
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--navy);
         }
 
         .service-card h3 {
@@ -441,261 +394,71 @@
         .service-card p {
             color: var(--charcoal);
             line-height: 1.7;
+            margin-bottom: 20px;
         }
 
-        /* ===== INDUSTRIES SECTION ===== */
-        /* ===== INDUSTRIES SECTION ===== */
-        .industries {
+        .service-card .btn {
+            margin-top: 15px;
+        }
+
+        /* ===== PROCESS SECTION ===== */
+        .process-section {
             background-color: var(--platinum);
-            padding: 100px 5%;
         }
 
-        /* ===== 3D CAROUSEL STYLES ===== */
-        .magic-carousel {
-            position: relative;
-            width: 100%;
-            height: 600px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        .cards-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            perspective: 1000px;
-        }
-
-        .industry-carousel-card {
-            position: absolute;
-            width: 300px;
-            height: auto;
-            border-radius: 16px;
-            overflow: hidden;
-            background: white;
-            transition: var(--transition);
-            transform-style: preserve-3d;
-            cursor: pointer;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(252, 213, 129, 0.1);
-        }
-
-            .industry-carousel-card:hover {
-                transform: translateY(-5px);
-            }
-
-        .industry-image-container {
-            width: 100%;
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .industry-carousel-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .industry-carousel-card:hover img {
-            transform: scale(1.05);
-        }
-
-        .industry-carousel-content {
-            padding: 25px;
-            background: white;
-            color: var(--charcoal);
-            flex-grow: 1;
-            border-top: 1px solid rgba(252, 213, 129, 0.1);
-        }
-
-            .industry-carousel-content h3 {
-                font-size: 1.4rem;
-                margin-bottom: 10px;
-                color: var(--navy);
-                font-family: 'Playfair Display', serif;
-            }
-
-            .industry-carousel-content p {
-                font-size: 1rem;
-                opacity: 0.9;
-                line-height: 1.6;
-            }
-
-        /* ===== CARD POSITIONS ===== */
-        .industry-carousel-card.active {
-            transform: translateX(0) scale(1.1) rotateY(0deg);
-            z-index: 3;
-        }
-
-        .industry-carousel-card.left {
-            transform: translateX(-80%) scale(0.9) rotateY(15deg);
-            z-index: 2;
-            filter: brightness(0.8);
-        }
-
-        .industry-carousel-card.right {
-            transform: translateX(80%) scale(0.9) rotateY(-15deg);
-            z-index: 2;
-            filter: brightness(0.8);
-        }
-
-        .industry-carousel-card.far-left {
-            transform: translateX(-160%) scale(0.8) rotateY(25deg);
-            z-index: 1;
-            filter: brightness(0.6);
-            opacity: 0.8;
-        }
-
-        .industry-carousel-card.far-right {
-            transform: translateX(160%) scale(0.8) rotateY(-25deg);
-            z-index: 1;
-            filter: brightness(0.6);
-            opacity: 0.8;
-        }
-
-        .industry-carousel-card.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        /* ===== NAVIGATION ARROWS ===== */
-        .carousel-nav {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            transform: translateY(-50%);
+        .process-steps {
             display: flex;
             justify-content: space-between;
-            padding: 0 20px;
-            z-index: 4;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .nav-arrow {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+        .step {
+            flex: 0 0 calc(25% - 30px);
+            text-align: center;
+            position: relative;
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
             background: var(--gold);
             color: var(--navy);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
-            transition: var(--transition);
             font-size: 1.5rem;
             font-weight: bold;
-            border: none;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 2;
         }
 
-            .nav-arrow:hover {
-                background: var(--burgundy);
-                color: white;
-                transform: scale(1.1);
-            }
-
-        /* ===== RESPONSIVE ADJUSTMENTS ===== */
-        @media (max-width: 1200px) {
-            .industry-carousel-card {
-                width: 280px;
-            }
-
-            .industry-image-container {
-                height: 230px;
-            }
+        .step-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
         }
 
-        @media (max-width: 992px) {
-            .magic-carousel {
-                height: 550px;
-            }
-
-            .industry-carousel-card {
-                width: 240px;
-            }
-
-            .industry-image-container {
-                height: 200px;
-            }
-
-            .industry-carousel-card.active {
-                transform: translateX(0) scale(1.05);
-            }
-
-            .industry-carousel-card.left {
-                transform: translateX(-70%) scale(0.85);
-            }
-
-            .industry-carousel-card.right {
-                transform: translateX(70%) scale(0.85);
-            }
-
-            .industry-carousel-card.far-left,
-            .industry-carousel-card.far-right {
-                display: none;
-            }
+        .step::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            right: -25px;
+            width: 50px;
+            height: 2px;
+            background: var(--gold);
         }
 
-        @media (max-width: 768px) {
-            .magic-carousel {
-                height: 500px;
-            }
-
-            .industry-carousel-card {
-                width: 200px;
-            }
-
-            .industry-image-container {
-                height: 180px;
-            }
-
-            .industry-carousel-content {
-                padding: 15px;
-            }
-
-                .industry-carousel-content h3 {
-                    font-size: 1.2rem;
-                }
-
-                .industry-carousel-content p {
-                    font-size: 0.9rem;
-                }
+        .step:last-child::after {
+            display: none;
         }
 
-        @media (max-width: 576px) {
-            .industries {
-                padding: 80px 5%;
-            }
-
-            .magic-carousel {
-                height: 450px;
-            }
-
-            .industry-carousel-card {
-                width: 180px;
-            }
-
-            .industry-image-container {
-                height: 160px;
-            }
-
-            .nav-arrow {
-                width: 40px;
-                height: 40px;
-                font-size: 1.2rem;
-            }
-        }
-
-        /* ===== PORTFOLIO SECTION ===== */
-        .portfolio-grid {
+        /* ===== COMPARISON SECTION ===== */
+        .comparison-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
@@ -703,426 +466,122 @@
             margin: 0 auto;
         }
 
-        .portfolio-item {
-            position: relative;
-            border-radius: 16px;
-            overflow: hidden;
-            height: 300px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            transition: var(--transition);
-        }
-
-        .portfolio-item:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .portfolio-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .portfolio-item:hover .portfolio-img {
-            transform: scale(1.1);
-        }
-
-        .portfolio-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(20, 28, 58, 0.9), transparent);
-            color: white;
-            padding: 30px 20px 20px;
-            transform: translateY(100%);
-            transition: var(--transition);
-        }
-
-        .portfolio-item:hover .portfolio-overlay {
-            transform: translateY(0);
-        }
-
-        .portfolio-overlay h3 {
-            color: white;
-            margin-bottom: 10px;
-        }
-
-        /* ===== FEATURES SECTION ===== */
-        .features {
-            background: linear-gradient(to bottom, var(--platinum) 0%, var(--pearl) 100%);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .feature-card {
+        .comparison-card {
             background: white;
-            padding: 40px 30px;
+            padding: 30px;
             border-radius: 16px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: var(--transition);
-            position: relative;
-            overflow: hidden;
             border: 1px solid rgba(252, 213, 129, 0.1);
         }
 
-        .feature-card:hover {
-            transform: translateY(-10px);
+        .comparison-card:hover {
+            transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .feature-card::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 100%;
-            background: var(--gold);
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 20px;
-            display: inline-block;
-            transition: var(--transition);
-        }
-
-        .feature-card:hover .feature-icon {
-            animation: float 2s ease infinite;
-        }
-
-        .feature-card h3 {
-            color: var(--navy);
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        .feature-card p {
-            color: var(--charcoal);
-            font-size: 1.05rem;
-        }
-
-        /* ===== VIDEO BANNER ===== */
-        .video-banner-vertical {
-            width: 100%;
-            max-width: 1400px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
-
-        .video-text-content {
+        .comparison-card h3 {
             text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .video-text-content h2 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
+            padding-bottom: 15px;
             margin-bottom: 20px;
-            color: var(--navy);
-            line-height: 1.3;
+            border-bottom: 2px solid var(--gold);
         }
 
-        .video-text-content p {
-            font-size: clamp(1rem, 2vw, 1.4rem);
-            color: var(--charcoal);
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
+        .feature-list {
+            list-style: none;
         }
 
-        .video-container {
-            width: 100%;
-            height: 60vh;
-            min-height: 400px;
-            position: relative;
-            overflow: hidden;
-            border-radius: 16px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .video-container video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            transition: var(--transition);
-        }
-
-        .video-container:hover video {
-            transform: scale(1.05);
-        }
-
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(20, 28, 58, 0.2) 0%, rgba(252, 213, 129, 0.1) 100%);
-        }
-
-        .video-cta-buttons {
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
             display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 40px;
-            flex-wrap: wrap;
+            align-items: flex-start;
         }
 
-        /* ===== BLOG SECTION ===== */
-        .blog {
-            position: relative;
-            padding: 100px 20px;
-            background: var(--pearl);
-            isolation: isolate;
+        .feature-list li:last-child {
+            border-bottom: none;
         }
 
-        .blog::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image: url('blog.bg.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            opacity: 0.6;
-            z-index: -1;
-        }
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .blog-card {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            transition: var(--transition);
-            position: relative;
-            transform-style: preserve-3d;
-            perspective: 1000px;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .blog-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .blog-card:hover .blog-img {
-            transform: scale(1.05);
-        }
-
-        .blog-content {
-            padding: 25px;
-        }
-
-        .blog-date {
+        .feature-list li::before {
+            content: "✓";
             color: var(--gold);
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-            font-weight: 500;
+            font-weight: bold;
+            margin-right: 10px;
         }
 
-        .blog-content h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: var(--navy);
-            line-height: 1.4;
-        }
-
-        .blog-content p {
-            color: var(--charcoal);
-            margin-bottom: 20px;
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-
-        .read-more {
-            color: var(--navy);
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition);
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .read-more:hover {
-            color: var(--burgundy);
-            gap: 8px;
-        }
-
-        /* ===== ABOUT SECTION ===== */
-        .about-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-            max-width: 1200px;
+        /* ===== CONTACT FORM ===== */
+        .contact-form {
+            max-width: 600px;
             margin: 0 auto;
             background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        }
-
-        .about-image {
-            height: 100%;
-            min-height: 400px;
-            background: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
-            transition: var(--transition);
-        }
-
-        .about-container:hover .about-image {
-            transform: scale(1.03);
-        }
-
-        .about-content {
             padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
         }
 
-        .about-content h3 {
-            font-size: 1.8rem;
-            margin-bottom: 25px;
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
             color: var(--navy);
         }
 
-        .about-content p {
-            margin-bottom: 20px;
-            line-height: 1.8;
-            color: var(--charcoal);
-        }
-
-        /* ===== CONTACT SECTION ===== */
-        .contact-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-top: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .contact-form,
-        .contact-info {
-            flex: 1 1 48%;
-            min-width: 300px;
-        }
-
-        .contact-form form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .contact-form .form-group input,
-        .contact-form .form-group select,
-        .contact-form .form-group textarea {
+        .form-control {
             width: 100%;
-            padding: 15px;
+            padding: 12px 15px;
+            border: 1px solid var(--platinum);
             border-radius: 8px;
-            border: 1px solid rgba(252, 213, 129, 0.3);
-            background: white;
-            color: var(--charcoal);
             font-family: 'Poppins', sans-serif;
             transition: var(--transition);
         }
 
-        .contact-form .form-group input:focus,
-        .contact-form .form-group select:focus,
-        .contact-form .form-group textarea:focus {
-            border-color: var(--gold);
+        .form-control:focus {
             outline: none;
-            box-shadow: 0 0 10px rgba(252, 213, 129, 0.2);
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(252, 213, 129, 0.2);
         }
 
-        .contact-form .btn {
-            margin-top: 10px;
-            padding: 12px 20px;
-            border: none;
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
             background: var(--gold);
             color: var(--navy);
+            border: none;
             border-radius: 8px;
+            font-weight: 600;
             cursor: pointer;
             transition: var(--transition);
-            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .contact-form .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 20px rgba(252, 213, 129, 0.4);
+        .submit-btn:hover {
             background: var(--burgundy);
             color: white;
+            transform: translateY(-2px);
         }
 
-        .contact-info {
-            background: var(--navy);
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
             color: white;
+            text-align: center;
+            padding: 80px 20px;
         }
 
-        .contact-detail {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
+        .cta-section h2 {
+            color: white;
+            font-size: 2.5rem;
             margin-bottom: 20px;
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-            color: var(--gold);
-        }
-
-        .contact-text h4 {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-        }
-
-        .contact-text p,
-        .contact-text a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .contact-text a:hover {
-            color: var(--gold);
-        }
-
-        .map-wrapper {
-            width: 100%;
-            margin-top: 30px;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .map-embed iframe {
-            width: 100%;
-            height: 250px;
-            border: none;
-            border-radius: 12px;
         }
 
         /* ===== FOOTER ===== */
@@ -1231,6 +690,13 @@
             padding-left: 5px;
         }
 
+        .contact-info li i {
+            margin-right: 10px;
+            color: var(--gold);
+            width: 20px;
+            text-align: center;
+        }
+
         .copyright {
             text-align: center;
             padding-top: 30px;
@@ -1324,8 +790,17 @@
         }
 
         @media (max-width: 992px) {
-            .about-container {
-                grid-template-columns: 1fr;
+            .process-steps {
+                flex-direction: column;
+            }
+
+            .step {
+                flex: 0 0 100%;
+                margin-bottom: 40px;
+            }
+
+            .step::after {
+                display: none;
             }
 
             .hero h1 {
@@ -1356,15 +831,6 @@
             .mobile-menu {
                 display: block;
             }
-
-            .about-image {
-                min-height: 300px;
-            }
-
-            .btn-outline {
-                margin-left: 0;
-                margin-top: 15px;
-            }
         }
 
         @media (max-width: 768px) {
@@ -1388,12 +854,8 @@
                 padding: 14px 30px;
             }
 
-            .industry-image {
-                height: 300px;
-            }
-
-            .video-container {
-                height: 50vh;
+            .contact-form {
+                padding: 30px 20px;
             }
         }
 
@@ -1420,22 +882,9 @@
                 font-size: 1.6rem;
             }
 
-            .contact-form,
-            .contact-info {
-                flex: 1 1 100%;
-            }
-
             .footer-logo {
                 flex-direction: column;
                 align-items: flex-start;
-            }
-
-            .industry-image {
-                height: 240px;
-            }
-
-            .video-container {
-                height: 40vh;
             }
         }
     </style>
@@ -1447,14 +896,14 @@
     <header id="header">
         <nav class="navbar">
             <a href="#top" class="logo" aria-label="Four Pillars Home">
-                <img src="https://github.com/fasciola/fourpillars/raw/main/logo.png" alt="Four Pillars - Luxury Digital Marketing Agency UAE" class="logo-img">
+                <div class="logo-text">Four<span>Pillars</span></div>
             </a>
             <div class="nav-links" role="navigation" aria-label="Primary">
+                <a href="business-setup.html">Business Setup</a>
+                <a href="digital-marketing.html">Digital Marketing</a>
                 <a href="#services">Services</a>
-                <a href="#industries">Industries</a>
-                <a href="#portfolio">Demo Sites</a>
-                <a href="#about">About</a>
-                <a href="#blog">Insights</a>
+                <a href="#setup-process">Process</a>
+                <a href="#comparison">UAE vs KSA</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="mobile-menu" aria-label="Open Menu">
@@ -1464,365 +913,218 @@
     </header>
 
     <!-- Hero Section -->
-    <!-- Hero Section with Particle Background -->
-    <section id="home" class="hero">
-        <div id="particles-js"></div>
+    <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="content-wrapper fade-in">
-                <h1 class="hero-title">Luxury Digital Marketing <span class="gold-gradient">Excellence</span></h1>
+                <h1 class="hero-title">Business Setup & Digital Growth in <span class="gold-gradient">UAE & KSA</span></h1>
                 <p class="hero-subtitle">
-                    Dubai's premier digital marketing experts crafting sophisticated strategies
-                    for high-end brands across UAE and Middle East
+                    Premier services for company formation and digital marketing excellence in the Middle East
                 </p>
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn">Get Started</a>
-                    <a href="#services" class="btn btn-outline">Our Services</a>
+                    <a href="#services" class="btn">Explore Services</a>
+                    <a href="#contact" class="btn btn-outline">Get Consultation</a>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    <!-- Services Section -->
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="section-title slide-up">
-            <h2>Premium Digital Marketing Services in UAE</h2>
-            <p>Exclusive marketing solutions for luxury brands in Dubai and across the Emirates</p>
+        <div class="section-title fade-in">
+            <h2>Our Comprehensive Services</h2>
+            <p>End-to-end solutions for establishing and growing your business in the Middle East</p>
         </div>
         <div class="services-container">
-            <!-- Service 1 -->
+            <!-- Business Setup Card -->
             <div class="service-card fade-in delay-1">
-                <img src="SEO.png" alt="Luxury SEO Services Dubai UAE" class="service-img">
-                <h3>Luxury SEO Dubai</h3>
-                <p>Premium search optimization strategies tailored for UAE market to ensure your luxury brand dominates search results in Dubai and beyond.</p>
+                <div class="service-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Business Setup Services</h3>
+                <p>Complete company formation solutions for UAE and Saudi Arabia markets. We handle all legal requirements for a seamless setup.</p>
+                <ul class="feature-list">
+                    <li>UAE Mainland & Free Zone Setup</li>
+                    <li>Saudi Arabia MISA Registration</li>
+                    <li>Licensing & Documentation</li>
+                    <li>Visa Processing</li>
+                    <li>Bank Account Opening</li>
+                </ul>
+                <a href="business-setup.html" class="btn">Learn More</a>
             </div>
 
-            <!-- Service 2 -->
+            <!-- Digital Marketing Card -->
             <div class="service-card fade-in delay-2">
-                <img src="paid-ads.png" alt="Paid Media Advertising UAE" class="service-img">
-                <h3>Paid Media UAE</h3>
-                <p>Exclusive paid advertising campaigns targeting high-net-worth individuals in Dubai and key UAE markets.</p>
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Digital Marketing Solutions</h3>
+                <p>Premium digital strategies tailored for luxury brands in the competitive Middle East market.</p>
+                <ul class="feature-list">
+                    <li>Luxury SEO & Content Strategy</li>
+                    <li>Paid Media & Social Advertising</li>
+                    <li>Brand Positioning & Strategy</li>
+                    <li>Premium Web Design</li>
+                    <li>Social Media Management</li>
+                </ul>
+                <a href="digital-marketing.html" class="btn">View Packages</a>
             </div>
 
-            <!-- Service 3 -->
+            <!-- Combined Service Card -->
             <div class="service-card fade-in delay-3">
-                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Premium Content Creation Dubai" class="service-img">
-                <h3>Content Creation</h3>
-                <p>Elegant, high-end content that tells your brand story with sophistication and appeals to discerning UAE audiences.</p>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="service-card fade-in delay-4">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Luxury Brand Strategy UAE" class="service-img">
-                <h3>Brand Strategy</h3>
-                <p>Premium branding services to position your business as the undisputed leader in your luxury niche across UAE markets.</p>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="service-card fade-in delay-1">
-                <img src="design1.png" alt="Luxury Web Design Dubai" class="service-img">
-                <h3>Web Design Dubai</h3>
-                <p>Bespoke website design that reflects the exclusivity and elegance of your luxury brand for the UAE market.</p>
-            </div>
-
-            <!-- Service 6 -->
-            <div class="service-card fade-in delay-2">
-                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Social Media Management UAE" class="service-img">
-                <h3>Social Media</h3>
-                <p>Sophisticated social media management that enhances your brand's prestige and engagement in the UAE market.</p>
+                <div class="service-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Full Business Lifecycle</h3>
+                <p>From initial setup to digital growth - a complete solution for your business journey in the Middle East.</p>
+                <ul class="feature-list">
+                    <li>Setup-to-Marketing Integration</li>
+                    <li>Ongoing Compliance Management</li>
+                    <li>Market Entry Strategy</li>
+                    <li>Brand Development</li>
+                    <li>Performance Analytics</li>
+                </ul>
+                <a href="#contact" class="btn">Get Started</a>
             </div>
         </div>
     </section>
 
-    <!-- Industries Section -->
-    <section class="industries" id="industries">
-        <div class="container">
-            <div class="section-title">
-                <h2>Industries We Help</h2>
-                <p>From local businesses to growing startups, we specialize in building impactful online presences</p>
-            </div>
-
-            <!-- 3D Carousel Container -->
-            <div class="magic-carousel">
-                <div class="cards-container" id="industriesCarousel">
-                    <!-- Cards will be inserted by JavaScript -->
-                </div>
-
-                <!-- Navigation Arrows -->
-                <div class="carousel-nav">
-                    <div class="nav-arrow" id="industriesPrevBtn">←</div>
-                    <div class="nav-arrow" id="industriesNextBtn">→</div>
+    <!-- Setup Process Section -->
+    <section id="setup-process" class="process-section">
+        <div class="section-title fade-in">
+            <h2>Business Setup Process</h2>
+            <p>Our streamlined approach to establishing your business in UAE and Saudi Arabia</p>
+        </div>
+        <div class="process-steps">
+            <div class="step fade-in delay-1">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Consultation & Planning</h3>
+                    <p>Understand your business goals and recommend optimal setup structure</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="section-title slide-up">
-            <h2>Demo Website Samples</h2>
-            <p style="text-align:center; font-size: 0.9rem; color: #888; margin-top: 20px;">
-                These sample websites are for demonstration only to showcase design capabilities and layout options.
-            </p>
-        </div>
-        <div class="portfolio-grid">
-            <!-- Portfolio Item 1 -->
-            <a href="https://magical-queijadas-a9e89a.netlify.app/" target="_blank" class="portfolio-item fade-in delay-1" aria-label="View PureChoco Dubai demo">
-                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="PureChoco Luxury Chocolate Brand Dubai" class="portfolio-img">
-                <div class="portfolio-overlay">
-                    <h3>PureChoco Dubai</h3>
-                    <p>Luxury Chocolate E-commerce</p>
+            
+            <div class="step fade-in delay-2">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Documentation & Licensing</h3>
+                    <p>Prepare and submit all required documents for business registration</p>
                 </div>
-            </a>
-
-            <!-- Portfolio Item 2 -->
-            <a href="https://papaya-vacherin-fee6b2.netlify.app/" target="_blank" class="portfolio-item fade-in delay-2" aria-label="View Eclat Luxury Dubai demo">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Eclat Luxury Jewelry Brand UAE" class="portfolio-img">
-                <div class="portfolio-overlay">
-                    <h3>Eclat Luxury Dubai</h3>
-                    <p>High-End Jewelry Brand</p>
-                </div>
-            </a>
-
-            <!-- Portfolio Item 3 -->
-            <a href="https://stupendous-hummingbird-03080a.netlify.app/" target="_blank" class="portfolio-item fade-in delay-3" aria-label="View LUXICOM Dubai demo">
-                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="LUXICOM Retail Dubai" class="portfolio-img">
-                <div class="portfolio-overlay">
-                    <h3>LUXICOM Dubai</h3>
-                    <p>Luxury Retail Experience</p>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Social Media Services</h2>
-                <p>Comprehensive solutions designed to grow your brand and drive real business results</p>
             </div>
-
-            <div class="features-grid">
-                <div class="feature-card fade-in delay-1">
-                    <div class="feature-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>Content Creation</h3>
-                    <p>Visually stunning posts that reflect your brand and drive engagement across all platforms.</p>
+            
+            <div class="step fade-in delay-3">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Establishment & Compliance</h3>
+                    <p>Set up physical/virtual office and ensure regulatory compliance</p>
                 </div>
-
-                <div class="feature-card fade-in delay-2">
-                    <div class="feature-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>Content Calendars</h3>
-                    <p>Consistent, timely calendars aligned with your goals and audience behavior.</p>
-                </div>
-
-                <div class="feature-card fade-in delay-3">
-                    <div class="feature-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Social Ads & Growth</h3>
-                    <p>Geo-targeted ads to reach your ideal customers and boost visibility.</p>
-                </div>
-
-                <div class="feature-card fade-in delay-4">
-                    <div class="feature-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>Community Management</h3>
-                    <p>Build trust, encourage loyalty, and convert interest into action.</p>
-                </div>
-
-                <div class="feature-card fade-in delay-1">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Analytics & Reporting</h3>
-                    <p>Clear monthly reports tracking growth, engagement, and ROI.</p>
-                </div>
-
-                <div class="feature-card fade-in delay-2">
-                    <div class="feature-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <h3>Platform Management</h3>
-                    <p>Full management of Instagram, Facebook, LinkedIn, TikTok, and more.</p>
+            </div>
+            
+            <div class="step fade-in delay-4">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Growth & Marketing</h3>
+                    <p>Implement digital marketing strategies for market penetration</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Video Banner Section -->
-    <section class="video-banner-vertical">
-        <!-- Text Content Above Video -->
-        <div class="video-text-content">
-            <h2><span class="gold-gradient">Boost Your Brand</span> With Premium Digital Excellence</h2>
-            <p>Our bespoke strategies elevate luxury brands to new heights in Dubai's competitive digital landscape</p>
+    <!-- Comparison Section -->
+    <section id="comparison" class="comparison">
+        <div class="section-title fade-in">
+            <h2>Market Comparison: UAE vs Saudi Arabia</h2>
+            <p>Key differences to consider when expanding to the Middle East</p>
         </div>
-
-        <!-- Video Container -->
-        <div class="video-container">
-            <video autoplay muted loop playsinline>
-                <source src="video-banner.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="video-overlay"></div>
-        </div>
-
-        <!-- Buttons Below Video -->
-        <div class="video-cta-buttons">
-            <a href="#contact" class="btn">Get Exclusive Strategy</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="section-title slide-up">
-            <h2>About Four Pillars UAE</h2>
-            <p>Dubai's premier digital marketing agency for luxury brands</p>
-        </div>
-        <div class="about-container">
-            <div class="about-image fade-in delay-1"></div>
-            <div class="about-content fade-in delay-2">
-                <h3>Redefining Digital Marketing Excellence in UAE</h3>
-                <p>Founded in 2025 in Dubai, Four Pillars was born from a passion for helping luxury brands thrive in the UAE digital space. We understand that premium brands require a different approach—one that emphasizes quality, sophistication, and attention to detail.</p>
-                <p>Our team of experts combines deep knowledge of the UAE market with cutting-edge digital strategies to create campaigns that resonate with your target audience and drive measurable results.</p>
-                <p>We don't just market your brand—we elevate it, crafting digital experiences that reflect the quality and value of your products or services in the competitive UAE market.</p>
-                <a href="#contact" class="btn">Discover Our UAE Approach</a>
+        <div class="comparison-grid">
+            <div class="comparison-card fade-in delay-1">
+                <h3>UAE Business Setup</h3>
+                <ul class="feature-list">
+                    <li>100% foreign ownership in most sectors</li>
+                    <li>Multiple free zones with tax benefits</li>
+                    <li>Faster setup process (2-4 weeks)</li>
+                    <li>Diverse international market</li>
+                    <li>Flexible visa policies</li>
+                    <li>Strong digital infrastructure</li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="blog-content-wrapper">
-            <div class="section-title slide-up">
-                <h2>Latest Insights</h2>
-                <p>Expert perspectives on digital marketing in UAE</p>
+            
+            <div class="comparison-card fade-in delay-2">
+                <h3>Saudi Arabia Business Setup</h3>
+                <ul class="feature-list">
+                    <li>Largest GCC market with local population</li>
+                    <li>Vision 2030 economic diversification</li>
+                    <li>Regional headquarters incentives</li>
+                    <li>Growing digital transformation</li>
+                    <li>Strong government support programs</li>
+                    <li>Access to Gulf Cooperation Council</li>
+                </ul>
             </div>
-            <div class="blog-grid">
-                <!-- Blog Post 1 -->
-                <div class="blog-card fade-in delay-1">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Luxury Marketing Trends Dubai UAE" class="blog-img">
-                    <div class="blog-content">
-                        <div class="blog-date">June 15, 2023</div>
-                        <h3>The Psychology of Luxury Purchasing in UAE</h3>
-                        <p>Understanding how high-net-worth consumers in Dubai and UAE make purchasing decisions in digital spaces and how to optimize your strategy accordingly.</p>
-                        <a href="psychology-of-luxury-purchasing.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Blog Post 2 -->
-                <div class="blog-card fade-in delay-2">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SEO Strategy Dubai UAE" class="blog-img">
-                    <div class="blog-content">
-                        <div class="blog-date">May 28, 2023</div>
-                        <h3>SEO Strategies for Luxury Brands in UAE</h3>
-                        <p>Why traditional SEO approaches often fail premium brands in Dubai and how to adapt your strategy for the UAE luxury market.</p>
-                        <a href="advanced-seo-luxury-brands.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Blog Post 3 -->
-                <div class="blog-card fade-in delay-3">
-                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Web Design Dubai UAE" class="blog-img">
-                    <div class="blog-content">
-                        <div class="blog-date">May 10, 2023</div>
-                        <h3>Designing for Exclusivity in UAE Market</h3>
-                        <p>The key elements that make a website feel premium to UAE consumers and how to balance aesthetics with functionality for luxury markets.</p>
-                        <a href="designing-for-exclusivity.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+            
+            <div class="comparison-card fade-in delay-3">
+                <h3>Digital Marketing Approach</h3>
+                <ul class="feature-list">
+                    <li><strong>UAE:</strong> Multicultural strategies, luxury focus</li>
+                    <li><strong>KSA:</strong> Localized Arabic content, mobile-first</li>
+                    <li>Platform preferences vary by country</li>
+                    <li>Different cultural considerations</li>
+                    <li>Varying payment method preferences</li>
+                    <li>Distinct seasonal marketing periods</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="section-title slide-up">
-            <h2>Contact Our UAE Office</h2>
-            <p>Ready to elevate your digital presence in UAE? Let's discuss your project</p>
+        <div class="section-title fade-in">
+            <h2>Contact Us</h2>
+            <p>Get in touch with our experts for business setup and digital marketing services</p>
         </div>
-        <div class="contact-grid">
-            <!-- Contact Form -->
-            <div class="contact-form fade-in delay-1">
-                <form action="https://formspree.io/f/xblypwjn" method="POST">
+        <div class="container">
+            <div class="contact-form fade-in">
+                <form id="contactForm" method="POST" action="mailto:info@4pillars.ae" enctype="text/plain">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Full Name" required>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Email Address" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="company" placeholder="Company Name" required>
-                    </div>
-                    <div class="form-group">
-                        <select name="service" required>
-                            <option value="" disabled selected>Select Service</option>
-                            <option>Luxury SEO</option>
-                            <option>Paid Media</option>
-                            <option>Content Creation</option>
-                            <option>Brand Strategy</option>
-                            <option>Web Design</option>
-                            <option>Social Media</option>
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service" class="form-control" required>
+                            <option value="">Select a service</option>
+                            <option value="Business Setup">Business Setup</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Both Services">Both Services</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Submit Request</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
+        </div>
+    </section>
 
-            <!-- Contact Info -->
-            <div class="contact-info fade-in delay-2">
-                <h3>Our UAE Office</h3>
-
-                <div class="contact-detail">
-                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <div class="contact-text">
-                        <h4>Location</h4>
-                        <p>RAKEZ Business Zone, Ras Al Khaimah, UAE</p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-                    <div class="contact-text">
-                        <h4>Phone</h4>
-                        <p><a href="tel:+971522797168">+971 522797168</a></p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <div class="contact-text">
-                        <h4>Email</h4>
-                        <p><a href="mailto:Faisal4pillars@gmail.com">Faisal4pillars@gmail.com</a></p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                    <div class="contact-text">
-                        <h4>Working Hours</h4>
-                        <p>Sun–Thu, 9AM–6PM (UAE Time)</p>
-                    </div>
-                </div>
-
-                <!-- Google Map -->
-                <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921902.7463506375!2d54.96526033722353!3d25.498955918311317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef67131f14a49b1%3A0xd3b5ffc06b24ab09!2sRas%20Al%20Khaimah%20Economic%20Zone%20-%20RAKEZ!5e0!3m2!1sen!2sae!4v1751447549322!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map to RAKEZ Business Zone"></iframe>
-                </div>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="fade-in">Ready to Establish & Grow Your Business?</h2>
+            <p class="fade-in delay-1">Our experts will guide you through the entire process in UAE or Saudi Arabia</p>
+            
+            <div class="cta-buttons">
+                <a href="#contact" class="btn fade-in delay-2">Get Started Today</a>
+                <a href="tel:+971567074922" class="btn btn-outline fade-in delay-3">Call Us Now</a>
             </div>
         </div>
     </section>
@@ -1832,10 +1134,9 @@
         <div class="footer-container">
             <div class="footer-about">
                 <div class="footer-logo">
-                    <img src="https://github.com/fasciola/fourpillars/raw/main/logo.png" alt="Four Pillars - Luxury Digital Marketing UAE" class="footer-logo-img">
                     <span class="footer-logo-text">Four<span>Pillars</span></span>
                 </div>
-                <p>UAE's premier digital marketing agency specializing in luxury brand growth across UAE. We help premium brands elevate their digital presence with sophistication and style in the competitive Middle East market.</p>
+                <p>Premier business setup and digital marketing agency specializing in helping businesses establish and grow in the UAE and Saudi Arabia markets.</p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/fourpillarsfzllc/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -1844,39 +1145,37 @@
                 </div>
             </div>
             <div class="footer-links">
-                <h4>Quick Links</h4>
+                <h4>Business Setup</h4>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Demo Sites</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Insights</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="business-setup.html">UAE Mainland</a></li>
+                    <li><a href="business-setup.html">Free Zones</a></li>
+                    <li><a href="business-setup.html">Saudi Arabia MISA</a></li>
+                    <li><a href="business-setup.html">Company Formation</a></li>
+                    <li><a href="business-setup.html">Visa Services</a></li>
                 </ul>
             </div>
             <div class="footer-links">
-                <h4>Services in UAE</h4>
+                <h4>Digital Marketing</h4>
                 <ul>
-                    <li><a href="#">Luxury SEO Dubai</a></li>
-                    <li><a href="#">Paid Media UAE</a></li>
-                    <li><a href="#">Content Creation</a></li>
-                    <li><a href="#">Brand Strategy</a></li>
-                    <li><a href="#">Web Design Dubai</a></li>
-                    <li><a href="#">Social Media UAE</a></li>
+                    <li><a href="digital-marketing.html">Luxury SEO</a></li>
+                    <li><a href="digital-marketing.html">Paid Advertising</a></li>
+                    <li><a href="digital-marketing.html">Brand Strategy</a></li>
+                    <li><a href="digital-marketing.html">Web Design</a></li>
+                    <li><a href="digital-marketing.html">Social Media</a></li>
                 </ul>
             </div>
             <div class="footer-links">
-                <h4>Contact in UAE</h4>
-                <ul>
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
                     <li><i class="fas fa-map-marker-alt"></i> RAKEZ, Ras Al Khaimah, UAE</li>
-                    <li><i class="fas fa-phone-alt"></i> +971 522797168</li>
-                    <li><i class="fas fa-envelope"></i> Faisal4pillars@gmail.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +971 567074922</li>
+                    <li><i class="fas fa-envelope"></i> info@4pillars.ae</li>
                     <li><i class="fas fa-clock"></i> Sun–Thu: 9AM–6PM</li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 Four Pillars Digital Marketing Agency UAE. All Rights Reserved.</p>
+            <p>&copy; 2025 Four Pillars Business Setup & Digital Marketing. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -1904,19 +1203,22 @@
             }
         });
 
-        // Smooth Scrolling
+        // Smooth Scrolling for anchor links only
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
-                if (href === "#") return;
-                const target = document.querySelector(href);
-                if (target) {
+                // Only handle anchor links (starting with #)
+                if (href.startsWith('#')) {
                     e.preventDefault();
-                    const offset = header.offsetHeight;
-                    const topPos = target.getBoundingClientRect().top + window.scrollY - offset;
-                    window.scrollTo({ top: topPos, behavior: 'smooth' });
-                    navLinks.classList.remove('active');
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offset = header.offsetHeight;
+                        const topPos = target.getBoundingClientRect().top + window.scrollY - offset;
+                        window.scrollTo({ top: topPos, behavior: 'smooth' });
+                        navLinks.classList.remove('active');
+                    }
                 }
+                // External links (like business-setup.html, digital-marketing.html) will work normally
             });
         });
 
@@ -1946,23 +1248,6 @@
         window.addEventListener('resize', updateScrollProgress);
         updateScrollProgress();
 
-        // Parallax Effect for Hero Background
-        function setupParallax() {
-            const heroBg = document.getElementById('heroBackground');
-            const heroSection = document.querySelector('.hero');
-            const heroHeight = heroSection.offsetHeight;
-
-            window.addEventListener('scroll', function () {
-                const scrollPosition = window.pageYOffset;
-                const maxScroll = heroHeight * 0.5;
-
-                if (scrollPosition <= maxScroll) {
-                    const moveY = scrollPosition * 0.5;
-                    heroBg.style.transform = `translate3d(0, ${moveY}px, 0)`;
-                }
-            });
-        }
-
         // Initialize animations when elements come into view
         const fadeElements = document.querySelectorAll('.fade-in');
         function checkFade() {
@@ -1985,210 +1270,20 @@
 
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function () {
-            setupParallax();
             checkFade();
         });
 
         window.addEventListener('scroll', checkFade);
         window.addEventListener('load', checkFade);
-    </script>
-    <!-- Particles.js Library -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-    <!-- Initialize Particles -->
-    <script>
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: "#fcd581" },
-                shape: { type: "circle", stroke: { width: 0, color: "#000" } },
-                opacity: {
-                    value: 0.8,
-                    random: true,
-                    anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
-                },
-                size: {
-                    value: 3,
-                    random: true,
-                    anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
-                },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#fcd581",
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: "none",
-                    random: true,
-                    straight: false,
-                    out_mode: "out",
-                    bounce: false
-                }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: { enable: true, mode: "grab" },
-                    onclick: { enable: true, mode: "push" },
-                    resize: true
-                },
-                modes: {
-                    grab: { distance: 140, line_linked: { opacity: 1 } },
-                    push: { particles_nb: 4 }
-                }
-            },
-            retina_detect: true
+        // Form submission handling
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to your server
+            alert('Thank you for your message! We will contact you shortly.');
+            contactForm.reset();
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Industries Carousel Data
-            const industriesData = [
-                {
-                    image: 'real-estate.jpg',
-                    title: 'Real Estate',
-                    description: 'Showcase properties, generate leads, and build authority in your market'
-                },
-                {
-                    image: 'beauty-salons.jpg',
-                    title: 'Beauty & Salons',
-                    description: 'Highlight services, showcase transformations, and book more appointments'
-                },
-                {
-                    image: 'health-wellness.jpg',
-                    title: 'Health & Wellness',
-                    description: 'Build trust, share expertise, and attract health-conscious clients'
-                },
-                {
-                    image: 'ecommerce-retail.jpg',
-                    title: 'E-commerce & Retail',
-                    description: 'Drive sales, showcase products, and build brand loyalty'
-                },
-                {
-                    image: 'restaurants-cafes.jpg',
-                    title: 'Restaurants & Cafes',
-                    description: 'Entice customers, showcase menus, and drive reservations'
-                },
-                {
-                    image: 'education-courses.jpg',
-                    title: 'Education & Courses',
-                    description: 'Attract students, demonstrate value, and boost enrollments'
-                },
-                {
-                    image: 'coaches-consultants.jpg',
-                    title: 'Coaches & Consultants',
-                    description: 'Establish authority, share insights, and attract premium clients'
-                },
-                {
-                    image: 'influencers-creators.jpg',
-                    title: 'Influencers & Creators',
-                    description: 'Grow your following, boost engagement, and monetize your content'
-                }
-            ];
-
-            const industriesContainer = document.getElementById('industriesCarousel');
-            const industriesPrevBtn = document.getElementById('industriesPrevBtn');
-            const industriesNextBtn = document.getElementById('industriesNextBtn');
-
-            let currentIndustryIndex = 0;
-            let autoPlayInterval;
-
-            // Create Industry Cards
-            function createIndustryCards() {
-                industriesData.forEach((industry, index) => {
-                    const cardElement = document.createElement('div');
-                    cardElement.className = 'industry-carousel-card';
-                    cardElement.innerHTML = `
-                        <div class="industry-image-container">
-                            <img src="${industry.image}" alt="${industry.title}" loading="lazy">
-                        </div>
-                        <div class="industry-carousel-content">
-                            <h3>${industry.title}</h3>
-                            <p>${industry.description}</p>
-                        </div>
-                    `;
-                    industriesContainer.appendChild(cardElement);
-                });
-
-                updateIndustryCards();
-            }
-
-            // Update Card Positions
-            function updateIndustryCards() {
-                const cards = document.querySelectorAll('.industry-carousel-card');
-
-                cards.forEach((card, index) => {
-                    // Reset all cards
-                    card.className = 'industry-carousel-card';
-
-                    // Calculate position relative to currentIndex
-                    const position = index - currentIndustryIndex;
-
-                    // Apply classes based on position
-                    if (position === 0) {
-                        card.classList.add('active');
-                    } else if (position === -1) {
-                        card.classList.add('left');
-                    } else if (position === 1) {
-                        card.classList.add('right');
-                    } else if (position === -2) {
-                        card.classList.add('far-left');
-                    } else if (position === 2) {
-                        card.classList.add('far-right');
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-            }
-
-            // Next Card
-            function nextIndustryCard() {
-                currentIndustryIndex = (currentIndustryIndex + 1) % industriesData.length;
-                updateIndustryCards();
-            }
-
-            // Previous Card
-            function prevIndustryCard() {
-                currentIndustryIndex = (currentIndustryIndex - 1 + industriesData.length) % industriesData.length;
-                updateIndustryCards();
-            }
-
-            // Auto-play
-            function startAutoPlay() {
-                autoPlayInterval = setInterval(nextIndustryCard, 3000);
-            }
-
-            // Stop auto-play
-            function stopAutoPlay() {
-                clearInterval(autoPlayInterval);
-            }
-
-            // Event listeners
-            industriesPrevBtn.addEventListener('click', () => {
-                prevIndustryCard();
-                stopAutoPlay();
-                startAutoPlay();
-            });
-
-            industriesNextBtn.addEventListener('click', () => {
-                nextIndustryCard();
-                stopAutoPlay();
-                startAutoPlay();
-            });
-
-            // Initialize
-            createIndustryCards();
-            startAutoPlay();
-
-            // Pause auto-play on hover
-            industriesContainer.addEventListener('mouseenter', stopAutoPlay);
-            industriesContainer.addEventListener('mouseleave', startAutoPlay);
-        });
-    </script>
-
 </body>
 </html>
