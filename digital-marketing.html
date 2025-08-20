@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-54ND7C10E4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-54ND7C10E4');
+  </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Pillars | Luxury Digital Marketing Agency UAE | Premium SEO Dubai</title>
+    <meta name="description" content="Leading luxury digital marketing agency in UAE specializing in premium SEO Dubai, high-end brand strategy, and exclusive web design for premium brands in Dubai and UAE">
+
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Four Pillars">
+    <link rel="canonical" href="https://4pillars.ae/">
+    <meta property="og:title" content="Four Pillars | Luxury Digital Marketing Agency UAE">
+    <meta property="og:description" content="Premium digital marketing services for luxury brands in Dubai and UAE">
+    <meta property="og:url" content="https://4pillars.ae/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/fasciola/fourpillars/raw/main/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ===== GLOBAL VARIABLES & RESET ===== */
+        :root {
+            --navy: #141c3a;
+            --navy-dark: #0d1227;
+            --gold: #fcd581;
+            --gold-light: #ffdf9e;
+            --pearl: #f8f7f2;
+            --platinum: #e5e3dc;
+            --burgundy: #8d1b3d;
+            --charcoal: #333333;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --gold-gradient: linear-gradient(135deg, #fcd581, #ffdf9e);
+            --section-padding: 100px 5%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--pearl);
+            color: var(--charcoal);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--navy);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-bottom: 1em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: var(--section-padding);
+            position: relative;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== UTILITY CLASSES ===== */
+        .text-center {
+            text-align: center;
+        }
+
+        .gold-accent {
+            color: var(--gold);
+        }
+
+        .gold-gradient {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .luxury-shadow {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1), 0 0 20px rgba(252, 213, 129, 0.15);
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes ripple {
+            0% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(2.5); opacity: 0; }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 5%;
+            transition: var(--transition);
+            background: rgba(20, 28, 58, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header.scrolled {
+            padding: 15px 5%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: auto;
+            transition: var(--transition);
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .logo-text span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 20px 60px;
+            overflow: hidden;
+            color: white;
+        }
+
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+            z-index: -2;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 43, 0.7);
+            z-index: -1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 1200px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 30px;
+            color: white;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-block;
+            padding: 16px 36px;
+            background: var(--gold);
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            border: none;
+            box-shadow: 0 0 20px rgba(252, 213, 129, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn:hover {
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(252, 213, 129, 0.4);
+            background: var(--burgundy);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            margin-left: 20px;
+        }
+
+        .btn-outline:hover {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%, -50%);
+            transform-origin: 50% 50%;
+        }
+
+        .btn:hover::after {
+            animation: ripple 0.6s ease-out;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== SECTION TITLES ===== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-size: 1.1rem;
+            color: var(--charcoal);
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            text-align: center;
+            padding: 40px 30px;
+            border: 1px solid rgba(252, 213, 129, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--gold);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-img {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--navy);
+        }
+
+        .service-card p {
+            color: var(--charcoal);
+            line-height: 1.7;
+        }
+
+        /* ===== INDUSTRIES SECTION ===== */
+        /* ===== INDUSTRIES SECTION ===== */
+        .industries {
+            background-color: var(--platinum);
+            padding: 100px 5%;
+        }
+
+        /* ===== 3D CAROUSEL STYLES ===== */
+        .magic-carousel {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .cards-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+        }
+
+        .industry-carousel-card {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            border-radius: 16px;
+            overflow: hidden;
+            background: white;
+            transition: var(--transition);
+            transform-style: preserve-3d;
+            cursor: pointer;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(252, 213, 129, 0.1);
+        }
+
+            .industry-carousel-card:hover {
+                transform: translateY(-5px);
+            }
+
+        .industry-image-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .industry-carousel-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .industry-carousel-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .industry-carousel-content {
+            padding: 25px;
+            background: white;
+            color: var(--charcoal);
+            flex-grow: 1;
+            border-top: 1px solid rgba(252, 213, 129, 0.1);
+        }
+
+            .industry-carousel-content h3 {
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+                color: var(--navy);
+                font-family: 'Playfair Display', serif;
+            }
+
+            .industry-carousel-content p {
+                font-size: 1rem;
+                opacity: 0.9;
+                line-height: 1.6;
+            }
+
+        /* ===== CARD POSITIONS ===== */
+        .industry-carousel-card.active {
+            transform: translateX(0) scale(1.1) rotateY(0deg);
+            z-index: 3;
+        }
+
+        .industry-carousel-card.left {
+            transform: translateX(-80%) scale(0.9) rotateY(15deg);
+            z-index: 2;
+            filter: brightness(0.8);
+        }
+
+        .industry-carousel-card.right {
+            transform: translateX(80%) scale(0.9) rotateY(-15deg);
+            z-index: 2;
+            filter: brightness(0.8);
+        }
+
+        .industry-carousel-card.far-left {
+            transform: translateX(-160%) scale(0.8) rotateY(25deg);
+            z-index: 1;
+            filter: brightness(0.6);
+            opacity: 0.8;
+        }
+
+        .industry-carousel-card.far-right {
+            transform: translateX(160%) scale(0.8) rotateY(-25deg);
+            z-index: 1;
+            filter: brightness(0.6);
+            opacity: 0.8;
+        }
+
+        .industry-carousel-card.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* ===== NAVIGATION ARROWS ===== */
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 4;
+        }
+
+        .nav-arrow {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.5rem;
+            font-weight: bold;
+            border: none;
+        }
+
+            .nav-arrow:hover {
+                background: var(--burgundy);
+                color: white;
+                transform: scale(1.1);
+            }
+
+        /* ===== RESPONSIVE ADJUSTMENTS ===== */
+        @media (max-width: 1200px) {
+            .industry-carousel-card {
+                width: 280px;
+            }
+
+            .industry-image-container {
+                height: 230px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .magic-carousel {
+                height: 550px;
+            }
+
+            .industry-carousel-card {
+                width: 240px;
+            }
+
+            .industry-image-container {
+                height: 200px;
+            }
+
+            .industry-carousel-card.active {
+                transform: translateX(0) scale(1.05);
+            }
+
+            .industry-carousel-card.left {
+                transform: translateX(-70%) scale(0.85);
+            }
+
+            .industry-carousel-card.right {
+                transform: translateX(70%) scale(0.85);
+            }
+
+            .industry-carousel-card.far-left,
+            .industry-carousel-card.far-right {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .magic-carousel {
+                height: 500px;
+            }
+
+            .industry-carousel-card {
+                width: 200px;
+            }
+
+            .industry-image-container {
+                height: 180px;
+            }
+
+            .industry-carousel-content {
+                padding: 15px;
+            }
+
+                .industry-carousel-content h3 {
+                    font-size: 1.2rem;
+                }
+
+                .industry-carousel-content p {
+                    font-size: 0.9rem;
+                }
+        }
+
+        @media (max-width: 576px) {
+            .industries {
+                padding: 80px 5%;
+            }
+
+            .magic-carousel {
+                height: 450px;
+            }
+
+            .industry-carousel-card {
+                width: 180px;
+            }
+
+            .industry-image-container {
+                height: 160px;
+            }
+
+            .nav-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* ===== PORTFOLIO SECTION ===== */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 300px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .portfolio-item:hover .portfolio-img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(20, 28, 58, 0.9), transparent);
+            color: white;
+            padding: 30px 20px 20px;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
+        .portfolio-overlay h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        /* ===== FEATURES SECTION ===== */
+        .features {
+            background: linear-gradient(to bottom, var(--platinum) 0%, var(--pearl) 100%);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(252, 213, 129, 0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gold);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover .feature-icon {
+            animation: float 2s ease infinite;
+        }
+
+        .feature-card h3 {
+            color: var(--navy);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: var(--charcoal);
+            font-size: 1.05rem;
+        }
+
+        /* ===== VIDEO BANNER ===== */
+        .video-banner-vertical {
+            width: 100%;
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .video-text-content {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .video-text-content h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+            color: var(--navy);
+            line-height: 1.3;
+        }
+
+        .video-text-content p {
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            color: var(--charcoal);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 60vh;
+            min-height: 400px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: var(--transition);
+        }
+
+        .video-container:hover video {
+            transform: scale(1.05);
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(20, 28, 58, 0.2) 0%, rgba(252, 213, 129, 0.1) 100%);
+        }
+
+        .video-cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* ===== BLOG SECTION ===== */
+        .blog {
+            position: relative;
+            padding: 100px 20px;
+            background: var(--pearl);
+            isolation: isolate;
+        }
+
+        .blog::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('blog.bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.6;
+            z-index: -1;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .blog-card:hover .blog-img {
+            transform: scale(1.05);
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-date {
+            color: var(--gold);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .blog-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--navy);
+            line-height: 1.4;
+        }
+
+        .blog-content p {
+            color: var(--charcoal);
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .read-more {
+            color: var(--navy);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .read-more:hover {
+            color: var(--burgundy);
+            gap: 8px;
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-image {
+            height: 100%;
+            min-height: 400px;
+            background: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            transition: var(--transition);
+        }
+
+        .about-container:hover .about-image {
+            transform: scale(1.03);
+        }
+
+        .about-content {
+            padding: 40px;
+        }
+
+        .about-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--navy);
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: var(--charcoal);
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-form,
+        .contact-info {
+            flex: 1 1 48%;
+            min-width: 300px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form .form-group input,
+        .contact-form .form-group select,
+        .contact-form .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(252, 213, 129, 0.3);
+            background: white;
+            color: var(--charcoal);
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+        }
+
+        .contact-form .form-group input:focus,
+        .contact-form .form-group select:focus,
+        .contact-form .form-group textarea:focus {
+            border-color: var(--gold);
+            outline: none;
+            box-shadow: 0 0 10px rgba(252, 213, 129, 0.2);
+        }
+
+        .contact-form .btn {
+            margin-top: 10px;
+            padding: 12px 20px;
+            border: none;
+            background: var(--gold);
+            color: var(--navy);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .contact-form .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(252, 213, 129, 0.4);
+            background: var(--burgundy);
+            color: white;
+        }
+
+        .contact-info {
+            background: var(--navy);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        .contact-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-text p,
+        .contact-text a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .contact-text a:hover {
+            color: var(--gold);
+        }
+
+        .map-wrapper {
+            width: 100%;
+            margin-top: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .map-embed iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            padding: 70px 5% 30px;
+            background: var(--navy);
+            color: white;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .footer-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .footer-logo-text span {
+            color: var(--gold);
+        }
+
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+
+        .social-links a:hover {
+            background: var(--gold);
+            color: var(--navy);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            color: white;
+        }
+
+        .footer-links h4::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        /* ===== WHATSAPP FLOAT ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.3), 0 0 20px #25D366, 0 0 40px #25D366;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: float 3s ease infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.3), 0 0 25px #25D366, 0 0 50px #25D366;
+            color: white;
+            text-decoration: none;
+            animation: none;
+        }
+
+        .whatsapp-float i {
+            font-size: 32px;
+        }
+
+        /* ===== BACK TO TOP BUTTON ===== */
+        #backToTop {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            z-index: 998;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background: var(--gold);
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        #backToTop:hover {
+            transform: scale(1.05) translateY(-3px);
+            color: white;
+            background: var(--burgundy);
+        }
+
+        /* ===== SCROLL PROGRESS BAR ===== */
+        #scrollProgress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            width: 0;
+            background: var(--gold);
+            z-index: 2000;
+            transition: width 0.1s linear;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: rgba(20, 28, 58, 0.95);
+                flex-direction: column;
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .about-image {
+                min-height: 300px;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 80px 5%;
+            }
+
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .btn {
+                padding: 14px 30px;
+            }
+
+            .industry-image {
+                height: 300px;
+            }
+
+            .video-container {
+                height: 50vh;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero {
+                min-height: 100vh;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.6rem;
+            }
+
+            .contact-form,
+            .contact-info {
+                flex: 1 1 100%;
+            }
+
+            .footer-logo {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .industry-image {
+                height: 240px;
+            }
+
+            .video-container {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    <div id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <a href="#top" class="logo" aria-label="Four Pillars Home">
+                <img src="https://github.com/fasciola/fourpillars/raw/main/logo.png" alt="Four Pillars - Luxury Digital Marketing Agency UAE" class="logo-img">
+            </a>
+            <div class="nav-links" role="navigation" aria-label="Primary">
+                <a href="#services">Services</a>
+                <a href="#industries">Industries</a>
+                <a href="#portfolio">Demo Sites</a>
+                <a href="#about">About</a>
+                <a href="#blog">Insights</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section with Particle Background -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="content-wrapper fade-in">
+                <h1 class="hero-title">Luxury Digital Marketing <span class="gold-gradient">Excellence</span></h1>
+                <p class="hero-subtitle">
+                    Dubai's premier digital marketing experts crafting sophisticated strategies
+                    for high-end brands across UAE and Middle East
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn">Get Started</a>
+                    <a href="#services" class="btn btn-outline">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Services Section -->
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-title slide-up">
+            <h2>Premium Digital Marketing Services in UAE</h2>
+            <p>Exclusive marketing solutions for luxury brands in Dubai and across the Emirates</p>
+        </div>
+        <div class="services-container">
+            <!-- Service 1 -->
+            <div class="service-card fade-in delay-1">
+                <img src="SEO.png" alt="Luxury SEO Services Dubai UAE" class="service-img">
+                <h3>Luxury SEO Dubai</h3>
+                <p>Premium search optimization strategies tailored for UAE market to ensure your luxury brand dominates search results in Dubai and beyond.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card fade-in delay-2">
+                <img src="paid-ads.png" alt="Paid Media Advertising UAE" class="service-img">
+                <h3>Paid Media UAE</h3>
+                <p>Exclusive paid advertising campaigns targeting high-net-worth individuals in Dubai and key UAE markets.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card fade-in delay-3">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Premium Content Creation Dubai" class="service-img">
+                <h3>Content Creation</h3>
+                <p>Elegant, high-end content that tells your brand story with sophistication and appeals to discerning UAE audiences.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card fade-in delay-4">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Luxury Brand Strategy UAE" class="service-img">
+                <h3>Brand Strategy</h3>
+                <p>Premium branding services to position your business as the undisputed leader in your luxury niche across UAE markets.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card fade-in delay-1">
+                <img src="design1.png" alt="Luxury Web Design Dubai" class="service-img">
+                <h3>Web Design Dubai</h3>
+                <p>Bespoke website design that reflects the exclusivity and elegance of your luxury brand for the UAE market.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card fade-in delay-2">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Social Media Management UAE" class="service-img">
+                <h3>Social Media</h3>
+                <p>Sophisticated social media management that enhances your brand's prestige and engagement in the UAE market.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries" id="industries">
+        <div class="container">
+            <div class="section-title">
+                <h2>Industries We Help</h2>
+                <p>From local businesses to growing startups, we specialize in building impactful online presences</p>
+            </div>
+
+            <!-- 3D Carousel Container -->
+            <div class="magic-carousel">
+                <div class="cards-container" id="industriesCarousel">
+                    <!-- Cards will be inserted by JavaScript -->
+                </div>
+
+                <!-- Navigation Arrows -->
+                <div class="carousel-nav">
+                    <div class="nav-arrow" id="industriesPrevBtn">←</div>
+                    <div class="nav-arrow" id="industriesNextBtn">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-title slide-up">
+            <h2>Demo Website Samples</h2>
+            <p style="text-align:center; font-size: 0.9rem; color: #888; margin-top: 20px;">
+                These sample websites are for demonstration only to showcase design capabilities and layout options.
+            </p>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <a href="https://magical-queijadas-a9e89a.netlify.app/" target="_blank" class="portfolio-item fade-in delay-1" aria-label="View PureChoco Dubai demo">
+                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="PureChoco Luxury Chocolate Brand Dubai" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>PureChoco Dubai</h3>
+                    <p>Luxury Chocolate E-commerce</p>
+                </div>
+            </a>
+
+            <!-- Portfolio Item 2 -->
+            <a href="https://papaya-vacherin-fee6b2.netlify.app/" target="_blank" class="portfolio-item fade-in delay-2" aria-label="View Eclat Luxury Dubai demo">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Eclat Luxury Jewelry Brand UAE" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Eclat Luxury Dubai</h3>
+                    <p>High-End Jewelry Brand</p>
+                </div>
+            </a>
+
+            <!-- Portfolio Item 3 -->
+            <a href="https://stupendous-hummingbird-03080a.netlify.app/" target="_blank" class="portfolio-item fade-in delay-3" aria-label="View LUXICOM Dubai demo">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="LUXICOM Retail Dubai" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>LUXICOM Dubai</h3>
+                    <p>Luxury Retail Experience</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Social Media Services</h2>
+                <p>Comprehensive solutions designed to grow your brand and drive real business results</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Content Creation</h3>
+                    <p>Visually stunning posts that reflect your brand and drive engagement across all platforms.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Content Calendars</h3>
+                    <p>Consistent, timely calendars aligned with your goals and audience behavior.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Social Ads & Growth</h3>
+                    <p>Geo-targeted ads to reach your ideal customers and boost visibility.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Management</h3>
+                    <p>Build trust, encourage loyalty, and convert interest into action.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Clear monthly reports tracking growth, engagement, and ROI.</p>
+                </div>
+
+                <div class="feature-card fade-in delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Platform Management</h3>
+                    <p>Full management of Instagram, Facebook, LinkedIn, TikTok, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Banner Section -->
+    <section class="video-banner-vertical">
+        <!-- Text Content Above Video -->
+        <div class="video-text-content">
+            <h2><span class="gold-gradient">Boost Your Brand</span> With Premium Digital Excellence</h2>
+            <p>Our bespoke strategies elevate luxury brands to new heights in Dubai's competitive digital landscape</p>
+        </div>
+
+        <!-- Video Container -->
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="video-banner.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- Buttons Below Video -->
+        <div class="video-cta-buttons">
+            <a href="#contact" class="btn">Get Exclusive Strategy</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-title slide-up">
+            <h2>About Four Pillars UAE</h2>
+            <p>Dubai's premier digital marketing agency for luxury brands</p>
+        </div>
+        <div class="about-container">
+            <div class="about-image fade-in delay-1"></div>
+            <div class="about-content fade-in delay-2">
+                <h3>Redefining Digital Marketing Excellence in UAE</h3>
+                <p>Founded in 2025 in Dubai, Four Pillars was born from a passion for helping luxury brands thrive in the UAE digital space. We understand that premium brands require a different approach—one that emphasizes quality, sophistication, and attention to detail.</p>
+                <p>Our team of experts combines deep knowledge of the UAE market with cutting-edge digital strategies to create campaigns that resonate with your target audience and drive measurable results.</p>
+                <p>We don't just market your brand—we elevate it, crafting digital experiences that reflect the quality and value of your products or services in the competitive UAE market.</p>
+                <a href="#contact" class="btn">Discover Our UAE Approach</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="blog-content-wrapper">
+            <div class="section-title slide-up">
+                <h2>Latest Insights</h2>
+                <p>Expert perspectives on digital marketing in UAE</p>
+            </div>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-card fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Luxury Marketing Trends Dubai UAE" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-date">June 15, 2023</div>
+                        <h3>The Psychology of Luxury Purchasing in UAE</h3>
+                        <p>Understanding how high-net-worth consumers in Dubai and UAE make purchasing decisions in digital spaces and how to optimize your strategy accordingly.</p>
+                        <a href="psychology-of-luxury-purchasing.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card fade-in delay-2">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SEO Strategy Dubai UAE" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-date">May 28, 2023</div>
+                        <h3>SEO Strategies for Luxury Brands in UAE</h3>
+                        <p>Why traditional SEO approaches often fail premium brands in Dubai and how to adapt your strategy for the UAE luxury market.</p>
+                        <a href="advanced-seo-luxury-brands.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card fade-in delay-3">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Web Design Dubai UAE" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-date">May 10, 2023</div>
+                        <h3>Designing for Exclusivity in UAE Market</h3>
+                        <p>The key elements that make a website feel premium to UAE consumers and how to balance aesthetics with functionality for luxury markets.</p>
+                        <a href="designing-for-exclusivity.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title slide-up">
+            <h2>Contact Our UAE Office</h2>
+            <p>Ready to elevate your digital presence in UAE? Let's discuss your project</p>
+        </div>
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form fade-in delay-1">
+                <form action="https://formspree.io/f/xblypwjn" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="service" required>
+                            <option value="" disabled selected>Select Service</option>
+                            <option>Luxury SEO</option>
+                            <option>Paid Media</option>
+                            <option>Content Creation</option>
+                            <option>Brand Strategy</option>
+                            <option>Web Design</option>
+                            <option>Social Media</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Request</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info fade-in delay-2">
+                <h3>Our UAE Office</h3>
+
+                <div class="contact-detail">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-text">
+                        <h4>Location</h4>
+                        <p>RAKEZ Business Zone, Ras Al Khaimah, UAE</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="contact-text">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+971522797168">+971 522797168</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p><a href="mailto:Faisal4pillars@gmail.com">Faisal4pillars@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                    <div class="contact-text">
+                        <h4>Working Hours</h4>
+                        <p>Sun–Thu, 9AM–6PM (UAE Time)</p>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921902.7463506375!2d54.96526033722353!3d25.498955918311317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef67131f14a49b1%3A0xd3b5ffc06b24ab09!2sRas%20Al%20Khaimah%20Economic%20Zone%20-%20RAKEZ!5e0!3m2!1sen!2sae!4v1751447549322!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map to RAKEZ Business Zone"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="https://github.com/fasciola/fourpillars/raw/main/logo.png" alt="Four Pillars - Luxury Digital Marketing UAE" class="footer-logo-img">
+                    <span class="footer-logo-text">Four<span>Pillars</span></span>
+                </div>
+                <p>UAE's premier digital marketing agency specializing in luxury brand growth across UAE. We help premium brands elevate their digital presence with sophistication and style in the competitive Middle East market.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/fourpillarsfzllc/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=615933361599231" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Demo Sites</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Insights</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services in UAE</h4>
+                <ul>
+                    <li><a href="#">Luxury SEO Dubai</a></li>
+                    <li><a href="#">Paid Media UAE</a></li>
+                    <li><a href="#">Content Creation</a></li>
+                    <li><a href="#">Brand Strategy</a></li>
+                    <li><a href="#">Web Design Dubai</a></li>
+                    <li><a href="#">Social Media UAE</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact in UAE</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> RAKEZ, Ras Al Khaimah, UAE</li>
+                    <li><i class="fas fa-phone-alt"></i> +971 522797168</li>
+                    <li><i class="fas fa-envelope"></i> Faisal4pillars@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Sun–Thu: 9AM–6PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Four Pillars Digital Marketing Agency UAE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/971567074922" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Sticky Header
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === "#") return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const offset = header.offsetHeight;
+                    const topPos = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top: topPos, behavior: 'smooth' });
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        function toggleBackToTop() {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        }
+        window.addEventListener('scroll', toggleBackToTop);
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Scroll Progress Bar
+        const scrollProgressEl = document.getElementById('scrollProgress');
+        function updateScrollProgress() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            scrollProgressEl.style.width = percent + '%';
+        }
+        window.addEventListener('scroll', updateScrollProgress);
+        window.addEventListener('resize', updateScrollProgress);
+        updateScrollProgress();
+
+        // Parallax Effect for Hero Background
+        function setupParallax() {
+            const heroBg = document.getElementById('heroBackground');
+            const heroSection = document.querySelector('.hero');
+            const heroHeight = heroSection.offsetHeight;
+
+            window.addEventListener('scroll', function () {
+                const scrollPosition = window.pageYOffset;
+                const maxScroll = heroHeight * 0.5;
+
+                if (scrollPosition <= maxScroll) {
+                    const moveY = scrollPosition * 0.5;
+                    heroBg.style.transform = `translate3d(0, ${moveY}px, 0)`;
+                }
+            });
+        }
+
+        // Initialize animations when elements come into view
+        const fadeElements = document.querySelectorAll('.fade-in');
+        function checkFade() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 50) {
+                    element.style.opacity = "1";
+                    element.style.transform = "translateY(0)";
+                }
+            });
+        }
+
+        // Set initial styles for fade-in elements
+        fadeElements.forEach(element => {
+            element.style.opacity = "0";
+            element.style.transform = "translateY(20px)";
+            element.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        });
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            setupParallax();
+            checkFade();
+        });
+
+        window.addEventListener('scroll', checkFade);
+        window.addEventListener('load', checkFade);
+    </script>
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Initialize Particles -->
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#fcd581" },
+                shape: { type: "circle", stroke: { width: 0, color: "#000" } },
+                opacity: {
+                    value: 0.8,
+                    random: true,
+                    anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#fcd581",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "grab" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Industries Carousel Data
+            const industriesData = [
+                {
+                    image: 'real-estate.jpg',
+                    title: 'Real Estate',
+                    description: 'Showcase properties, generate leads, and build authority in your market'
+                },
+                {
+                    image: 'beauty-salons.jpg',
+                    title: 'Beauty & Salons',
+                    description: 'Highlight services, showcase transformations, and book more appointments'
+                },
+                {
+                    image: 'health-wellness.jpg',
+                    title: 'Health & Wellness',
+                    description: 'Build trust, share expertise, and attract health-conscious clients'
+                },
+                {
+                    image: 'ecommerce-retail.jpg',
+                    title: 'E-commerce & Retail',
+                    description: 'Drive sales, showcase products, and build brand loyalty'
+                },
+                {
+                    image: 'restaurants-cafes.jpg',
+                    title: 'Restaurants & Cafes',
+                    description: 'Entice customers, showcase menus, and drive reservations'
+                },
+                {
+                    image: 'education-courses.jpg',
+                    title: 'Education & Courses',
+                    description: 'Attract students, demonstrate value, and boost enrollments'
+                },
+                {
+                    image: 'coaches-consultants.jpg',
+                    title: 'Coaches & Consultants',
+                    description: 'Establish authority, share insights, and attract premium clients'
+                },
+                {
+                    image: 'influencers-creators.jpg',
+                    title: 'Influencers & Creators',
+                    description: 'Grow your following, boost engagement, and monetize your content'
+                }
+            ];
+
+            const industriesContainer = document.getElementById('industriesCarousel');
+            const industriesPrevBtn = document.getElementById('industriesPrevBtn');
+            const industriesNextBtn = document.getElementById('industriesNextBtn');
+
+            let currentIndustryIndex = 0;
+            let autoPlayInterval;
+
+            // Create Industry Cards
+            function createIndustryCards() {
+                industriesData.forEach((industry, index) => {
+                    const cardElement = document.createElement('div');
+                    cardElement.className = 'industry-carousel-card';
+                    cardElement.innerHTML = `
+                        <div class="industry-image-container">
+                            <img src="${industry.image}" alt="${industry.title}" loading="lazy">
+                        </div>
+                        <div class="industry-carousel-content">
+                            <h3>${industry.title}</h3>
+                            <p>${industry.description}</p>
+                        </div>
+                    `;
+                    industriesContainer.appendChild(cardElement);
+                });
+
+                updateIndustryCards();
+            }
+
+            // Update Card Positions
+            function updateIndustryCards() {
+                const cards = document.querySelectorAll('.industry-carousel-card');
+
+                cards.forEach((card, index) => {
+                    // Reset all cards
+                    card.className = 'industry-carousel-card';
+
+                    // Calculate position relative to currentIndex
+                    const position = index - currentIndustryIndex;
+
+                    // Apply classes based on position
+                    if (position === 0) {
+                        card.classList.add('active');
+                    } else if (position === -1) {
+                        card.classList.add('left');
+                    } else if (position === 1) {
+                        card.classList.add('right');
+                    } else if (position === -2) {
+                        card.classList.add('far-left');
+                    } else if (position === 2) {
+                        card.classList.add('far-right');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
+
+            // Next Card
+            function nextIndustryCard() {
+                currentIndustryIndex = (currentIndustryIndex + 1) % industriesData.length;
+                updateIndustryCards();
+            }
+
+            // Previous Card
+            function prevIndustryCard() {
+                currentIndustryIndex = (currentIndustryIndex - 1 + industriesData.length) % industriesData.length;
+                updateIndustryCards();
+            }
+
+            // Auto-play
+            function startAutoPlay() {
+                autoPlayInterval = setInterval(nextIndustryCard, 3000);
+            }
+
+            // Stop auto-play
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+
+            // Event listeners
+            industriesPrevBtn.addEventListener('click', () => {
+                prevIndustryCard();
+                stopAutoPlay();
+                startAutoPlay();
+            });
+
+            industriesNextBtn.addEventListener('click', () => {
+                nextIndustryCard();
+                stopAutoPlay();
+                startAutoPlay();
+            });
+
+            // Initialize
+            createIndustryCards();
+            startAutoPlay();
+
+            // Pause auto-play on hover
+            industriesContainer.addEventListener('mouseenter', stopAutoPlay);
+            industriesContainer.addEventListener('mouseleave', startAutoPlay);
+        });
+    </script>
+
+</body>
+</html>
